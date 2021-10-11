@@ -105,6 +105,20 @@
         "com.unity.render-pipelines.core": "12.0.0"
       }
     },
+    "jp.keijiro.beta": {
+      "version": "1.0.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
+    "jp.keijiro.cmu-mocap": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
     "jp.keijiro.kino.aqua": {
       "version": "1.0.3",
       "depth": 0,
@@ -156,6 +170,13 @@
         "com.unity.shadergraph": "10.0.0"
       },
       "url": "https://registry.npmjs.com"
+    },
+    "jp.supertask.shaderlibcore": {
+      "version": "https://github.com/supertask/ShaderLibCore.git?path=/Packages/jp.supertask.shaderlibcore",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ee4b19a9a765f1542a909ef746ccaf1e941ab063"
     },
     "com.unity.modules.animation": {
       "version": "1.0.0",
