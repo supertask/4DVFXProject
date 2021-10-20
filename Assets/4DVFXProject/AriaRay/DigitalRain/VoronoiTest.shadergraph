@@ -64,9 +64,6 @@
             "m_Id": "6519c855666b4c99b2f65563b41476d2"
         },
         {
-            "m_Id": "e468342d187a4e908ec6d2e2b559e724"
-        },
-        {
             "m_Id": "2b33bea4c29441238210fabcb2bb7af1"
         },
         {
@@ -547,31 +544,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "19306ba7b9ec4c1fa371ba9f33652a9e",
-    "m_Id": 0,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "199eebf39d4d49f494d6e48b65687cf7",
     "m_Id": 3,
@@ -707,9 +679,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -317.0,
-            "y": 326.0,
-            "width": 208.00006103515626,
+            "x": -152.0001220703125,
+            "y": -143.99998474121095,
+            "width": 208.0,
             "height": 302.0
         }
     },
@@ -1110,8 +1082,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 0.000023126602172851563,
-            "y": 131.99998474121095,
+            "x": 164.99986267089845,
+            "y": -338.0000305175781,
             "width": 208.0,
             "height": 326.0
         }
@@ -1478,10 +1450,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -182.0,
-            "y": 131.99998474121095,
-            "width": 145.00001525878907,
-            "height": 136.00001525878907
+            "x": -17.0001220703125,
+            "y": -338.0000305175781,
+            "width": 145.0,
+            "height": 137.0
         }
     },
     "m_Slots": [
@@ -1790,8 +1762,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -256.0,
-            "y": 775.0,
+            "x": -267.9999694824219,
+            "y": 751.9999389648438,
             "width": 324.0,
             "height": 374.0
         }
@@ -2121,8 +2093,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -663.0,
-            "y": 341.0,
+            "x": -498.0001525878906,
+            "y": -129.00001525878907,
             "width": 120.0,
             "height": 149.0
         }
@@ -2226,10 +2198,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -647.0000610351563,
-            "y": 542.0,
-            "width": 104.00006103515625,
-            "height": 34.00006103515625
+            "x": -482.0001525878906,
+            "y": 72.0,
+            "width": 104.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -2514,43 +2486,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.UVNode",
-    "m_ObjectId": "e468342d187a4e908ec6d2e2b559e724",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "UV",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1540.0,
-            "y": 7.000005722045898,
-            "width": 208.0,
-            "height": 312.9999694824219
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "19306ba7b9ec4c1fa371ba9f33652a9e"
-        }
-    ],
-    "synonyms": [
-        "texcoords",
-        "coords",
-        "coordinates"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_OutputChannel": 0
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.Rendering.HighDefinition.ShaderGraph.LightingData",
     "m_ObjectId": "ea69f93085d04eeb8dd26cf38d60008f",
     "m_NormalDropOffSpace": 0,
@@ -2593,9 +2528,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -503.0,
-            "y": 424.0,
-            "width": 126.00003051757813,
+            "x": -338.0001220703125,
+            "y": -46.000030517578128,
+            "width": 126.0,
             "height": 118.0
         }
     },
