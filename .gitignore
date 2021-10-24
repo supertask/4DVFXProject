@@ -13,8 +13,17 @@
 
 /[Aa]ssets/DepthKitClip/
 /[Aa]ssets/Samples/
+
+# Cyber city background objects
+# https://assetstore.unity.com/packages/3d/environments/sci-fi/dark-city2-cyberpunk-pack-133817
 /[Aa]ssets/4DVFXProject/Common/Model/CyberBackground/
 /[Aa]ssets/4DVFXProject/Common/Texture/CyberBackground/
+
+# Download from Sketchfab link
+# https://sketchfab.com/3d-models/sf-street-art-26-24th-york-mini-park-d978d8b9a4f44b00861d11ee8c683584
+/[Aa]ssets/4DVFXProject/Common/Model/sf-street-art-26-24th-york-mini-park/
+/[Aa]ssets/4DVFXProject/Common/Texture/sf-street-art-26-24th-york-mini-park/
+/Extra/sf-street-art-26-24th-york-mini-park/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
