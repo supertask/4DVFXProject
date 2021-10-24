@@ -9,9 +9,12 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/Recordings/
 
 /[Aa]ssets/DepthKitClip/
 /[Aa]ssets/Samples/
+/[Aa]ssets/4DVFXProject/Common/Model/CyberBackground/
+/[Aa]ssets/4DVFXProject/Common/Texture/CyberBackground/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta

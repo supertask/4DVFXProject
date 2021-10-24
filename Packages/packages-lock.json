@@ -23,15 +23,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.recorder": {
-      "version": "3.0.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.timeline": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.render-pipelines.core": {
       "version": "11.0.0",
       "depth": 1,
@@ -252,7 +243,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "ac5a6faba622b084268db8a3a008a4d9f97f8141"
+      "hash": "ba0b9cc34c9461d0926d33fa389768b8e600bc25"
     },
     "nyc.scatter.depthkit.core": {
       "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",

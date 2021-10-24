@@ -1,0 +1,55 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel ResetWaveTex
+#pragma kernel UpdateWaveTex
+
+#define THREAD_NUM_X 2
+#define RIPPLE_TEX_THREAD_X 1024
+
+#include "./RippleStruct.hlsl"
+
+StructuredBuffer<ParticleData> _Particles;
+RWTexture2D<float4> _RippleTex;
+
+uint _RippleTextureWidth;
+float _NormalizedWaveHalfAmplitude;
+
+
+// 乱数生成
+inline float rnd(float2 p){
+    return frac(sin(dot(p ,float2(12.9898, 78.233))) * 43758.5453);
+}
+
+inline float3 rnd3(float2 p){
+	return 2.0 * (float3(rnd(p * 1), rnd(p * 2), rnd(p * 3)) - 0.5);
+}
+
+
+[numthreads(RIPPLE_TEX_THREAD_X, 1, 1)]
+void ResetWaveTex (uint3 id : SV_DispatchThreadID)
+{
+	_RippleTex[id.xy] = float4(0,0,0,1);
+}
+
+[numthreads(THREAD_NUM_X, 1, 1)]
+void UpdateWaveTex (uint3 id : SV_DispatchThreadID)
+{
+	uint idx = id.x;
+	ParticleData particle = _Particles[idx];
+	int wavePeakPositionX = (int) (particle.position.x * _RippleTextureWidth);
+	
+	int halfWaveLength = (int) (_NormalizedWaveHalfAmplitude * _RippleTextureWidth);
+	uint waveTroughLeftPositionX = wavePeakPositionX - halfWaveLength;
+	uint waveTroughRightPositionX = wavePeakPositionX + halfWaveLength;
+	
+	for(int x = - halfWaveLength; x < halfWaveLength; x++)
+	{
+		int wavePositionX = wavePeakPositionX + x;
+		if (0 <= wavePositionX && wavePositionX < _RippleTextureWidth)
+		{
+			float amplitude = smoothstep(waveTroughLeftPositionX, waveTroughRightPositionX, wavePositionX)
+				* smoothstep(waveTroughRightPositionX, waveTroughLeftPositionX, wavePositionX);
+			_RippleTex[uint2(wavePositionX, 0)] = max(_RippleTex[uint2(wavePositionX, 0)], amplitude);
+			//_RippleTex[uint2(wavePositionX, 0)] = float4(1,1,1,1);
+		}
+	}
+}
