@@ -12,6 +12,7 @@ RWTexture2D<float4> _RippleTex;
 
 uint _RippleTextureWidth;
 float _NormalizedWaveHalfAmplitude;
+float3 _AudioAmplitude;
 
 
 // 乱数生成
@@ -35,7 +36,11 @@ void UpdateWaveTex (uint3 id : SV_DispatchThreadID)
 {
 	uint idx = id.x;
 	ParticleData particle = _Particles[idx];
+	if (! particle.isActive) { return; }
 	int wavePeakPositionX = (int) (particle.position.x * _RippleTextureWidth);
+	
+	//For debug
+	//_RippleTex[uint2(wavePeakPositionX, 0)] = float4(1,1,1,1);
 	
 	int halfWaveLength = (int) (_NormalizedWaveHalfAmplitude * _RippleTextureWidth);
 	uint waveTroughLeftPositionX = wavePeakPositionX - halfWaveLength;
@@ -46,10 +51,23 @@ void UpdateWaveTex (uint3 id : SV_DispatchThreadID)
 		int wavePositionX = wavePeakPositionX + x;
 		if (0 <= wavePositionX && wavePositionX < _RippleTextureWidth)
 		{
-			float amplitude = smoothstep(waveTroughLeftPositionX, waveTroughRightPositionX, wavePositionX)
+			float rippleAmplitude = smoothstep(waveTroughLeftPositionX, waveTroughRightPositionX, wavePositionX)
 				* smoothstep(waveTroughRightPositionX, waveTroughLeftPositionX, wavePositionX);
-			_RippleTex[uint2(wavePositionX, 0)] = max(_RippleTex[uint2(wavePositionX, 0)], amplitude);
-			//_RippleTex[uint2(wavePositionX, 0)] = float4(1,1,1,1);
+				
+			// age 0: low height, age 0.5: high height, age 1: low height
+			float age0to1 = min(particle.age / particle.lifetime, 1);
+			float heightBasedOnAge = smoothstep(0, 0.15, age0to1) * smoothstep(1.0, 0.85, age0to1);
+			rippleAmplitude = lerp(0, rippleAmplitude, heightBasedOnAge); //actual ripple amplitude
+
+			rippleAmplitude *= lerp(1.0, 1.6, length(particle.velocity)); //high speed makes big wave
+				
+			// R = ripple amplitude scale, B = audio amplitude
+			float4 col = _RippleTex[uint2(wavePositionX, 0)];
+			col.r = max(col.r, rippleAmplitude); //波紋の高さ
+			col.g = max(col.g, particle.velocity); //波紋の速度
+			uint rippleType = particle.pid / 2;
+			col.b = max(col.b, rippleType  == 0 ? 0.0 : (rippleType == 1 ? 0.5 : 1.0) ); //ripple type
+			_RippleTex[uint2(wavePositionX, 0)] = col;
 		}
 	}
 }

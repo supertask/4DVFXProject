@@ -1,0 +1,120 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel Init
+#pragma kernel Emit
+#pragma kernel Update
+
+#define THREAD_NUM_X 2
+
+#include "./RippleStruct.hlsl"
+
+// 乱数生成
+inline float rnd(float2 p){
+    return frac(sin(dot(p ,float2(12.9898, 78.233))) * 43758.5453);
+}
+
+inline float3 rnd3(float2 p){
+	return 2.0 * (float3(rnd(p * 1), rnd(p * 2), rnd(p * 3)) - 0.5);
+}
+
+float3 hsv_to_rgb(float3 HSV)
+{
+	float4 k = float4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+	float3 p = abs(frac(HSV.xxx + k.xyz) * 6.0 - k.www);
+	return HSV.z * lerp(k.xxx, clamp(p - k.xxx, 0.0, 1.0), HSV.y);
+}
+
+RWStructuredBuffer<ParticleData> _Particles;
+AppendStructuredBuffer<uint> _DeadList;
+ConsumeStructuredBuffer<uint> _ParticlePool;
+AppendStructuredBuffer<uint> _ActiveList;
+
+//float _EmitPosition;
+float2 _VelocityRange;
+//float2 _PositionRange;
+float3 _StartPositions;
+float _DT;
+float _Time;
+//float _LifeTime;
+float2 _LifeTimeRange;
+float _ScaleMin;
+float _ScaleMax;
+float _Sai;
+float _Val;
+
+float3 _AudioAmplitude;
+
+
+[numthreads(THREAD_NUM_X, 1, 1)]
+void Init (uint3 id : SV_DispatchThreadID)
+{
+	uint no = id.x;
+
+	_Particles[no].isActive = false;
+	_DeadList.Append(no);
+}
+
+[numthreads(THREAD_NUM_X, 1, 1)]
+void Emit ()
+{
+	uint no = _ParticlePool.Consume();
+
+	float2 seed = float2(no + _Time, no + 1.583 + _Time);
+	//float speed = lerp(_VelocityRange.x, _VelocityRange.y, rnd(seed));
+	//float scale = (rnd(seed + 3) - 0.5) * 2.0 * (_ScaleMax - _ScaleMin) + _ScaleMin;
+	float h = rnd(seed + 5);	// color
+
+	//float position = lerp(_PositionRange.x, _PositionRange.y, rnd(seed + 7));
+	float startPosition;
+	float audioAmplitude;
+	uint rippleType = no / 2;
+	if (rippleType == 0) {
+		startPosition = _StartPositions.x;
+		audioAmplitude = _AudioAmplitude.x;
+	} else if (rippleType == 1) {
+		startPosition = _StartPositions.y;
+		audioAmplitude = _AudioAmplitude.y;
+	} else {
+		startPosition = _StartPositions.z;
+		audioAmplitude = _AudioAmplitude.z;
+	}
+
+	_Particles[no].isActive = true;
+	_Particles[no].pid = no;
+	_Particles[no].position = float3(startPosition, 0, 0); //Start radius on Wave system
+	_Particles[no].velocity = float3(0, 0, 0);
+	_Particles[no].force = lerp(_VelocityRange.x, _VelocityRange.y, audioAmplitude);
+
+	//_Particles[no].velocity = float3(lerp(_VelocityRange.x, _VelocityRange.y, _AudioAmplitude), 0, 0);
+	_Particles[no].color = float4(hsv_to_rgb(float3(h, _Sai, _Val)),1);
+	
+	float lifetime = lerp(_LifeTimeRange.x, _LifeTimeRange.y, rnd(seed + 8));
+	_Particles[no].age = 0;
+	_Particles[no].lifetime = audioAmplitude > 0 ? lifetime : 0;
+	_Particles[no].scale = lerp(_ScaleMin, _ScaleMax, audioAmplitude);
+}
+
+[numthreads(THREAD_NUM_X, 1, 1)]
+void Update (uint3 id : SV_DispatchThreadID)
+{
+	uint no = id.x;
+
+	if(_Particles[no].isActive) {
+		//float2 seed = float2(no + _Time, no + 1.583 + _Time);
+
+		// acceleration = force / mass; //ignored mass at this time
+		//float acceleration = lerp(_VelocityRange.x, _VelocityRange.y, _AudioAmplitude);
+		float acceleration = _Particles[no].force;
+		_Particles[no].velocity += float3(acceleration * _DT, 0, 0);
+		_Particles[no].position += _Particles[no].velocity * _DT;
+		_Particles[no].age += _DT;
+		//_Particles[no].color.a = max(_Particles[no].age / _Particles[no].lifetime, 0); //age 0-1
+		if(_Particles[no].age > _Particles[no].lifetime) {
+			_Particles[no].isActive = false;
+			_DeadList.Append(no);
+		}
+		else {
+			_ActiveList.Append(no);
+		}
+	}
+
+}

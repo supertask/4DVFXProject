@@ -16,6 +16,7 @@
     }
   ],
   "dependencies": {
+    "com.unity.recorder": "2.5.5",
     "com.unity.render-pipelines.high-definition": "11.0.0",
     "com.unity.timeline": "1.6.2",
     "com.unity.ugui": "1.0.0",
@@ -30,8 +31,8 @@
     "jp.keijiro.metamesh": "1.0.0",
     "jp.keijiro.noiseshader": "2.0.0",
     "jp.keijiro.pugrad": "1.0.0",
-    "jp.keijiro.vfxgraphassets": "1.0.5",
     "jp.keijiro.test-assets": "1.0.1",
+    "jp.keijiro.vfxgraphassets": "1.0.5",
     "jp.supertask.shaderlibcore": "https://github.com/supertask/ShaderLibCore.git?path=/Packages/jp.supertask.shaderlibcore",
     "nyc.scatter.depthkit.core": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",
     "nyc.scatter.depthkit.core.shadergraph": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core.shadergraph",

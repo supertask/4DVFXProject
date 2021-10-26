@@ -41,6 +41,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: c646ec2be3d5c604381bae9f0e86e2f8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - CyberTex:
+        m_Texture: {fileID: 8400000, guid: 69b97087ef056024cbf48ce9d23cd4eb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - RippleTex:
         m_Texture: {fileID: 8400000, guid: e9ce94c177452af4f96d097a0b518c73, type: 2}
         m_Scale: {x: 1, y: 1}
@@ -143,7 +147,7 @@ Material:
     - LowPassAudioLevel: 0
     - Radius: 5
     - SinHeight: 0.25
-    - WaveMigrationLength: 0
+    - WaveMigrationLength: 37.058758
     - WavePeriod: -200
     - _AORemapMax: 1
     - _AORemapMin: 0

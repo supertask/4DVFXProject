@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
 
+using Lasp;
 using ComputeShaderUtil;
 
 public struct GPUParticle
 {
     public int isActive;       // 有効フラグ
+    public int pid;       // particle id
     public Vector3 position;    // 座標
-    public Vector3 velocity;    // 加速度
+    public Vector3 velocity;    // 速
+    public Vector3 force;    // 力
     public Color color;         // 色
-    public float duration;      // 生存時間
+    //public float duration;      // 年齢
+    public float age;      // 年齢
+    public float lifetime; //寿命
     public float scale;         // サイズ
     public override string ToString() {
-        return $"(isActive = {isActive}, position = {position}, velocity = {velocity}, duaration = {duration}, scale = {scale}, color = {color})";
+        return $"(isActive = {isActive}, position = {position}, velocity = {velocity}, age = {age}, lifetime = {lifetime} scale = {scale}, color = {color})";
     }
 }
 
@@ -22,12 +27,17 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
 {
     #region public
     public Vector2 velocityRange = new Vector2(-0.3f, 2);
-    public Vector2 positionRange = new Vector2(0.1f, 0.3f);
-    public float lifeTime = 1;
+    public Vector3 startPositions = new Vector3(0.05f, 0.07f, 0.08f);
+    public Vector2 lifeTimeRange = new Vector3(0.3f, 0.9f);
+    //public Vector2 positionRange = new Vector2(0.1f, 0.3f);
+    //public float lifeTime = 1;
     public float scaleMin = 1;
     public float scaleMax = 2;
     public RenderTexture rippleTex;
     public ComputeShader rippleCS;
+    public AudioLevelTracker highPassAudioLevelTracker;
+    public AudioLevelTracker midPassAudioLevelTracker;
+    public AudioLevelTracker lowPassAudioLevelTracker;
 
     [Range(0,1)] public float sai = 1;   // 彩度
     [Range(0,1)] public float val = 1;   // 明るさ
@@ -49,7 +59,7 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
         this.rippleTmpTex = RenderTexUtil.CreateRenderTexture(
             rippleTex.width, rippleTex.height, 0,
             RenderTextureFormat.ARGBFloat, TextureWrapMode.Repeat,
-            FilterMode.Point);
+            FilterMode.Bilinear);
     }
 
     /// <summary>
@@ -60,7 +70,13 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
         particleActiveBuffer.SetCounterValue(0);
 
         cs.SetFloat("_DT", Time.deltaTime);
-        cs.SetFloat("_LifeTime", lifeTime);
+        cs.SetVector("_LifeTimeRange", lifeTimeRange);
+        cs.SetVector("_AudioAmplitude", new Vector3(
+            highPassAudioLevelTracker.normalizedLevel,
+            midPassAudioLevelTracker.normalizedLevel,
+            lowPassAudioLevelTracker.normalizedLevel
+        ));
+        cs.SetVector("_VelocityRange", velocityRange);
         cs.SetBuffer(updateKernel, "_Particles", particleBuffer);
         cs.SetBuffer(updateKernel, "_DeadList", particlePoolBuffer);
         cs.SetBuffer(updateKernel, "_ActiveList", particleActiveBuffer);
@@ -88,9 +104,15 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
 
         if (particleCounts[0] < emitNum) return;   // emitNum未満なら発生させない
 
-        cs.SetVector("_PositionRange", positionRange);
+        cs.SetVector("_AudioAmplitude", new Vector3(
+            highPassAudioLevelTracker.normalizedLevel,
+            midPassAudioLevelTracker.normalizedLevel,
+            lowPassAudioLevelTracker.normalizedLevel
+        ));
+        //cs.SetVector("_PositionRange", positionRange);
+        cs.SetVector("_StartPositions", startPositions);
         cs.SetVector("_VelocityRange", velocityRange);
-        cs.SetFloat("_LifeTime", lifeTime);
+        cs.SetVector("_LifeTimeRange", lifeTimeRange);
         cs.SetFloat("_ScaleMin", scaleMin);
         cs.SetFloat("_ScaleMax", scaleMax);
         cs.SetFloat("_Sai", sai);
@@ -117,6 +139,12 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
     {
         this.rippleCS.SetInt("_RippleTextureWidth", this.rippleTmpTex.width);
         this.rippleCS.SetFloat("_NormalizedWaveHalfAmplitude", normalizedWaveHalfAmplitude);
+        this.rippleCS.SetVector("_AudioAmplitude", new Vector3(
+            highPassAudioLevelTracker.normalizedLevel,
+            midPassAudioLevelTracker.normalizedLevel,
+            lowPassAudioLevelTracker.normalizedLevel
+        ));
+
         this.rippleCS.SetBuffer(this.updateWaveTexKernel.Index, "_Particles", particleBuffer);
         this.rippleCS.SetTexture(this.updateWaveTexKernel.Index, "_RippleTex", this.rippleTmpTex);
         this.rippleCS.Dispatch(this.updateWaveTexKernel.Index,
@@ -130,10 +158,10 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
         //{
         //}
 
-        if (Time.frameCount % 2 == 0)
-        {
-            EmitParticle();
-        }
+        //if (Time.frameCount % 2 == 0)
+        //{
+        EmitParticle();
+        //}
         UpdateParticle();
         
         ResetWaveTex();
