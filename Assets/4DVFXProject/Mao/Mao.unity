@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.02039858, g: 0.029407337, b: 0.04358676, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1749,7 +1749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!73398921 &1499216726
 VFXRenderer:
   m_ObjectHideFlags: 2
@@ -1757,7 +1757,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499216725}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2629,6 +2629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990195597}
   - component: {fileID: 1990195598}
+  - component: {fileID: 1990195599}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -2666,6 +2667,24 @@ MonoBehaviour:
   resolutionHeight: 1024
   lod: 0
   targetShader: {fileID: 4800000, guid: b2c1f2a8dd99e4543af0d3a2aadd6b2f, type: 3}
+  outputTex: {fileID: 8400000, guid: 94a89badb8e913045afb9797b596bc7c, type: 2}
+  waveScale: 7.18
+--- !u!114 &1990195599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990195596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8272aa803410cce41a4353354182a9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolutionWidth: 1024
+  resolutionHeight: 1024
+  lod: 0
+  targetShader: {fileID: 4800000, guid: 343e5d4717ff7864b902efc616f7974f, type: 3}
   outputTex: {fileID: 8400000, guid: 69b97087ef056024cbf48ce9d23cd4eb, type: 2}
 --- !u!1 &1991160776
 GameObject:

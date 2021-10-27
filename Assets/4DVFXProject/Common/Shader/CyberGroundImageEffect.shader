@@ -1,4 +1,4 @@
-Shader "Hidden/TestImageEffect"
+Shader "Hidden/CyberGroundImageEffect"
 {
     Properties
     {

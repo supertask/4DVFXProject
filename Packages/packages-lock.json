@@ -252,7 +252,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "ba0b9cc34c9461d0926d33fa389768b8e600bc25"
+      "hash": "975560834f3bd52775e5b7d3c23c71e738f7d0b9"
     },
     "nyc.scatter.depthkit.core": {
       "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",

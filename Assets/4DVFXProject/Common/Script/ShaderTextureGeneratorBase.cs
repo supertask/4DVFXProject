@@ -15,7 +15,7 @@ namespace VFXProject4D {
         [SerializeField] protected Shader targetShader;
         [SerializeField] protected RenderTexture outputTex;
 
-        private Material material;
+        protected Material material;
         private RenderTexture outputTmpTex;
         //public CustomRenderTexture outputTmpTex;
 
