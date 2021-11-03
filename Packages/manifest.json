@@ -33,6 +33,8 @@
     "jp.keijiro.pugrad": "1.0.0",
     "jp.keijiro.test-assets": "1.0.1",
     "jp.keijiro.vfxgraphassets": "1.0.5",
+    "jp.keijiro.minis": "1.0.10",
+    "jp.supertask.cinema.post-processing": "https://github.com/supertask/Cinema.git?path=/Packages/jp.supertask.cinema.post-processing",
     "jp.supertask.shaderlibcore": "https://github.com/supertask/ShaderLibCore.git?path=/Packages/jp.supertask.shaderlibcore",
     "nyc.scatter.depthkit.core": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",
     "nyc.scatter.depthkit.core.shadergraph": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core.shadergraph",
