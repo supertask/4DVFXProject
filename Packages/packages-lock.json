@@ -271,7 +271,7 @@
       "dependencies": {
         "com.unity.render-pipelines.high-definition": "11.0.0"
       },
-      "hash": "b813d477978babd76f42ad304070ffd77a14e7db"
+      "hash": "ecf7fe1e60747011dd1c569081a8e7cfc492807f"
     },
     "jp.supertask.shaderlibcore": {
       "version": "https://github.com/supertask/ShaderLibCore.git?path=/Packages/jp.supertask.shaderlibcore",

@@ -325,6 +325,16 @@ MonoBehaviour:
     PublicKeyToken=null
   - Cinema.PostProcessing.Distortion, Cinema.Postprocessing, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
+  - Cinema.PostProcessing.Mosaic, Cinema.Postprocessing, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Cinema.PostProcessing.RadiationBlur, Cinema.Postprocessing, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Cinema.PostProcessing.RectBlockGlitch, Cinema.Postprocessing, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Cinema.PostProcessing.Reflection, Cinema.Postprocessing, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Cinema.PostProcessing.RGBShift, Cinema.Postprocessing, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256
     streamingGpuCacheSettings:
