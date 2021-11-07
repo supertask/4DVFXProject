@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090e3e4eec7ad5a47b778575e0ede947, type: 3}
   m_Name: Glitch
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   block:
     m_OverrideState: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     min: 0
     max: 1
   jump:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
     min: 0
     max: 1
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ad42d51df0b2f43ba2cab92a53036d, type: 3}
   m_Name: Recolor
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   edgeColor:
     m_OverrideState: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
     min: 0
     max: 1
   fillGradient:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value:
       serializedVersion: 2
       key0: {r: 0, g: 0, b: 0, a: 1}
@@ -124,8 +124,8 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
   fillOpacity:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0
     min: 0
     max: 1
   ditherType:
@@ -483,7 +483,7 @@ MonoBehaviour:
   active: 0
   m_AdvancedMode: 0
   scale:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
     min: 0
     max: 100
@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65460e6bd978bb541a1b62168de1a7df, type: 3}
   m_Name: RadiationBlur
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   center:
     m_OverrideState: 0
@@ -853,11 +853,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e84e1766b64919984e8b1ecd65226, type: 3}
   m_Name: Aqua
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   opacity:
     m_OverrideState: 1
-    m_Value: 0.451
+    m_Value: 0.364
     min: 0
     max: 1
   edgeColor:

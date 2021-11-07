@@ -134,7 +134,7 @@ Material:
     m_Floats:
     - ActorTiling: 1
     - DissolvePercent: 0
-    - RainbowEffectHeight: 1.124
+    - RainbowEffectHeight: 0.3
     - RainbowEffectPower: 50
     - Test: 0.025
     - _AORemapMax: 1
