@@ -288,6 +288,28 @@ MonoBehaviour:
   m_HighQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &-5476668856763263974
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8a0f38b1204b046b9e956a8be6235e, type: 3}
+  m_Name: RadiationBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  center:
+    m_OverrideState: 0
+    m_Value: {x: 0.5, y: 0.5}
+  power:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 100
 --- !u!114 &-5199446166266695053
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -672,21 +694,36 @@ MonoBehaviour:
   - {fileID: 3197329773285785925}
   - {fileID: -5143710941204012488}
   - {fileID: -5199446166266695053}
-  - {fileID: 7869977079808133442}
   - {fileID: -7495458681016307679}
-  - {fileID: 2990183668662058564}
   - {fileID: 3560104781944627109}
   - {fileID: -4350270116870118447}
   - {fileID: 6999831455520903169}
   - {fileID: -2722719112503098888}
   - {fileID: -8820114271751527905}
-  - {fileID: 4451483378279285013}
-  - {fileID: -4470911308804418692}
   - {fileID: 8777886359523670152}
-  - {fileID: 5936919579649498165}
-  - {fileID: -7611748894103650671}
-  - {fileID: 7850734044352876380}
   - {fileID: -8441566700282738483}
+  - {fileID: -5476668856763263974}
+  - {fileID: 2421094789683464853}
+  - {fileID: 8491615794851201246}
+--- !u!114 &2421094789683464853
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da34fc8e164e6eb498b9e3479836988a, type: 3}
+  m_Name: RGBShift
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  power:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 100
 --- !u!114 &2990183668662058564
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -902,6 +939,41 @@ MonoBehaviour:
     max: 10
   barrelDistortionPower:
     m_OverrideState: 1
+    m_Value: {x: 0, y: 0}
+--- !u!114 &8491615794851201246
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeaae3b8769eed44f9193c8883f90feb, type: 3}
+  m_Name: Distortion
+  m_EditorClassIdentifier: 
+  active: 0
+  m_AdvancedMode: 0
+  noiseDistortionScale:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  noiseDistortionPosition:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  noiseDistortionPower:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  noiseDistortionTimeScale:
+    m_OverrideState: 0
+    m_Value: 5
+    min: 0
+    max: 10
+  barrelDistortionPower:
+    m_OverrideState: 0
     m_Value: {x: 0, y: 0}
 --- !u!114 &8777886359523670152
 MonoBehaviour:

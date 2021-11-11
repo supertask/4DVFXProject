@@ -271,14 +271,14 @@
       "dependencies": {
         "com.unity.render-pipelines.high-definition": "11.0.0"
       },
-      "hash": "ecf7fe1e60747011dd1c569081a8e7cfc492807f"
+      "hash": "9e784018bb8ed28d33836f163f520a3735929fdd"
     },
     "jp.supertask.shaderlibcore": {
       "version": "https://github.com/supertask/ShaderLibCore.git?path=/Packages/jp.supertask.shaderlibcore",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "975560834f3bd52775e5b7d3c23c71e738f7d0b9"
+      "hash": "97c0bbfdbdcc7fa9bb022e99cda8c7f60f37d095"
     },
     "nyc.scatter.depthkit.core": {
       "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",
