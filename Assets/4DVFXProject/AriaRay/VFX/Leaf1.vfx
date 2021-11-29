@@ -564,7 +564,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614730}
   - {fileID: 8926484042661615258}
   dataType: 0
-  capacity: 1024
+  capacity: 512
   stripCapacity: 16
   particlePerStripCount: 16
   m_Space: 0
@@ -6245,7 +6245,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1024
+      m_SerializableObject: 512
     m_Space: 2147483647
   m_Property:
     name: Rate
