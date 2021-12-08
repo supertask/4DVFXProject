@@ -1540,7 +1540,7 @@ MonoBehaviour:
     onClipEnter:
       m_Name: StartRain
     onClipExit:
-      m_Name: OnStop
+      m_Name: StopRain
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
 --- !u!114 &-1679515607983914052

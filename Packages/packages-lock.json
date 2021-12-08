@@ -281,13 +281,13 @@
       "hash": "97c0bbfdbdcc7fa9bb022e99cda8c7f60f37d095"
     },
     "nyc.scatter.depthkit.core": {
-      "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",
+      "version": "file:C:/Assets/4DVFXProject/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",
       "depth": 0,
       "source": "local",
       "dependencies": {}
     },
     "nyc.scatter.depthkit.core.shadergraph": {
-      "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core.shadergraph",
+      "version": "file:C:/Assets/4DVFXProject/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core.shadergraph",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -296,7 +296,7 @@
       }
     },
     "nyc.scatter.depthkit.core.vfx": {
-      "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core.vfx",
+      "version": "file:C:/Assets/4DVFXProject/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core.vfx",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -305,7 +305,7 @@
       }
     },
     "nyc.scatter.depthkit.studio": {
-      "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.studio",
+      "version": "file:C:/Assets/4DVFXProject/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.studio",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -313,7 +313,7 @@
       }
     },
     "nyc.scatter.depthkit.studio.shadergraph": {
-      "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.studio.shadergraph",
+      "version": "file:C:/Assets/4DVFXProject/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.studio.shadergraph",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -324,7 +324,7 @@
       }
     },
     "nyc.scatter.depthkit.studio.vfx": {
-      "version": "file:C:/Users/Tasuku/Downloads/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.studio.vfx",
+      "version": "file:C:/Assets/4DVFXProject/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.studio.vfx",
       "depth": 0,
       "source": "local",
       "dependencies": {
