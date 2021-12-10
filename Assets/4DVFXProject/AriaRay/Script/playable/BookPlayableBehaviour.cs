@@ -10,7 +10,6 @@ public class BookPlayableBehaviour : PlayableBehaviour
     public BrownianMotionExtra brownianMotionExtra;
 
     public float rotateAngle;
-    public float progressUntil;
 
     // Called when the owning graph starts playing
     public override void OnGraphStart(Playable playable) {
@@ -37,8 +36,7 @@ public class BookPlayableBehaviour : PlayableBehaviour
     public override void PrepareFrame(Playable playable, FrameData info)
     {
         float progress = Mathf.Clamp01((float)(playable.GetTime() / playable.GetDuration())); //0.0 - 1.0
-        //cameraPivotObj.transform.Rotate(new Vector3(0, 1, 0), 360);
-        cameraPivotObj.transform.rotation  = Quaternion.Slerp(new Vector3(0, 0, 0), new Vector3(0, 360, 0));
+        cameraPivotObj.transform.Rotate(new Vector3(0, 1, 0), 360 * );
 
         //float vClipPercent = Mathf.Lerp(this.maxVerticalClipPercent, this.minVerticalClipPercent, progress);
         //this.bookBodyObj.GetComponent<MeshRenderer>().material.SetFloat("_VerticalClipPercent", vClipPercent);
