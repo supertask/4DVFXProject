@@ -428,7 +428,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   power:
     m_OverrideState: 1
-    m_Value: 1.7
+    m_Value: 0
     min: 0
     max: 100
 --- !u!114 &-5199446166266695053
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeaae3b8769eed44f9193c8883f90feb, type: 3}
   m_Name: Distortion
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   noiseDistortionScale:
     m_OverrideState: 0
@@ -1290,7 +1290,7 @@ MonoBehaviour:
     max: 10
   barrelDistortionPower:
     m_OverrideState: 1
-    m_Value: {x: -1, y: 0}
+    m_Value: {x: -0, y: 0}
 --- !u!114 &8777886359523670152
 MonoBehaviour:
   m_ObjectHideFlags: 3

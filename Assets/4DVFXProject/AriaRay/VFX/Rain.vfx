@@ -22,9 +22,11 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots: []
   m_Label: Head Spawn
-  m_Data: {fileID: 8926484042661615584}
+  m_Data: {fileID: 8926484042661615554}
   m_InputFlowSlot:
-  - link: []
+  - link:
+    - context: {fileID: 8926484042661615553}
+      slotIndex: 0
   - link:
     - context: {fileID: 8926484042661615583}
       slotIndex: 0
@@ -9861,7 +9863,9 @@ MonoBehaviour:
   m_InputFlowSlot:
   - link: []
   m_OutputFlowSlot:
-  - link: []
+  - link:
+    - context: {fileID: 114023846229194376}
+      slotIndex: 0
   eventName: StartRain
 --- !u!114 &8926484042661615554
 MonoBehaviour:
@@ -9884,6 +9888,7 @@ MonoBehaviour:
   title: 
   m_Owners:
   - {fileID: 8926484042661615553}
+  - {fileID: 114023846229194376}
 --- !u!114 &8926484042661615555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10505,7 +10510,6 @@ MonoBehaviour:
   title: 
   m_Owners:
   - {fileID: 8926484042661615583}
-  - {fileID: 114023846229194376}
 --- !u!114 &8926484042661615585
 MonoBehaviour:
   m_ObjectHideFlags: 0

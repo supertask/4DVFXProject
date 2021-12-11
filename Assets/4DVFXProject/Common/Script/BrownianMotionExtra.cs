@@ -38,12 +38,13 @@ namespace Klak.Motion
 
         public void Rehash()
         {
+            //Start position & rotation
             var rand = UtilitiesPublic.Random(seed);
-
             _positionOffset = rand.NextFloat3(-1e3f, 1e3f);
             _rotationOffset = rand.NextFloat3(-1e3f, 1e3f);
 
-            ApplyMotion();
+            ApplyMotion(new float3(0,0,0), new float3(0,0,0));
+            //ApplyMotion(_positionOffset, _rotationOffset);
         }
 
         #endregion
@@ -73,18 +74,18 @@ namespace Klak.Motion
             return f;
         }
 
-        void ApplyMotion()
+        void ApplyMotion(float3 positionOffset, float3 rotationOffset)
         {
             var np = math.float3(
-                Fbm(_positionOffset.x, _time, octaves),
-                Fbm(_positionOffset.y, _time, octaves),
-                Fbm(_positionOffset.z, _time, octaves)
+                Fbm(positionOffset.x, _time, octaves),
+                Fbm(positionOffset.y, _time, octaves),
+                Fbm(positionOffset.z, _time, octaves)
             );
 
             var nr = math.float3(
-                Fbm(_rotationOffset.x, _time, octaves),
-                Fbm(_rotationOffset.y, _time, octaves),
-                Fbm(_rotationOffset.z, _time, octaves)
+                Fbm(rotationOffset.x, _time, octaves),
+                Fbm(rotationOffset.y, _time, octaves),
+                Fbm(rotationOffset.z, _time, octaves)
             );
 
             np = np * positionAmount / 0.75f;
@@ -127,14 +128,17 @@ namespace Klak.Motion
                 } else {
                     //on end pause
                     //Debug.Log("On end pause");
-                    //_initialPosition = transform.localPosition;
-                    //_initialRotation = transform.localRotation;
-                    //_time = 0;
+                    _initialPosition = transform.localPosition;
+                    _initialRotation = transform.localRotation;
+                    _time = 0;
                 }
-            }
+            } 
+            
             if (!pause) {
                 _time += UnityEngine.Time.deltaTime * frequency;
-                ApplyMotion();
+                ApplyMotion(new float3(0,0,0), new float3(0,0,0));
+                //ApplyMotion(_positionOffset, _rotationOffset);
+
             }
             cachedPause = pause;
         }
