@@ -3,7 +3,7 @@ Volumetric captured dance videos captured at Rememory Studio powered by DepthKit
 
 ## Ariaray
 
-![screenshot](./images/AriarayTest01.gif)
+![screenshot](./images/AriarayTest01_high_res.gif)
 
 
 ## Roy
