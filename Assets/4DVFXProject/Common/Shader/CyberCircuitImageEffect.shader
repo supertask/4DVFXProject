@@ -62,7 +62,7 @@ Shader "Hidden/CyberCircuitImageEffect"
                 Wave1_float(float2(distance.x * _WaveScale, 0), 0, res);
                 float cyberCircuit = (res > 0.99 ? 1 : 0);
                 
-                float clipping = fbm(IN.uv * 3) - _DissolvePercentage;
+                float clipping = fbm2DWithMorgan(IN.uv * 3, 2) - _DissolvePercentage;
                 if (0 < clipping && clipping < _LineWidth && _DissolvePercentage > 0) {
                     return _LineColor; 
                 }
