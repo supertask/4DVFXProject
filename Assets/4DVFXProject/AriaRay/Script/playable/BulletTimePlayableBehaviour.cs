@@ -53,7 +53,9 @@ public class BulletTimePlayableBehaviour : PlayableBehaviour
 
         Debug.Log("radiationBlur" + radiationBlur);
 
-        brownianMotionExtra.pause = true;
+        if (rotateAngle != 0) {
+            brownianMotionExtra.pause = true;            
+        }
         
 
         
@@ -64,7 +66,10 @@ public class BulletTimePlayableBehaviour : PlayableBehaviour
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
         Debug.Log("OnBehaviourPause");
-        brownianMotionExtra.pause = false;
+        
+        if (rotateAngle != 0) {
+            brownianMotionExtra.pause = false;
+        }
     }
 
     /*
@@ -93,18 +98,30 @@ public class BulletTimePlayableBehaviour : PlayableBehaviour
         //Debug.Log("progress = " + progress);
         //Debug.Log("playable.GetDuration() = " + playable.GetDuration());
         
+        //
+        // Barrel Distortion effect
+        //
         distortion.barrelDistortionPower.value = new Vector2(
             Mathf.Lerp(0, barrelDistortionPower, barrelDistortionAnimCurve.Evaluate(progress)),
             0);
+            
+        //
+        // Radiation blur effect
+        //
         radiationBlur.power.value = Mathf.Lerp(0, radiationBlurPower, radiationBlurAnimCurve.Evaluate(progress));
         
-        float progressingDegreePerFrame = - 720f / ( (float)playable.GetDuration() /  Time.deltaTime);
-        progressingDegreePerFrame *= rotationSpeedAnimCurve.Evaluate(progress);
-        
-        cameraPivotObj.transform.RotateAround(
-            cameraPivotObj.transform.position, 
-            Vector3.up,
-            progressingDegreePerFrame);
+        //
+        // Rotation effect
+        //
+        if (rotateAngle != 0) {
+            float progressingDegreePerFrame = rotateAngle / ( (float)playable.GetDuration() /  Time.deltaTime);
+            progressingDegreePerFrame *= rotationSpeedAnimCurve.Evaluate(progress);
+            
+            cameraPivotObj.transform.RotateAround(
+                cameraPivotObj.transform.position, 
+                Vector3.up,
+                progressingDegreePerFrame);
+        }
         
         /*
         Quaternion currRotation = cameraPivotObj.transform.rotation;

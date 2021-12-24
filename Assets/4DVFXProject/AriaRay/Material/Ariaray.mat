@@ -134,9 +134,11 @@ Material:
     m_Floats:
     - ActorTiling: 1
     - DissolvePercent: 0
+    - Melt: 0
     - RainbowEffectColorFrequence: 22
-    - RainbowEffectHeight: 0.3
+    - RainbowEffectHeight: 1.04
     - RainbowEffectPower: 50
+    - RoughHeight: 0.015
     - Test: 0.025
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -250,6 +252,7 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
+    - roughHeight: 1
     m_Colors:
     - ActorOffset: {r: 0, g: 0, b: 0, a: 0}
     - RainbowEffectHeightRange: {r: -0.5, g: 1.8, b: 0, a: 0}

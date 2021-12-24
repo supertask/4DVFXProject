@@ -19,7 +19,8 @@ public class BulletTimePlayableAsset : PlayableAsset
     public float barrelDistortionPower = -1.0f;
     public AnimationCurve barrelDistortionAnimCurve;
 
-    public AnimationCurve rotationSpeedAnimCurve;
+    public float rotateAngle = - 720f;
+    public AnimationCurve rotationSpeedAnimCurve;    
 
     // Factory method that generates a playable based on this asset
     public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
@@ -37,6 +38,7 @@ public class BulletTimePlayableAsset : PlayableAsset
         behaviour.barrelDistortionAnimCurve = barrelDistortionAnimCurve;
 
         behaviour.rotationSpeedAnimCurve = rotationSpeedAnimCurve;
+        behaviour.rotateAngle = rotateAngle;
 
         return ScriptPlayable<BulletTimePlayableBehaviour>.Create(graph, behaviour);
     }

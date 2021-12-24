@@ -4509,7 +4509,7 @@ MonoBehaviour:
   m_InputSlots:
   - {fileID: 8926484042661615526}
   m_OutputSlots: []
-  m_Disabled: 0
+  m_Disabled: 1
   attribute: velocity
   Composition: 0
   Source: 0
@@ -6037,7 +6037,7 @@ MonoBehaviour:
   m_InputSlots:
   - {fileID: 8926484042661615600}
   m_OutputSlots: []
-  m_Disabled: 0
+  m_Disabled: 1
   attribute: position
   Composition: 0
   Source: 0
@@ -8652,7 +8652,7 @@ MonoBehaviour:
   m_InputSlots:
   - {fileID: 8926484042661615725}
   m_OutputSlots: []
-  m_Disabled: 0
+  m_Disabled: 1
   attribute: InitVelocity
   Composition: 0
   Random: 0
@@ -8976,7 +8976,7 @@ MonoBehaviour:
   m_InputSlots:
   - {fileID: 8926484042661615737}
   m_OutputSlots: []
-  m_Disabled: 0
+  m_Disabled: 1
   attribute: velocity
   Composition: 0
   Source: 0
