@@ -46,12 +46,13 @@ public class BulletTimePlayableBehaviour : PlayableBehaviour
     {
         //this.bookBodyObj.GetComponent<MeshRenderer>().enabled = true;
         this.volumeProfile =  volumeProfileObj.GetComponent<Volume>();
-        Debug.Log("OnBehaviourPlay" + volumeProfile);
+        //Debug.Log("OnBehaviourPlay" + volumeProfile);
 
         if (radiationBlur == null) volumeProfile.profile.TryGet<RadiationBlur>(out radiationBlur);
         if (distortion == null) volumeProfile.profile.TryGet<Distortion>(out distortion);
 
         Debug.Log("radiationBlur" + radiationBlur);
+        Debug.Log("distortion" + distortion);
 
         if (rotateAngle != 0) {
             brownianMotionExtra.pause = true;            
@@ -65,7 +66,7 @@ public class BulletTimePlayableBehaviour : PlayableBehaviour
     // Called when the state of the playable is set to Paused
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
-        Debug.Log("OnBehaviourPause");
+        //Debug.Log("OnBehaviourPause");
         
         if (rotateAngle != 0) {
             brownianMotionExtra.pause = false;
@@ -95,7 +96,7 @@ public class BulletTimePlayableBehaviour : PlayableBehaviour
     public override void PrepareFrame(Playable playable, FrameData info)
     {
         float progress = Mathf.Clamp01((float)(playable.GetTime() / playable.GetDuration())); //0.0 - 1.0
-        //Debug.Log("progress = " + progress);
+        Debug.Log("progress = " + progress);
         //Debug.Log("playable.GetDuration() = " + playable.GetDuration());
         
         //

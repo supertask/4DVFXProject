@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LitTest
   m_Shader: {fileID: -6465566751694194690, guid: 99c22d025bd15df49baeca7a0823876e, type: 3}
-  m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+  m_ShaderKeywords: _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -154,6 +154,7 @@ Material:
     m_Ints: []
     m_Floats:
     - ActorTiling: 1
+    - Alpha: 1
     - DissolvePercent: 0
     - _AORemapMax: 1
     - _AORemapMin: 0

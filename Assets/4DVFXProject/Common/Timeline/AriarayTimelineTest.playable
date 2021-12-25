@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 4859297207497309736}
-    m_Duration: 35.03333333333333
+    m_Duration: 421.28333333333336
     m_TimeScale: 1
     m_ParentTrack: {fileID: -1679515607983914052}
     m_EaseInDuration: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: CoryStudioDemo-video
+    m_DisplayName: Ariaray001
   m_Markers:
     m_Objects: []
 --- !u!114 &11400000
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: CoryStudioDemoTimeline
+  m_Name: AriarayTimelineTest
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
@@ -128,7 +128,7 @@ MonoBehaviour:
   videoPlayer:
     exposedName: c0ae820b2863a6f4883c29f99845ad2e
     defaultValue: {fileID: 0}
-  videoClip: {fileID: 32900000, guid: 5250dec3ee3e2e64fba2eb1d6ce321eb, type: 3}
+  videoClip: {fileID: 32900000, guid: 9438fc6c419375e43af663ce2554ed51, type: 3}
   mute: 0
   loop: 0
   preloadTime: 0.3

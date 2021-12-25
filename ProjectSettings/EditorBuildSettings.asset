@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/4DVFXProject/AriaRay/Scenes/AriaRay.unity
+    guid: 86e3e5d9fa849b04cb8cc950db9d16dd
   m_configObjects: {}
