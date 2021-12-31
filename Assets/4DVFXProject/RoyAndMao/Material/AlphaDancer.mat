@@ -20,9 +20,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Roy001
+  m_Name: AlphaDancer
   m_Shader: {fileID: -6465566751694194690, guid: 99c22d025bd15df49baeca7a0823876e, type: 3}
-  m_ShaderKeywords: _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+  m_ShaderKeywords: _ALPHATEST_ON _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT
+    _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -155,15 +156,18 @@ Material:
     m_Floats:
     - ActorTiling: 1
     - Alpha: 1
-    - DissolvePercent: 0
+    - DissolvePercent: 0.194
     - DissolveScale: 40
+    - EmissionPercent: 0.5
+    - Metallic: 1
+    - Smoothness: 1
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
     - _AlphaCutoff: 0.5
-    - _AlphaCutoffEnable: 0
+    - _AlphaCutoffEnable: 1
     - _AlphaCutoffPostpass: 0.5
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
@@ -266,11 +270,13 @@ Material:
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
     - _ZTestDepthEqualForOpaque: 4
-    - _ZTestGBuffer: 4
+    - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
     - ActorOffset: {r: 3.21, g: 0, b: 0.08, a: 0}
+    - BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    - CyberCitrcuitColor: {r: 0, g: 19.32081, b: 25.45017, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 8.780356, g: 26.34107, b: 37.267735, a: 1}
