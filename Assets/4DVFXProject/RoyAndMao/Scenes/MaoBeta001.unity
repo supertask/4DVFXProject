@@ -2175,6 +2175,8 @@ Material:
     - EmissionPercent: 0.5
     - Metallic: 0
     - Smoothness: 0
+    - SpikeNormalPower: 0.1
+    - SpikeThreshold: 0.2
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1

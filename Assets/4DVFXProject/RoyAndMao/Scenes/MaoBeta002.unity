@@ -2172,9 +2172,15 @@ Material:
     - Alpha: 1
     - DissolvePercent: 0
     - DissolveScale: 40
+    - DistortionNoiseScale: 0.4
+    - DistortionPower: 0.0287
+    - DistortionTimeScale: 6
     - EmissionPercent: 0.5
     - Metallic: 0
     - Smoothness: 0
+    - SpikeNoiseScale: 30
+    - SpikeNormalPower: 3
+    - SpikeThreshold: 0.2
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -2291,6 +2297,7 @@ Material:
     - ActorOffset: {r: -1.9668097, g: -2.8834205, b: -0.11862891, a: 0}
     - BaseColor: {r: 0, g: 0, b: 0, a: 1}
     - CyberCitrcuitColor: {r: 0, g: 19.32081, b: 25.45017, a: 0}
+    - DistortionPercent: {r: 1, g: 0.2, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 8.780356, g: 26.34107, b: 37.267735, a: 1}
