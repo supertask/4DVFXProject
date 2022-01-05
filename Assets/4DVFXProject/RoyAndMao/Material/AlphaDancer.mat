@@ -156,7 +156,7 @@ Material:
     m_Floats:
     - ActorTiling: 1
     - Alpha: 1
-    - DissolvePercent: 0.194
+    - DissolvePercent: 0.07094082
     - DissolveScale: 40
     - EmissionPercent: 0.5
     - Metallic: 1
