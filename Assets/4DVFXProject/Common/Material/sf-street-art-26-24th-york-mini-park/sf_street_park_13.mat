@@ -147,7 +147,7 @@ Material:
     - LowPassAudioLevel: 0
     - Radius: 5
     - SinHeight: 0.25
-    - WaveMigrationLength: 2.8980024
+    - WaveMigrationLength: 0
     - WavePeriod: -200
     - _AORemapMax: 1
     - _AORemapMin: 0
