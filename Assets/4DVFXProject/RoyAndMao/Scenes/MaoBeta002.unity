@@ -209,7 +209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &86711266
 Transform:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &520130334
 Transform:
   m_ObjectHideFlags: 0
@@ -2469,6 +2469,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - MidiSpectrumTexture:
+        m_Texture: {fileID: 8400000, guid: f248ee62a4615e14e9e76308fcd28f38, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - MidiTwistSpectrumTexture:
+        m_Texture: {fileID: 8400000, guid: f248ee62a4615e14e9e76308fcd28f38, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -2598,8 +2606,13 @@ Material:
     - DistortionNoiseScale: 0.4
     - DistortionPower: 0
     - DistortionTimeScale: 6
-    - EmissionPercent: 0
+    - EmissionPercent: 0.542
     - Metallic: 0.938
+    - MidiTwistPercent: 1
+    - MidiTwistRotatePower: 3
+    - MidiTwistTimeScale: -0.3
+    - MidiTwistWaveFrequence: 0.02
+    - RockTexScale: 1
     - Smoothness: 0.957
     - SpikeNoiseScale: 30
     - SpikeNormalPower: 3
@@ -2792,7 +2805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1264307918
 Transform:
   m_ObjectHideFlags: 0
@@ -4967,7 +4980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1994557686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5015,7 +5028,7 @@ MonoBehaviour:
   _resolution: 1024
   _autoGain: 1
   _gain: 0
-  _dynamicRange: 62.4
+  _dynamicRange: 40
 --- !u!1 &2031901076
 GameObject:
   m_ObjectHideFlags: 0
