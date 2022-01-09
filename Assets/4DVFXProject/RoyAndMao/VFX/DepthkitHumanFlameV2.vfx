@@ -119,9 +119,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: -2181
-    y: -446
+    y: -295
     width: 4921
-    height: 3888
+    height: 3737
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -327,10 +327,14 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots: []
   m_Label: 
-  m_Data: {fileID: 8926484042661616908}
+  m_Data: {fileID: 8926484042661615853}
   m_InputFlowSlot:
-  - link: []
-  - link: []
+  - link:
+    - context: {fileID: 8926484042661615590}
+      slotIndex: 0
+  - link:
+    - context: {fileID: 8926484042661615852}
+      slotIndex: 0
   m_OutputFlowSlot:
   - link:
     - context: {fileID: 8926484042661614558}
@@ -2685,7 +2689,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 977, y: -446}
+  m_UIPosition: {x: 660, y: -295}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2695,8 +2699,10 @@ MonoBehaviour:
   m_InputFlowSlot:
   - link: []
   m_OutputFlowSlot:
-  - link: []
-  eventName: StartFlame
+  - link:
+    - context: {fileID: 8926484042661614555}
+      slotIndex: 0
+  eventName: StartFlameV2
 --- !u!114 &8926484042661615591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2733,7 +2739,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 977, y: -279}
+  m_UIPosition: {x: 1138, y: -279}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2743,8 +2749,10 @@ MonoBehaviour:
   m_InputFlowSlot:
   - link: []
   m_OutputFlowSlot:
-  - link: []
-  eventName: StopWarpVFX
+  - link:
+    - context: {fileID: 8926484042661614555}
+      slotIndex: 1
+  eventName: StopFlameV2
 --- !u!114 &8926484042661615853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2766,6 +2774,7 @@ MonoBehaviour:
   title: 
   m_Owners:
   - {fileID: 8926484042661615852}
+  - {fileID: 8926484042661614555}
 --- !u!114 &8926484042661615923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9613,27 +9622,6 @@ MonoBehaviour:
   m_Direction: 0
   m_LinkedSlots:
   - {fileID: 8926484042661615328}
---- !u!114 &8926484042661616908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68759077adc0b143b6e1c101e82065e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966674976}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  title: 
-  m_Owners:
-  - {fileID: 8926484042661614555}
 --- !u!114 &8926484042661616910
 MonoBehaviour:
   m_ObjectHideFlags: 0
