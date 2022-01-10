@@ -13,8 +13,8 @@ using Cinema.PostProcessing;
 // A behaviour that is attached to a playable
 public class DisappearVFXPlayableBehaviour : PlayableBehaviour
 {
-    public GameObject dissolveMeshObj;
-    public GameObject disappearVfxObj;
+    public GameObject dancerMeshObj;
+    public GameObject warpVfxObj;
 
     private Volume volumeProfile;
     private VisualEffect disappearVfx;
@@ -30,10 +30,12 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
     //Start
     public override void OnGraphStart(Playable playable)
     {
-        this.alphaDancerMaterial = this.dissolveMeshObj.GetComponent<MeshRenderer>().sharedMaterials[0];
-        this.disappearVfx = this.disappearVfxObj.GetComponent<VisualEffect>();
-        this.disappearVfx.SetVector3("ActorSourcePosition", Vector3.zero);
-        this.disappearVfx.SetVector3("ActorTargetPosition", Vector3.zero);
+        this.alphaDancerMaterial = this.dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterials[0];
+        this.disappearVfx = this.warpVfxObj.GetComponent<VisualEffect>();
+        Debug.LogFormat("ActorTargetPosition OnGraphStart = {0}", this.disappearVfx.GetVector3("ActorTargetPosition"));
+
+        //this.disappearVfx.SetVector3("ActorSourcePosition", Vector3.zero);
+        //this.disappearVfx.SetVector3("ActorTargetPosition", Vector3.zero);
     }
 
     //OnDestory
@@ -44,7 +46,10 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
     // Called when the state of the playable is set to Play
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
+        Debug.Log(disappearVfx);
         Vector3 actorSourcePosition = this.disappearVfx.GetVector3("ActorTargetPosition");
+        Debug.LogFormat("actorSourcePosition = {0}", actorSourcePosition);
+
         Vector3 actorTargetPosition = actorSourcePosition;
         float maxSquareDistance = 0f;
         
@@ -62,14 +67,14 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
             }
         }
 
-        Debug.Log("actorSourcePosition: " + actorSourcePosition);
-        Debug.Log("actorTargetPosition: " + actorTargetPosition);
+        //Debug.LogFormat("actorSourcePosition = {0}, actorTargetPosition = {1}", actorSourcePosition, actorTargetPosition);
+        
         this.disappearVfx.SetVector3("ActorSourcePosition", actorSourcePosition);
         this.disappearVfx.SetVector3("ActorTargetPosition", actorTargetPosition);
         //this.alphaDancerMaterial.SetVector("ActorOffset", newPosition);
         this.disappearVfx.SendEvent("StartWarpVFX");
-        //this.disappearVfxObj.GetComponent<MeshRenderer>().enabled = true;
-        //this.dissolveMeshObj.GetComponent<MeshRenderer>().enabled = true;
+        //this.warpVfxObj.GetComponent<MeshRenderer>().enabled = true;
+        //this.dancerMeshObj.GetComponent<MeshRenderer>().enabled = true;
         
         //3.21
     }
@@ -124,7 +129,8 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
         else if (0.5f <= progress && progress <= 0.6f)
         {
             Vector3 actorTargetPosition = this.disappearVfx.GetVector3("ActorTargetPosition");
-            dissolveMeshObj.transform.position = actorTargetPosition;
+            dancerMeshObj.transform.position = actorTargetPosition;
+            Debug.Log("actorTargetPosition = " + actorTargetPosition);
         }
         
     }
