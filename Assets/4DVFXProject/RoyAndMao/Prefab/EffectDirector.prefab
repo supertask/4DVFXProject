@@ -98,3 +98,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d422164b4e9aef04897fb22ea818389d, type: 2}
   warpV2Timelines:
   - {fileID: 11400000, guid: cd9d2882c10bb284eb811f7d57edbd2a, type: 2}
+  alphaDancerMaterial: {fileID: 2100000, guid: ba20992d1c9476d4fa1868fe36b5e2d1, type: 2}

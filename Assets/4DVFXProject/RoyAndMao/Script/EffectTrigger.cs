@@ -10,6 +10,7 @@ using UnityEngine.VFX;
 
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using UnityEngine.InputSystem;
 
 
 namespace VFXProject4D
@@ -50,6 +51,7 @@ namespace VFXProject4D
         [SerializeField] private KeyCode twistKey = KeyCode.C;
         [Space]
         
+        public GameObject dancerMeshObj;
         public PlayableDirector volumetricVideoDirector;
         [Space]
 
@@ -64,12 +66,11 @@ namespace VFXProject4D
         [SerializeField] private TimelineAsset[] noiseDistortionTwistTimelines;
         [SerializeField] private TimelineAsset[] warpV2Timelines;
         [Space]
+        
+        
 
-
+        private Material alphaDancerMaterial;
         private PlayableDirector director;
-
-
-        StreamWriter effectTimeWritter;
         private string effectTimelineString;
 
 
@@ -78,6 +79,7 @@ namespace VFXProject4D
 
         private void Start()
         {
+            this.alphaDancerMaterial = dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterial;
             this.director = this.GetComponent<PlayableDirector>();
             this.warpV2.SetVector3("ActorSourcePosition", Vector3.zero);
             this.warpV2.SetVector3("ActorTargetPosition", Vector3.zero);
@@ -88,12 +90,26 @@ namespace VFXProject4D
             this.KeyCheck();
         }
         
+
+        public void OnModifyNoiseDistortion(float midiNomalizedValue)
+        {
+            //Debug.Log("OnNoiseDistortion value: " + midiNomalizedValue);
+            alphaDancerMaterial.SetFloat("DistortionPower", midiNomalizedValue * 0.4f);
+            //this.SaveEffectTime("NoiseDistortion,Value=" + midiNomalizedValue);
+        }
+        
+        public void OnModifyTwist(float midiNomalizedValue)
+        {
+            alphaDancerMaterial.SetFloat("TwistPercent", midiNomalizedValue);
+        }
+        
+        
         private void OnDestroy()
         {
-            this.effectTimeWritter = new StreamWriter(Application.streamingAssetsPath + "/EffectTimeline.txt",false);
-            this.effectTimeWritter.WriteLine(effectTimelineString);
-            this.effectTimeWritter.Flush();
-            this.effectTimeWritter.Close();
+            StreamWriter effectTimeWritter = new StreamWriter(Application.streamingAssetsPath + "/EffectTimeline.txt",false);
+            effectTimeWritter.WriteLine(effectTimelineString);
+            effectTimeWritter.Flush();
+            effectTimeWritter.Close();
         }
         
         void SaveEffectTime(string effectName)
@@ -182,6 +198,7 @@ namespace VFXProject4D
                 }
             }
 
+            /*
             //Simple Twist
             if (Input.GetKeyDown(twistKey))
             {
@@ -211,6 +228,7 @@ namespace VFXProject4D
                     this.SaveEffectTime("NoiseDistortionStart");
                 }
             }
+            */
 
             //Warp VFX
             if (Input.GetKeyDown(warpV2Key))
