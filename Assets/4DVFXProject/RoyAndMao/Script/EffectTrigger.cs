@@ -54,13 +54,19 @@ namespace VFXProject4D
         public GameObject dancerMeshObj;
         public PlayableDirector volumetricVideoDirector;
         [Space]
+        
+        public GameObject triangleObj;
+        public GameObject rectObj;
+        [Space]
 
         [SerializeField] public VisualEffect flameV1;
         [SerializeField] public VisualEffect flameV2;
         [SerializeField] public VisualEffect warpV2;
         [SerializeField] public VisualEffect horizontalRain;
 
-        [SerializeField] private TimelineAsset[] triangleTimelines;
+        [SerializeField] private TimelineAsset[] triangleV1Timelines;
+        [SerializeField] private TimelineAsset[] rectV1Timelines;
+
         [SerializeField] private TimelineAsset[] midiTwistTimelines;
         [SerializeField] private TimelineAsset[] twistTimelines;
         [SerializeField] private TimelineAsset[] noiseDistortionTwistTimelines;
@@ -72,8 +78,14 @@ namespace VFXProject4D
         private Material alphaDancerMaterial;
         private PlayableDirector director;
         private string effectTimelineString;
-
-
+        
+        private float SHAPE_ROTATION_Y_DEGREE_PER_SEC = 180.0f * 6;
+        private float SHAPE_ROTATION_X_DEGREE = 180.0f;
+        private float currentTriangleYRotateSpeed;
+        private float currentTriangleXRotateSpeed;
+        private float currentRectYRotateSpeed;
+        private float currentRectXRotateSpeed;
+        
         #endregion
 
 
@@ -83,11 +95,22 @@ namespace VFXProject4D
             this.director = this.GetComponent<PlayableDirector>();
             this.warpV2.SetVector3("ActorSourcePosition", Vector3.zero);
             this.warpV2.SetVector3("ActorTargetPosition", Vector3.zero);
+            this.currentTriangleYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * 0.1f;
+            this.currentTriangleXRotateSpeed = SHAPE_ROTATION_X_DEGREE * 0.0f;
+            this.currentRectYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * 0.1f;
+            this.currentRectXRotateSpeed = SHAPE_ROTATION_X_DEGREE * 0.0f;
         }
 
         private void Update()
         {
             this.KeyCheck();
+            
+            if (this.triangleObj.transform.localScale.x > 0 && currentTriangleYRotateSpeed > 0) {
+                this.triangleObj.transform.RotateAround(this.triangleObj.transform.position, Vector3.up, this.currentTriangleYRotateSpeed * Time.deltaTime);
+            }
+            if (this.rectObj.transform.localScale.x > 0 && currentRectYRotateSpeed > 0) {
+                this.rectObj.transform.RotateAround(this.rectObj.transform.position, Vector3.up, this.currentRectYRotateSpeed * Time.deltaTime);
+            }
         }
         
 
@@ -103,33 +126,68 @@ namespace VFXProject4D
             alphaDancerMaterial.SetFloat("TwistPercent", midiNomalizedValue);
         }
         
-        
-        private void OnDestroy()
+        public void OnStartTriangleV1()
         {
-            StreamWriter effectTimeWritter = new StreamWriter(Application.streamingAssetsPath + "/EffectTimeline.txt",false);
-            effectTimeWritter.WriteLine(effectTimelineString);
-            effectTimeWritter.Flush();
-            effectTimeWritter.Close();
-        }
-        
-        void SaveEffectTime(string effectName)
-        {
-            //Debug.LogFormat("effectTime: {0}, effectName: {1}", this.volumetricVideoDirector.time, effectName);
-            effectTimelineString += String.Format("{0},{1}\n", this.volumetricVideoDirector.time, effectName);
+            this.director.Play(triangleV1Timelines[0]);
+            this.SaveEffectTime("StartTriangleV1");
         }
 
+        
+        public void OnStopTriangleV1()
+        {
+            this.director.Play(triangleV1Timelines[1]);
+            this.SaveEffectTime("StopTriangleV1");
+        }
+        
+        public void OnYRotateTriangle(float midiNomalizedValue)
+        {
+            this.currentTriangleYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * midiNomalizedValue;
+            //Debug.Log(midiNomalizedValue);
+        }
+        
+        public void OnXRotateTriangle(float midiNomalizedValue)
+        {
+            this.currentTriangleXRotateSpeed = 3.14f * midiNomalizedValue;
+            this.triangleObj.transform.Rotate( Vector3.right, this.currentTriangleXRotateSpeed);
+
+            //Debug.Log(midiNomalizedValue);
+        }
+
+        public void OnYRotateRect(float midiNomalizedValue)
+        {
+            this.currentRectYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * midiNomalizedValue;
+            //Debug.Log(midiNomalizedValue);
+        }
+        
+        public void OnXRotateRect(float midiNomalizedValue)
+        {
+            this.currentRectXRotateSpeed = 3.14f * midiNomalizedValue;
+            this.rectObj.transform.Rotate( Vector3.right, this.currentRectXRotateSpeed);
+
+            //Debug.Log(midiNomalizedValue);
+        }
+
+        public void OnStartRectV1()
+        {
+            this.director.Play(rectV1Timelines[0]);
+            this.SaveEffectTime("StartRectV1");
+        }
+
+        public void OnStopRectV1()
+        {
+            this.director.Play(rectV1Timelines[1]);
+            this.SaveEffectTime("StopRectV1");
+        }
+        
         void KeyCheck()
         {
             //Triangle
             if (Input.GetKeyDown(triangle1Key))
             {
-                this.director.Play(triangleTimelines[0]);
-                this.SaveEffectTime("triangleV1");
+
             }
             if (Input.GetKeyDown(triangle2Key))
             {
-                this.director.Play(triangleTimelines[1]); 
-                this.SaveEffectTime("triangleV2");
             }
 
             //Rect
@@ -238,6 +296,21 @@ namespace VFXProject4D
                 this.SaveEffectTime("WarpV2");
             }
 
+        }
+        
+        
+        private void OnDestroy()
+        {
+            StreamWriter effectTimeWritter = new StreamWriter(Application.streamingAssetsPath + "/EffectTimeline.txt",false);
+            effectTimeWritter.WriteLine(effectTimelineString);
+            effectTimeWritter.Flush();
+            effectTimeWritter.Close();
+        }
+        
+        void SaveEffectTime(string effectName)
+        {
+            //Debug.LogFormat("effectTime: {0}, effectName: {1}", this.volumetricVideoDirector.time, effectName);
+            effectTimelineString += String.Format("{0},{1}\n", this.volumetricVideoDirector.time, effectName);
         }
 
     }

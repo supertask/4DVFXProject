@@ -41,7 +41,7 @@ PlayableDirector:
   m_GameObject: {fileID: 4945458841698943628}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: cd9d2882c10bb284eb811f7d57edbd2a, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 1af044628054e664692f222b81836085, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -50,6 +50,12 @@ PlayableDirector:
   - key: {fileID: -8748906368040674503, guid: f7797ebb3d30b644cb4d024e3994accb, type: 2}
     value: {fileID: 0}
   - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: -8748906368040674503, guid: 217a407d25796b54fb772f5ca7bcccfc, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8748906368040674503, guid: 1af044628054e664692f222b81836085, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8748906368040674503, guid: 14b99746c0e83204e8e07609ff96ea40, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
@@ -80,13 +86,19 @@ MonoBehaviour:
   midiTwistKey: 122
   noiseDistortionKey: 120
   twistKey: 99
+  dancerMeshObj: {fileID: 0}
   volumetricVideoDirector: {fileID: 0}
+  triangleObj: {fileID: 0}
   flameV1: {fileID: 0}
   flameV2: {fileID: 0}
   warpV2: {fileID: 0}
   horizontalRain: {fileID: 0}
-  triangleTimelines:
+  triangleV1Timelines:
+  - {fileID: 11400000, guid: 217a407d25796b54fb772f5ca7bcccfc, type: 2}
   - {fileID: 11400000, guid: f7797ebb3d30b644cb4d024e3994accb, type: 2}
+  rectV1Timelines:
+  - {fileID: 11400000, guid: 14b99746c0e83204e8e07609ff96ea40, type: 2}
+  - {fileID: 11400000, guid: 1af044628054e664692f222b81836085, type: 2}
   midiTwistTimelines:
   - {fileID: 11400000, guid: c15d9666d15978d4897ba565385d71d2, type: 2}
   - {fileID: 11400000, guid: 57fde598be4752747b1270e984de0cd8, type: 2}
@@ -98,4 +110,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d422164b4e9aef04897fb22ea818389d, type: 2}
   warpV2Timelines:
   - {fileID: 11400000, guid: cd9d2882c10bb284eb811f7d57edbd2a, type: 2}
-  alphaDancerMaterial: {fileID: 2100000, guid: ba20992d1c9476d4fa1868fe36b5e2d1, type: 2}
