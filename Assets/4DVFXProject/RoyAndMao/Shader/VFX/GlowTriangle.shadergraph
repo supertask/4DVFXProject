@@ -92,7 +92,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "f3df021f6cca40bd938a7c1d923e1edc"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -488,8 +492,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -245.0,
-            "y": 301.0,
+            "x": 196.99996948242188,
+            "y": 313.0,
             "width": 117.0,
             "height": 34.0
         }
@@ -567,10 +571,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -534.0,
-            "y": 642.0000610351563,
-            "width": 155.00001525878907,
-            "height": 34.0
+            "x": -540.9999389648438,
+            "y": 409.9999694824219,
+            "width": 154.99998474121095,
+            "height": 33.999996185302737
         }
     },
     "m_Slots": [
@@ -602,8 +606,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -256.0,
-            "y": 352.0,
+            "x": 186.0000457763672,
+            "y": 364.0,
             "width": 142.0,
             "height": 34.0
         }
@@ -2003,10 +2007,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1529.0001220703125,
-            "y": 918.9999389648438,
-            "width": 184.0,
-            "height": 253.0
+            "x": -1663.9998779296875,
+            "y": 824.0,
+            "width": 183.99998474121095,
+            "height": 253.99998474121095
         }
     },
     "m_Slots": [
@@ -2384,9 +2388,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1907.000244140625,
-            "y": 699.0,
-            "width": 184.0,
+            "x": -1936.9998779296875,
+            "y": 697.9999389648438,
+            "width": 183.99998474121095,
             "height": 253.0
         }
     },
@@ -2618,6 +2622,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "f3df021f6cca40bd938a7c1d923e1edc",
+    "m_Title": "Choosing a triangle",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1540.0,
+        "y": 21.0,
+        "width": 236.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "f451a7cdae0444cba78efab2733c0755",
     "m_Id": 0,
@@ -2693,10 +2717,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -285.0,
-            "y": 595.0000610351563,
-            "width": 208.0,
-            "height": 302.0
+            "x": -359.9999694824219,
+            "y": 346.9999694824219,
+            "width": 207.99998474121095,
+            "height": 301.9999694824219
         }
     },
     "m_Slots": [
