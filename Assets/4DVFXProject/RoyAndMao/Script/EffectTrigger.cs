@@ -71,6 +71,8 @@ namespace VFXProject4D
         [SerializeField] private TimelineAsset[] twistTimelines;
         [SerializeField] private TimelineAsset[] noiseDistortionTwistTimelines;
         [SerializeField] private TimelineAsset[] warpV2Timelines;
+        [SerializeField] private TimelineAsset[] gvoxelizerTimelines;
+
         [Space]
         
         
@@ -177,6 +179,18 @@ namespace VFXProject4D
         {
             this.director.Play(rectV1Timelines[1]);
             this.SaveEffectTime("StopRectV1");
+        }
+        
+        public void OnStartGVoxelizer()
+        {
+            this.director.Play(gvoxelizerTimelines[0]);
+            this.SaveEffectTime("StartGVoxelizer");
+        }
+        
+        public void OnStopGVoxelizer()
+        {
+            this.director.Play(gvoxelizerTimelines[1]);
+            this.SaveEffectTime("StopGVoxelizer");
         }
         
         void KeyCheck()
