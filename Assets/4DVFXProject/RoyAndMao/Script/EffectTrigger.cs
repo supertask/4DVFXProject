@@ -66,12 +66,18 @@ namespace VFXProject4D
 
         [SerializeField] private TimelineAsset[] triangleV1Timelines;
         [SerializeField] private TimelineAsset[] rectV1Timelines;
+        [Space]
 
         [SerializeField] private TimelineAsset[] midiTwistTimelines;
         [SerializeField] private TimelineAsset[] twistTimelines;
         [SerializeField] private TimelineAsset[] noiseDistortionTwistTimelines;
+        [Space]
+        
         [SerializeField] private TimelineAsset[] warpV2Timelines;
         [SerializeField] private TimelineAsset[] gvoxelizerTimelines;
+        [SerializeField] private TimelineAsset[] flameV1Timelines;
+        [SerializeField] private TimelineAsset[] flameV2Timelines;
+
 
         [Space]
         
@@ -186,11 +192,43 @@ namespace VFXProject4D
             this.director.Play(gvoxelizerTimelines[0]);
             this.SaveEffectTime("StartGVoxelizer");
         }
-        
         public void OnStopGVoxelizer()
         {
             this.director.Play(gvoxelizerTimelines[1]);
             this.SaveEffectTime("StopGVoxelizer");
+        }
+
+        public void OnStartFlameV1()
+        {
+            this.director.Play(flameV1Timelines[0]);
+            this.SaveEffectTime("StartFlameV1");
+        }
+        public void OnStopFlameV1()
+        {
+            this.director.Play(flameV1Timelines[1]);
+            this.SaveEffectTime("StopFlameV1");
+        }
+        
+        public void OnStartFlameV2()
+        {
+            this.director.Play(flameV2Timelines[0]);
+            this.SaveEffectTime("StartFlameV2");
+        }
+        public void OnStopFlameV2()
+        {
+            this.director.Play(flameV2Timelines[1]);
+            this.SaveEffectTime("StopFlameV2");
+        }
+        
+        public void OnWarpV2()
+        {
+            this.director.Play(warpV2Timelines[0]);
+            this.SaveEffectTime("WarpV2");
+        }
+        public void OnWarpV2ReturnToOrigin()
+        {
+            this.director.Play(warpV2Timelines[1]);
+            this.SaveEffectTime("WarpV2ReturnToOrigin");
         }
         
         void KeyCheck()
@@ -210,7 +248,7 @@ namespace VFXProject4D
                 //director.Play(timelines[1]); 
             }
             
-            //Flame V2 VFX
+            //Horizontal Rain VFX
             if (Input.GetKeyDown(horizontalRainKey))
             {
                 if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
@@ -225,21 +263,8 @@ namespace VFXProject4D
                 }
             }
 
-            //Flame V1 VFX
-            if (Input.GetKeyDown(flameV1Key))
-            {
-                if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-                {
-                    this.flameV1.SendEvent("StopFlameV1");
-                    this.SaveEffectTime("StopFlameV1");
-                }
-                else
-                {
-                    this.flameV1.SendEvent("StartFlameV1");
-                    this.SaveEffectTime("StartFlameV1");
-                }
-            }
 
+            /*
             //Flame V2 VFX
             if (Input.GetKeyDown(flameV2Key))
             {
@@ -254,6 +279,7 @@ namespace VFXProject4D
                     this.SaveEffectTime("StartFlameV2");
                 }
             }
+            */
 
             //MIDI Twist
             if (Input.GetKeyDown(midiTwistKey))
@@ -302,6 +328,7 @@ namespace VFXProject4D
             }
             */
 
+            /*
             //Warp VFX
             if (Input.GetKeyDown(warpV2Key))
             {
@@ -309,6 +336,7 @@ namespace VFXProject4D
                 this.director.Play(warpV2Timelines[0]);
                 this.SaveEffectTime("WarpV2");
             }
+            */
 
         }
         

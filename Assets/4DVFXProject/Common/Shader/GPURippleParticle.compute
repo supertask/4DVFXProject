@@ -93,7 +93,7 @@ void Emit ()
 	_Particles[no].scale = lerp(_ScaleMin, _ScaleMax, audioAmplitude);
 }
 
-[numthreads(THREAD_NUM_X, 1, 1)]
+[numthreads(1024, 1, 1)]
 void Update (uint3 id : SV_DispatchThreadID)
 {
 	uint no = id.x;

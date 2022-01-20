@@ -41,7 +41,7 @@ PlayableDirector:
   m_GameObject: {fileID: 4945458841698943628}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 5e87275bd7635f04ca77a897fdaa7581, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 80794a5146a92214c91d344b2428b998, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -61,12 +61,22 @@ PlayableDirector:
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
+    - cc34855a230f5da4ba6c09ee43583f0a: {fileID: 0}
+    - a66f0fda7811734499b96bf7f0928868: {fileID: 0}
+    - bd24f30614024ee47b2fe87467c94515: {fileID: 0}
+    - 84ba204dc0fcf8e46b88e5f78858666a: {fileID: 0}
     - 45ed085b51e4f1f49aef35d1ddb06787: {fileID: 0}
     - 3659a0007c69601469a0651649c06040: {fileID: 0}
+    - 52ddc3457bd8e5240a693a361d35a914: {fileID: 0}
+    - a222850e2ba8eca49a5e7f34c10d5d54: {fileID: 0}
     - 696f1e5314396a4439b061bd3cd3dc2f: {fileID: 0}
     - 0ae131364996aa34d83b0ca428b84230: {fileID: 0}
+    - cd76c7f332f759844bcb1418dbff3802: {fileID: 0}
+    - 6ab252ac4f68ed84c8a21f8813966936: {fileID: 0}
+    - 9cddeb3d0850e9843b74843c2007e1ec: {fileID: 0}
     - 9f6c7e582b68b744298d1c5c81886ef9: {fileID: 0}
     - aeb8e0ebf7645744584c4a46e772a735: {fileID: 0}
+    - 69c1f19bbf5843f4d9579a1add488da6: {fileID: 0}
 --- !u!114 &4945458841698943634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,5 +125,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d422164b4e9aef04897fb22ea818389d, type: 2}
   warpV2Timelines:
   - {fileID: 11400000, guid: cd9d2882c10bb284eb811f7d57edbd2a, type: 2}
+  - {fileID: 11400000, guid: 80794a5146a92214c91d344b2428b998, type: 2}
   gvoxelizerTimelines:
   - {fileID: 11400000, guid: 5e87275bd7635f04ca77a897fdaa7581, type: 2}
+  - {fileID: 11400000, guid: d3f22bdacf465e24fae14629525fd2f9, type: 2}
+  flameV1Timelines:
+  - {fileID: 11400000, guid: b1c34ef72ad32234092f1132d4e5cc22, type: 2}
+  - {fileID: 11400000, guid: 6d347186659a02542baed475eb65e112, type: 2}
+  flameV2Timelines:
+  - {fileID: 11400000, guid: 72dd670173337d9499ef86881958dd9e, type: 2}
+  - {fileID: 11400000, guid: 846264fa14d48d14ba71462375e16bc7, type: 2}

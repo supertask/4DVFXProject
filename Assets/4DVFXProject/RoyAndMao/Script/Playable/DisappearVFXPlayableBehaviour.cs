@@ -15,6 +15,7 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
 {
     public GameObject dancerMeshObj;
     public GameObject warpVfxObj;
+    public bool isReturnToOrigin;
 
     private Volume volumeProfile;
     private VisualEffect disappearVfx;
@@ -50,22 +51,34 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
         Vector3 actorSourcePosition = this.disappearVfx.GetVector3("ActorTargetPosition");
         Debug.LogFormat("actorSourcePosition = {0}", actorSourcePosition);
 
+        //
+        //Set a target position randomly
+        //
         Vector3 actorTargetPosition = actorSourcePosition;
-        float maxSquareDistance = 0f;
         
-        for(int i = 0; i < 3; i++)
+        if (this.isReturnToOrigin)
         {
-            Vector3 tmpTargetPosition = new Vector3(
-                Random.Range(- RANDOM_TARGET_POSITION_MAX_X, RANDOM_TARGET_POSITION_MAX_X),
-                Random.Range(- RANDOM_TARGET_POSITION_MAX_Y, RANDOM_TARGET_POSITION_MAX_Y),
-                Random.Range(- RANDOM_TARGET_POSITION_MAX_Z, RANDOM_TARGET_POSITION_MAX_Z)
-            );
-            float squareDistance = (actorSourcePosition - tmpTargetPosition).sqrMagnitude;
-            if (squareDistance > maxSquareDistance) {
-                actorTargetPosition = tmpTargetPosition;
-                maxSquareDistance = squareDistance;
+            actorTargetPosition = Vector3.zero;
+        }
+        else
+        {
+            float maxSquareDistance = 0f;
+            
+            for(int i = 0; i < 3; i++)
+            {
+                Vector3 tmpTargetPosition = new Vector3(
+                    Random.Range(- RANDOM_TARGET_POSITION_MAX_X, RANDOM_TARGET_POSITION_MAX_X),
+                    Random.Range(- RANDOM_TARGET_POSITION_MAX_Y, RANDOM_TARGET_POSITION_MAX_Y),
+                    Random.Range(- RANDOM_TARGET_POSITION_MAX_Z, RANDOM_TARGET_POSITION_MAX_Z)
+                );
+                float squareDistance = (actorSourcePosition - tmpTargetPosition).sqrMagnitude;
+                if (squareDistance > maxSquareDistance) {
+                    actorTargetPosition = tmpTargetPosition;
+                    maxSquareDistance = squareDistance;
+                }
             }
         }
+
 
         //Debug.LogFormat("actorSourcePosition = {0}, actorTargetPosition = {1}", actorSourcePosition, actorTargetPosition);
         

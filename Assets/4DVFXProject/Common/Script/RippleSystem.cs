@@ -89,6 +89,8 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
         //particleActiveNum = particleCounts[0];
     }
 
+    //protected int[] particleCounts2 = { 1, 1, 0, 0 }; 
+
     /// <summary>
     /// パーティクルの発生
     /// THREAD_NUM_X分発生
@@ -96,10 +98,12 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
     /// <param name="position"></param>
     void EmitParticle()
     {
+        //WARNING: ここがかなり重い!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         particlePoolCountBuffer.SetData(particleCounts);
         ComputeBuffer.CopyCount(particlePoolBuffer, particlePoolCountBuffer, 0);
-        particlePoolCountBuffer.GetData(particleCounts);
-        //Debug.Log("EmitParticle Pool Num " + particleCounts[0] + " position " + position);
+        particlePoolCountBuffer.GetData(particleCounts); //WARNING: ここがかなり重い!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        //Debug.LogFormat("EmitParticle Pool Num = {0}, len = {1}", particleCounts[0], particleCounts.Length);
         particlePoolNum = particleCounts[0];
 
         if (particleCounts[0] < emitNum) return;   // emitNum未満なら発生させない
@@ -120,16 +124,16 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
         cs.SetFloat("_Time", Time.time);
         cs.SetBuffer(emitKernel, "_ParticlePool", particlePoolBuffer);
         cs.SetBuffer(emitKernel, "_Particles", particleBuffer);
-
-        //cs.Dispatch(emitKernel, particleCounts[0] / THREAD_NUM_X, 1, 1);
+        
         cs.Dispatch(emitKernel, emitNum / THREAD_NUM_X, 1, 1);   // emitNumの数だけ発生
+
     }
     
 
     private void ResetWaveTex ()
     {
-        Debug.Log(this.rippleTex.width );
-        Debug.Log( Mathf.CeilToInt ( (float) this.rippleTex.width / this.resetWaveTexKernel.ThreadX) );
+        //Debug.Log(this.rippleTex.width );
+        //Debug.Log( Mathf.CeilToInt ( (float) this.rippleTex.width / this.resetWaveTexKernel.ThreadX) );
         this.rippleCS.SetTexture(this.resetWaveTexKernel.Index, "_RippleTex", this.rippleTmpTex);
         this.rippleCS.Dispatch(this.resetWaveTexKernel.Index,
             Mathf.CeilToInt ( (float) this.rippleTex.width / this.resetWaveTexKernel.ThreadX), 1, 1);
@@ -158,10 +162,11 @@ public class RippleSystem : GPUParticleBase<GPUParticle>
         //{
         //}
 
-        //if (Time.frameCount % 2 == 0)
-        //{
-        EmitParticle();
-        //}
+         //Time.frameCount % N のNの数を大きくするとFrameRateが60FPSに近くなるが，そうでないと24FPSくらいになる
+        if (Time.frameCount % 8 == 0)
+        {
+            EmitParticle();
+        }
         UpdateParticle();
         
         ResetWaveTex();

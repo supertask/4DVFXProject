@@ -39,9 +39,10 @@ public class GVoxelizerVFXPlayableBehaviour : PlayableBehaviour
     // Called when the state of the playable is set to Play
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
+        this.gvoxelizerVfx.SetBool("IsDarkToDefaultColor", !this.isDarkToDefaultColor);
+        this.gvoxelizerVfx.SetVector3("ActorSourcePosition", this.dancerMeshObj.transform.localPosition);
         this.gvoxelizerVfx.SendEvent("StartGVoxelizer");
         this.alphaDancerMaterial.SetInt("HeightDissolveIsDark", this.isDarkToDefaultColor ? 1 : 0);
-        this.gvoxelizerVfx.SetBool("IsDarkToDefaultColor", !this.isDarkToDefaultColor);
     }
 
     // Called when the state of the playable is set to Paused

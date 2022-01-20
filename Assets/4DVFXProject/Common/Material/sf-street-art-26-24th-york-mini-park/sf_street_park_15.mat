@@ -145,9 +145,11 @@ Material:
     m_Floats:
     - HighPassAudioLevel: 0
     - LowPassAudioLevel: 0
+    - Metallic: 0.8
     - Radius: 5
     - SinHeight: 0.25
-    - WaveMigrationLength: 0
+    - Smoothness: 0.8
+    - WaveMigrationLength: 24.482647
     - WavePeriod: -200
     - _AORemapMax: 1
     - _AORemapMin: 0
