@@ -121,6 +121,10 @@ namespace VFXProject4D
             }
         }
         
+        public float remap(float value, float from1 = 0, float to1 = 10, float from2 = -0.1f, float to2 = 0.1f)
+        {
+            return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+        }
 
         public void OnModifyNoiseDistortion(float midiNomalizedValue)
         {
@@ -132,6 +136,15 @@ namespace VFXProject4D
         public void OnModifyTwist(float midiNomalizedValue)
         {
             alphaDancerMaterial.SetFloat("TwistPercent", midiNomalizedValue);
+        }
+        
+        public void OnRotateYFlame(float midiNomalizedValue)
+        {
+            Vector3 v = new Vector3(0, remap(midiNomalizedValue, 0, 1, 1, -1) * 180f, 0);
+            v.x = 12f;
+            this.flameV1.SetVector3("WindAngle", v);
+            v.x = -12f;
+            this.flameV2.SetVector3("WindAngle", v);
         }
         
         public void OnStartTriangleV1()
