@@ -27,6 +27,13 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 	[Button("Roy1")]
 	public bool roy1;
 	
+	[Button("Roy2")]
+	public bool roy2;
+	
+	[Button("Roy3")]
+	public bool roy3;
+	
+	
 	private void Init()
 	{
 		this.clip = this.GetComponent<Depthkit.Clip>();
@@ -62,5 +69,19 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 	{
 		Debug.Log("Roy1");
 		this.AssignVolumetricVideoInfo(2);
+	}
+	
+	//[ContextMenu("Switch Volumetric Video Roy 2")]
+	public void Roy2 ()
+	{
+		Debug.Log("Roy2");
+		this.AssignVolumetricVideoInfo(3);
+	}
+	
+	//[ContextMenu("Switch Volumetric Video Roy 3")]
+	public void Roy3 ()
+	{
+		Debug.Log("Roy3");
+		this.AssignVolumetricVideoInfo(4);
 	}
 }
