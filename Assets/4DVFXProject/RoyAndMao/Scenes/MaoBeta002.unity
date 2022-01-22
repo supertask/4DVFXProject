@@ -4234,7 +4234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017318046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5020754, y: -0.8, z: -7.041574}
+  m_LocalPosition: {x: -4.6975117, y: -0.8, z: 5.456499}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 734497270}
@@ -4249,7 +4249,7 @@ SphereCollider:
   m_GameObject: {fileID: 1017318046}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -4260,7 +4260,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017318046}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7840,7 +7840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 854237334161607345, guid: db15aa5b226605b4e9caedbe87d7d795, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1365681918043619720, guid: db15aa5b226605b4e9caedbe87d7d795, type: 3}
       propertyPath: m_Looping
@@ -9824,7 +9824,7 @@ PlayableDirector:
     - 6a15040797129eb45a0df053418b937d: {fileID: 1880756891}
 --- !u!114 &1880756893
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 8
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -9947,7 +9947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 10
+  m_Intensity: 50
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -10070,7 +10070,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 50
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -11146,6 +11146,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 734497270}
     m_Modifications:
     - target: {fileID: 1482496258310162968, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162968, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
@@ -11198,12 +11202,44 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1017318047}
     - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_ResetSeedOnPlay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Name
+      value: Metallic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Name
+      value: Smoothnes
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Value
+      value: 0.809
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Value
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: 1.5020754
+      value: -4.6975117
       objectReference: {fileID: 0}
     - target: {fileID: 1482496258310162971, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: -7.041574
+      value: 5.456499
       objectReference: {fileID: 0}
     - target: {fileID: 1482496258310162974, guid: e21d46565d96741499b1ce7365a343bd, type: 3}
       propertyPath: m_Name

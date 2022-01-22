@@ -31,9 +31,6 @@
             "m_Id": "ca70efe49d9e47359cfdfbc2fafb7fa7"
         },
         {
-            "m_Id": "66983c485ac84c70a7665e3429a7956a"
-        },
-        {
             "m_Id": "de3173eda9de4a26b9ba2f7d463f6fce"
         },
         {
@@ -133,9 +130,6 @@
             },
             {
                 "m_Id": "ca70efe49d9e47359cfdfbc2fafb7fa7"
-            },
-            {
-                "m_Id": "66983c485ac84c70a7665e3429a7956a"
             },
             {
                 "m_Id": "de3173eda9de4a26b9ba2f7d463f6fce"
@@ -270,7 +264,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.VFXTarget",
     "m_ObjectId": "1c0b8c472f384a6b833c8d1f4b695cbd",
-    "m_Lit": true,
+    "m_Lit": false,
     "m_AlphaTest": false
 }
 
@@ -355,30 +349,6 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.BaseColor"
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.NormalMaterialSlot",
-    "m_ObjectId": "379cfb9937074427a3e7cb109f45c749",
-    "m_Id": 0,
-    "m_DisplayName": "Normal (Tangent Space)",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "NormalTS",
-    "m_StageCapability": 2,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_Labels": [],
-    "m_Space": 3
 }
 
 {
@@ -543,39 +513,6 @@
         "w": 0.0
     },
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
-    "m_ObjectId": "66983c485ac84c70a7665e3429a7956a",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "SurfaceDescription.NormalTS",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "379cfb9937074427a3e7cb109f45c749"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SerializedDescriptor": "SurfaceDescription.NormalTS"
 }
 
 {

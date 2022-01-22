@@ -66,7 +66,7 @@ VisualEffect:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: -6.5053515, y: -0.8, z: -3.085514}
+      - m_Value: {x: 2.500603, y: -0.8, z: -6.7518134}
         m_Name: AttractorPosition
         m_Overridden: 1
     m_Vector4f:
