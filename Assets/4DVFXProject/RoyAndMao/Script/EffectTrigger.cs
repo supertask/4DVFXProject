@@ -27,13 +27,6 @@ namespace VFXProject4D
         // twistとnoiseDistortionは相性が良さそう
         //
 
-        //Shape VFX
-        [SerializeField] private KeyCode triangle1Key = KeyCode.Alpha1;
-        [SerializeField] private KeyCode triangle2Key = KeyCode.Alpha2;
-        [SerializeField] private KeyCode rect1Key = KeyCode.Alpha6;
-        [SerializeField] private KeyCode rect2Key = KeyCode.Alpha7;
-        [Space]
-        
         // Particle VFX
         [SerializeField] private KeyCode horizontalRainKey = KeyCode.Q;
         [Space]
@@ -47,8 +40,6 @@ namespace VFXProject4D
 
         //Human Vertex shader VFX
         [SerializeField] private KeyCode midiTwistKey = KeyCode.Z;
-        [SerializeField] private KeyCode noiseDistortionKey = KeyCode.X;
-        [SerializeField] private KeyCode twistKey = KeyCode.C;
         [Space]
         
         public GameObject dancerMeshObj;
@@ -66,6 +57,8 @@ namespace VFXProject4D
 
         [SerializeField] private TimelineAsset[] triangleV1Timelines;
         [SerializeField] private TimelineAsset[] rectV1Timelines;
+        [SerializeField] private TimelineAsset[] rippleCirclesTimelines;
+
         [Space]
 
         [SerializeField] private TimelineAsset[] midiTwistTimelines;
@@ -126,6 +119,10 @@ namespace VFXProject4D
             return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
         }
 
+
+        //
+        // Human body shader
+        //
         public void OnModifyNoiseDistortion(float midiNomalizedValue)
         {
             //Debug.Log("OnNoiseDistortion value: " + midiNomalizedValue);
@@ -147,6 +144,10 @@ namespace VFXProject4D
             this.flameV2.SetVector3("WindAngle", v);
         }
         
+        
+        //
+        // Shapes
+        //
         public void OnStartTriangleV1()
         {
             this.director.Play(triangleV1Timelines[0]);
@@ -200,6 +201,22 @@ namespace VFXProject4D
             this.SaveEffectTime("StopRectV1");
         }
         
+        public void OnRippleCircleUnder()
+        {
+            this.director.Play(rippleCirclesTimelines[0]);
+            this.SaveEffectTime("rippleCirclesUnder");
+        }
+
+        public void OnRippleCircleUpper()
+        {
+            this.director.Play(rippleCirclesTimelines[1]);
+            this.SaveEffectTime("rippleCirclesUpper");
+        }
+        
+        
+        //
+        // Visual Effect Graph
+        //
         public void OnStartGVoxelizer()
         {
             this.director.Play(gvoxelizerTimelines[0]);
@@ -246,20 +263,6 @@ namespace VFXProject4D
         
         void KeyCheck()
         {
-            //Triangle
-            if (Input.GetKeyDown(triangle1Key))
-            {
-
-            }
-            if (Input.GetKeyDown(triangle2Key))
-            {
-            }
-
-            //Rect
-            if (Input.GetKeyDown(rect2Key))
-            {
-                //director.Play(timelines[1]); 
-            }
             
             //Horizontal Rain VFX
             if (Input.GetKeyDown(horizontalRainKey))
@@ -276,24 +279,6 @@ namespace VFXProject4D
                 }
             }
 
-
-            /*
-            //Flame V2 VFX
-            if (Input.GetKeyDown(flameV2Key))
-            {
-                if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-                {
-                    this.flameV2.SendEvent("StopFlameV2");
-                    this.SaveEffectTime("StopFlameV2");
-                }
-                else
-                {
-                    this.flameV2.SendEvent("StartFlameV2");
-                    this.SaveEffectTime("StartFlameV2");
-                }
-            }
-            */
-
             //MIDI Twist
             if (Input.GetKeyDown(midiTwistKey))
             {
@@ -308,49 +293,6 @@ namespace VFXProject4D
                     this.SaveEffectTime("MIDITwistStart");
                 }
             }
-
-            /*
-            //Simple Twist
-            if (Input.GetKeyDown(twistKey))
-            {
-                if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-                {
-                    this.director.Play(twistTimelines[1]);
-                    this.SaveEffectTime("TwistStop");
-                }
-                else
-                {
-                    this.director.Play(twistTimelines[0]);
-                    this.SaveEffectTime("TwistStart");
-                }
-            }
-
-            //Noise distortion
-            if (Input.GetKeyDown(noiseDistortionKey))
-            {
-                if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-                {
-                    this.director.Play(noiseDistortionTwistTimelines[1]);
-                    this.SaveEffectTime("NoiseDistortionStop");
-                }
-                else
-                {
-                    this.director.Play(noiseDistortionTwistTimelines[0]);
-                    this.SaveEffectTime("NoiseDistortionStart");
-                }
-            }
-            */
-
-            /*
-            //Warp VFX
-            if (Input.GetKeyDown(warpV2Key))
-            {
-                //Debug.Log("warpV2");
-                this.director.Play(warpV2Timelines[0]);
-                this.SaveEffectTime("WarpV2");
-            }
-            */
-
         }
         
         

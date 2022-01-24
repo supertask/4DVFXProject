@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-899154794621700205
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 11
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
@@ -7,15 +20,17 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sf_street_park_14
-  m_Shader: {fileID: -6465566751694194690, guid: 26ee12f4125ce0d48b5a6be4cd5c3f86, type: 3}
-  m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT
+  m_Name: RoyMaoPhotoTake
+  m_Shader: {fileID: -6465566751694194690, guid: 1f57a434f2e8d4e40979f248bac82f5c, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT
+    _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2225
+  m_CustomRenderQueue: 3001
   stringTagMap:
     MotionVector: User
+    RenderType: Transparent
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -25,28 +40,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - AudioLevelTex:
-        m_Texture: {fileID: 8400000, guid: e7a5453017a7a0a4cbbbd40a4ff75b34, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - AudioSpectrumTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - AudioTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - BaseMap:
-        m_Texture: {fileID: 2800000, guid: d9061958fe3bb77489b37d7a54e40736, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - CyberTex:
-        m_Texture: {fileID: 8400000, guid: 69b97087ef056024cbf48ce9d23cd4eb, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - RippleTex:
-        m_Texture: {fileID: 8400000, guid: e9ce94c177452af4f96d097a0b518c73, type: 2}
+    - MidiTwistSpectrumTexture:
+        m_Texture: {fileID: 8400000, guid: f248ee62a4615e14e9e76308fcd28f38, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -54,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 9d8985cb71fe7394bbd777713d5c749e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -63,6 +58,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BentNormalMapOS:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BiplanarNormal_94ab41f2e8b7484cb56840951062c162_Texture2De0d0c78fbf3a42a1a7446c1cb12cb80b_2539806797:
+        m_Texture: {fileID: 2800000, guid: 7da941c18509fcd46bca4e99aa599054, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Biplanar_6169ad5ebd6742179e9d1cb81b616869_Texture2De4c443e5f2a74c5b84fb0e474cab9f4f_1659453159:
+        m_Texture: {fileID: 2800000, guid: 7480ac4bfd4dd7e4d87b932749944f29, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CoatMaskMap:
@@ -90,7 +93,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9d8985cb71fe7394bbd777713d5c749e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -129,6 +132,26 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_1a4ac085483043ef938fd819fd4f51d5_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 7480ac4bfd4dd7e4d87b932749944f29, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_408ab5f07d7d4e45be73ccdc0299ed90_Texture_1:
+        m_Texture: {fileID: 2800000, guid: db40374efd282d540bc5f3ecf265155a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_6fe14cdf5523473db36d8d686ff39edb_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d84c28800b469204d8a10a380e7956c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_92d42a53aa134db4a388911b89e9b487_Texture_1:
+        m_Texture: {fileID: 8400000, guid: 94a89badb8e913045afb9797b596bc7c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_f6e1143f8ef147bebe1c091e17432949_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 7da941c18509fcd46bca4e99aa599054, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -143,25 +166,42 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - HighPassAudioLevel: 0
-    - LowPassAudioLevel: 0
-    - Metallic: 0.8
-    - Radius: 5
-    - SinHeight: 0.25
-    - Smoothness: 0.8
-    - WaveMigrationLength: 0.90073556
-    - WavePeriod: -200
+    - ActorTiling: 1
+    - Alpha: 1
+    - DissolvePercent: 0.07094082
+    - DissolveScale: 40
+    - DistortionNoiseScale: 0.4
+    - DistortionPower: 0
+    - DistortionTimeScale: 6
+    - EmissionPercent: 0.5
+    - HeightDissolveHeight: -0.7
+    - HeightDissolveInterpolation: 0.45
+    - HeightDissolveIsDark: 0
+    - HeightDissolveNoiseScale: 70
+    - Metallic: 1
+    - MidiTwistPercent: 0
+    - MidiTwistRotatePower: 3
+    - MidiTwistTimeScale: -0.3
+    - MidiTwistWaveFrequence: 0.3
+    - RockTexScale: 1
+    - Smoothness: 1
+    - SpikeNoiseScale: 30
+    - SpikeNormalPower: 3
+    - SpikeThreshold: 0.2
+    - TwistAngleScale: 2
+    - TwistPercent: 0
+    - TwistTimeScale: 5
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
     - _AlphaCutoff: 0.5
-    - _AlphaCutoffEnable: 0
+    - _AlphaCutoffEnable: 1
     - _AlphaCutoffPostpass: 0.5
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
-    - _AlphaDstBlend: 0
+    - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
@@ -182,7 +222,7 @@ Material:
     - _DisplacementMode: 0
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
     - _EmissiveIntensity: 1
@@ -221,7 +261,7 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _RenderQueueType: 1
+    - _RenderQueueType: 4
     - _RequireSplitLighting: 0
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
@@ -231,10 +271,10 @@ Material:
     - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
     - _StencilRef: 0
-    - _StencilRefDepth: 8
+    - _StencilRefDepth: 0
     - _StencilRefDistortionVec: 4
-    - _StencilRefGBuffer: 10
-    - _StencilRefMV: 40
+    - _StencilRefGBuffer: 2
+    - _StencilRefMV: 32
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 8
     - _StencilWriteMaskDistortionVec: 4
@@ -242,7 +282,7 @@ Material:
     - _StencilWriteMaskMV: 40
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
-    - _SurfaceType: 0
+    - _SurfaceType: 1
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
     - _Thickness: 1
@@ -251,7 +291,7 @@ Material:
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
-    - _TransparentSortPriority: 0
+    - _TransparentSortPriority: 1
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UVBase: 0
@@ -259,15 +299,19 @@ Material:
     - _UVEmissive: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
-    - _ZTestDepthEqualForOpaque: 3
-    - _ZTestGBuffer: 4
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
-    - Center: {r: 0, g: 0, b: 0, a: 0}
+    - ActorOffset: {r: 3.21, g: 0, b: 0.08, a: 0}
+    - BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    - CyberCitrcuitColor: {r: 0, g: 19.32081, b: 25.45017, a: 0}
+    - DistortionPercent: {r: 1, g: 0.2, b: 1, a: 0}
+    - MidiTwistSubColor: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 8.780356, g: 26.34107, b: 37.267735, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -282,16 +326,3 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &6253161949651044343
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 11
