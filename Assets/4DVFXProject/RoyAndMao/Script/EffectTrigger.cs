@@ -138,7 +138,7 @@ namespace VFXProject4D
         public void OnRotateYFlame(float midiNomalizedValue)
         {
             Vector3 v = new Vector3(0, remap(midiNomalizedValue, 0, 1, 1, -1) * 180f, 0);
-            v.x = 12f;
+            v.x = -12f;
             this.flameV1.SetVector3("WindAngle", v);
             v.x = -12f;
             this.flameV2.SetVector3("WindAngle", v);
