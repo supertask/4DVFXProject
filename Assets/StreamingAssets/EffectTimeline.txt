@@ -1,5 +1,3 @@
-31.2165969926864,rippleCirclesUnder
-32.794992191717,rippleCirclesUnder
-33.885854289867,rippleCirclesUnder
-35.0732179954648,rippleCirclesUnder
+17.4134434061125,StartRectV1
+20.1048476081342,StartTriangleV1
 
