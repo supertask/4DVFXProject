@@ -1384,6 +1384,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 687526343357337528, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 687526343357337528, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 687526343357337528, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1007377866742299187, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1415,6 +1427,10 @@ PrefabInstance:
     - target: {fileID: 1007377868373122903, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1818446683087470968, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3564276237663300002, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Value
@@ -1606,11 +1622,11 @@ PrefabInstance:
       objectReference: {fileID: 1232831587}
     - target: {fileID: 4738808733075263009, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6951468
+      value: 1.3015934
       objectReference: {fileID: 0}
     - target: {fileID: 4738808733075263009, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.60537344
+      value: -1.243324
       objectReference: {fileID: 0}
     - target: {fileID: 4824642793293783721, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Enabled
@@ -1626,11 +1642,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: -1.6951468
+      value: 1.3015934
       objectReference: {fileID: 0}
     - target: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: -0.60537344
+      value: -1.243324
       objectReference: {fileID: 0}
     - target: {fileID: 6178683748901708169, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Mesh
