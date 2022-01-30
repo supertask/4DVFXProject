@@ -142,7 +142,7 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
         else if (0.5f <= progress && progress <= 0.6f)
         {
             Vector3 actorTargetPosition = this.disappearVfx.GetVector3("ActorTargetPosition");
-            dancerMeshObj.transform.position = actorTargetPosition;
+            dancerMeshObj.transform.localPosition = actorTargetPosition;
             Debug.Log("actorTargetPosition = " + actorTargetPosition);
         }
         

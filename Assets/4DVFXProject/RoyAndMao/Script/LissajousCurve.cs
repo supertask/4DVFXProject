@@ -19,6 +19,11 @@ public class LissajousCurve : MonoBehaviour
 	[SerializeField] Vector3 lissajousOffset;
 
 	private float time = 0;
+	
+	public virtual void Start()
+	{
+		
+	}
 
 	public virtual void Update()
 	{

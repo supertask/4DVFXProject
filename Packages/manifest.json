@@ -1,21 +1,22 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "Unity NuGet",
-      "url": "https://unitynuget-registry.azurewebsites.net",
-      "scopes": [
-        "org.nuget"
-      ]
-    },
-    {
-      "name": "Keijiro",
-      "url": "https://registry.npmjs.com",
-      "scopes": [
-        "jp.keijiro"
-      ]
-    }
-  ],
-  "dependencies": {
+    "scopedRegistries": [
+        {
+            "name": "Unity NuGet",
+            "url": "https://unitynuget-registry.azurewebsites.net",
+            "scopes": [
+                "org.nuget"
+            ]
+        },
+        {
+            "name": "Keijiro",
+            "url": "https://registry.npmjs.com",
+            "scopes": [
+                "jp.keijiro"
+            ]
+        }
+    ],
+    "dependencies": {
+    "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.3.2.tgz",
     "com.unity.recorder": "2.5.5",
     "com.unity.render-pipelines.high-definition": "11.0.0",
     "com.unity.timeline": "1.6.2",
