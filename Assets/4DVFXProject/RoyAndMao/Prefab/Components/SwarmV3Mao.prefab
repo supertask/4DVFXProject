@@ -168,7 +168,7 @@ VisualEffect:
       - m_Value: 0.01
         m_Name: SwirlNoiseAmplitude
         m_Overridden: 1
-      - m_Value: 0.025
+      - m_Value: 0.045
         m_Name: TrailWidth
         m_Overridden: 1
       - m_Value: 2
