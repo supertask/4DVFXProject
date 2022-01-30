@@ -29,12 +29,6 @@ namespace VFXProject4D
 
         // Particle VFX
         [SerializeField] private KeyCode horizontalRainKey = KeyCode.Q;
-        [Space]
-        
-        //Human Particle VFX
-        [SerializeField] private KeyCode flameV1Key = KeyCode.A;
-        [SerializeField] private KeyCode flameV2Key = KeyCode.S;
-        [SerializeField] private KeyCode warpV2Key = KeyCode.D;
 
         [Space]
 
@@ -54,10 +48,12 @@ namespace VFXProject4D
         [SerializeField] public VisualEffect flameV2;
         [SerializeField] public VisualEffect warpV2;
         [SerializeField] public VisualEffect horizontalRain;
+        [Space]
 
         [SerializeField] private TimelineAsset[] triangleV1Timelines;
         [SerializeField] private TimelineAsset[] rectV1Timelines;
         [SerializeField] private TimelineAsset[] rippleCirclesTimelines;
+        [SerializeField] private TimelineAsset[] verticalRainTimelines;
 
         [Space]
 
@@ -154,7 +150,6 @@ namespace VFXProject4D
             this.SaveEffectTime("StartTriangleV1");
         }
 
-        
         public void OnStopTriangleV1()
         {
             this.director.Play(triangleV1Timelines[1]);
@@ -201,6 +196,10 @@ namespace VFXProject4D
             this.SaveEffectTime("StopRectV1");
         }
         
+        
+        //
+        // Shape VFX
+        //
         public void OnRippleCircleUnder()
         {
             this.director.Play(rippleCirclesTimelines[0]);
@@ -213,9 +212,14 @@ namespace VFXProject4D
             this.SaveEffectTime("rippleCirclesUpper");
         }
         
+        public void OnVerticalRain()
+        {
+            this.director.Play(verticalRainTimelines[0]);
+            this.SaveEffectTime("verticalRain");
+        }
         
         //
-        // Visual Effect Graph
+        // Human particle VFX
         //
         public void OnStartGVoxelizer()
         {
