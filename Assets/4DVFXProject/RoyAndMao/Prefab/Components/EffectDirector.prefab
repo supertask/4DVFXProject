@@ -41,7 +41,7 @@ PlayableDirector:
   m_GameObject: {fileID: 4945458841698943628}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 162d748ab50ba294d9cfb6aa2c7c2d6f, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: b01dd09832b68ab4f9789cb9b2c5ae52, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -66,6 +66,26 @@ PlayableDirector:
   - key: {fileID: 476766925597529131, guid: 162d748ab50ba294d9cfb6aa2c7c2d6f, type: 2}
     value: {fileID: 0}
   - key: {fileID: -7896558120453677529, guid: 162d748ab50ba294d9cfb6aa2c7c2d6f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6133813857938770741, guid: 59a51eb22e663b048b12d3e188f4f32c, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8832813103959450271, guid: f1ee453311f8645499ec516e61411be5, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 476766925597529131, guid: f1ee453311f8645499ec516e61411be5, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7896558120453677529, guid: f1ee453311f8645499ec516e61411be5, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6133813857938770741, guid: 0a8413a3901e4a74182e97cf9a419451, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -779065196283143287, guid: 0a8413a3901e4a74182e97cf9a419451, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6133813857938770741, guid: 4214d3b14429e514bbe27f1a968a92e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -779065196283143287, guid: 4214d3b14429e514bbe27f1a968a92e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6133813857938770741, guid: 9b59d761ee3d5a5408200b0448b18f4d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6133813857938770741, guid: b01dd09832b68ab4f9789cb9b2c5ae52, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
@@ -98,9 +118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalRainKey: 113
-  flameV1Key: 97
-  flameV2Key: 115
-  warpV2Key: 100
   midiTwistKey: 122
   dancerMeshObj: {fileID: 0}
   volumetricVideoDirector: {fileID: 0}
@@ -117,8 +134,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 14b99746c0e83204e8e07609ff96ea40, type: 2}
   - {fileID: 11400000, guid: 1af044628054e664692f222b81836085, type: 2}
   rippleCirclesTimelines:
+  - {fileID: 11400000, guid: f1ee453311f8645499ec516e61411be5, type: 2}
   - {fileID: 11400000, guid: 162d748ab50ba294d9cfb6aa2c7c2d6f, type: 2}
-  - {fileID: 11400000, guid: 162d748ab50ba294d9cfb6aa2c7c2d6f, type: 2}
+  verticalRainTimelines:
+  - {fileID: 11400000, guid: 59a51eb22e663b048b12d3e188f4f32c, type: 2}
+  swarmTimelines:
+  - {fileID: 11400000, guid: 9b59d761ee3d5a5408200b0448b18f4d, type: 2}
+  - {fileID: 11400000, guid: b01dd09832b68ab4f9789cb9b2c5ae52, type: 2}
+  mirrorTrianglesTimelines:
+  - {fileID: 11400000, guid: 0a8413a3901e4a74182e97cf9a419451, type: 2}
+  - {fileID: 11400000, guid: 4214d3b14429e514bbe27f1a968a92e1, type: 2}
   midiTwistTimelines:
   - {fileID: 11400000, guid: c15d9666d15978d4897ba565385d71d2, type: 2}
   - {fileID: 11400000, guid: 57fde598be4752747b1270e984de0cd8, type: 2}

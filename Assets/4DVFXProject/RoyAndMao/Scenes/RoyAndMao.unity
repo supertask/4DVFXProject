@@ -1046,11 +1046,6 @@ MonoBehaviour:
   frequency: 0.1
   octaves: 3
   seed: 0
---- !u!2083052967 &1825862279 stripped
-VisualEffect:
-  m_CorrespondingSourceObject: {fileID: 5151494225273352290, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-  m_PrefabInstance: {fileID: 3648574451176413358}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2041281621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,6 +1384,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 65405188, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 746838847, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748279245, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 687526343357337528, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1428,6 +1435,10 @@ PrefabInstance:
     - target: {fileID: 1007377868373122903, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908073039894285887, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3564276237663300002, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Value
@@ -1569,62 +1580,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3648574450692486396, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_PlayableAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 59a51eb22e663b048b12d3e188f4f32c, type: 2}
-    - target: {fileID: 3648574450692486396, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450692486396, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.data[10].key
-      value: 
-      objectReference: {fileID: 6133813857938770741, guid: 59a51eb22e663b048b12d3e188f4f32c, type: 2}
-    - target: {fileID: 3648574450692486396, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.data[10].value
-      value: 
-      objectReference: {fileID: 1825862279}
-    - target: {fileID: 3648574450815029578, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029578, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_BoxSize.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029578, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_BoxSize.y
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029578, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_BoxSize.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029581, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_ProbeSettings.influence.m_BoxBlendDistanceNegative.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029581, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_ProbeSettings.influence.m_BoxBlendDistanceNegative.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029581, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_ProbeSettings.influence.m_BoxBlendDistanceNegative.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029581, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_ProbeSettings.influence.m_BoxBlendDistancePositive.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029581, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_ProbeSettings.influence.m_BoxBlendDistancePositive.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574450815029581, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_ProbeSettings.influence.m_BoxBlendDistancePositive.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3648574451217188435, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1635,15 +1590,11 @@ PrefabInstance:
       objectReference: {fileID: 1232831587}
     - target: {fileID: 4738808733075263009, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.10805937
+      value: -0.24326326
       objectReference: {fileID: 0}
     - target: {fileID: 4738808733075263009, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.7967535
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824642793293783721, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      value: 1.7834861
       objectReference: {fileID: 0}
     - target: {fileID: 4824642793293783721, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1655,11 +1606,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: -0.10805937
+      value: -0.24326326
       objectReference: {fileID: 0}
     - target: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: -1.7967535
+      value: 1.7834861
       objectReference: {fileID: 0}
     - target: {fileID: 6178683748901708169, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Mesh

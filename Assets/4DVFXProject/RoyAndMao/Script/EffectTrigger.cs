@@ -30,8 +30,6 @@ namespace VFXProject4D
         // Particle VFX
         [SerializeField] private KeyCode horizontalRainKey = KeyCode.Q;
 
-        [Space]
-
         //Human Vertex shader VFX
         [SerializeField] private KeyCode midiTwistKey = KeyCode.Z;
         [Space]
@@ -50,24 +48,29 @@ namespace VFXProject4D
         [SerializeField] public VisualEffect horizontalRain;
         [Space]
 
+        [Header("Primitive shapes")]
         [SerializeField] private TimelineAsset[] triangleV1Timelines;
         [SerializeField] private TimelineAsset[] rectV1Timelines;
-        [SerializeField] private TimelineAsset[] rippleCirclesTimelines;
-        [SerializeField] private TimelineAsset[] verticalRainTimelines;
-
         [Space]
 
+        [Header("Primitive particles or trails")]
+        [SerializeField] private TimelineAsset[] rippleCirclesTimelines;
+        [SerializeField] private TimelineAsset[] verticalRainTimelines;
+        [SerializeField] private TimelineAsset[] swarmTimelines;
+        [SerializeField] private TimelineAsset[] mirrorTrianglesTimelines;
+        [Space]
+
+        [Header("Human body deformations")]
         [SerializeField] private TimelineAsset[] midiTwistTimelines;
         [SerializeField] private TimelineAsset[] twistTimelines;
         [SerializeField] private TimelineAsset[] noiseDistortionTwistTimelines;
         [Space]
         
+        [Header("Human body particles")]
         [SerializeField] private TimelineAsset[] warpV2Timelines;
         [SerializeField] private TimelineAsset[] gvoxelizerTimelines;
         [SerializeField] private TimelineAsset[] flameV1Timelines;
         [SerializeField] private TimelineAsset[] flameV2Timelines;
-
-
         [Space]
         
         
@@ -198,24 +201,46 @@ namespace VFXProject4D
         
         
         //
-        // Shape VFX
+        // Shape particles
         //
-        public void OnRippleCircleUnder()
-        {
-            this.director.Play(rippleCirclesTimelines[0]);
-            this.SaveEffectTime("rippleCirclesUnder");
-        }
-
         public void OnRippleCircleUpper()
         {
+            this.director.Play(rippleCirclesTimelines[0]);
+            this.SaveEffectTime("RippleCircleUpper");
+        }
+
+        public void OnRippleCircleLower()
+        {
             this.director.Play(rippleCirclesTimelines[1]);
-            this.SaveEffectTime("rippleCirclesUpper");
+            this.SaveEffectTime("RippleCircleLower");
         }
         
         public void OnVerticalRain()
         {
             this.director.Play(verticalRainTimelines[0]);
-            this.SaveEffectTime("verticalRain");
+            this.SaveEffectTime("VerticalRain");
+        }
+        
+        public void OnStartSwarm()
+        {
+            this.director.Play(swarmTimelines[0]);
+            this.SaveEffectTime("StartSwarm");
+        }
+        public void OnStopSwarm()
+        {
+            this.director.Play(swarmTimelines[1]);
+            this.SaveEffectTime("StopSwarm");
+        }
+        
+        public void OnStartMirrorTriangles()
+        {
+            this.director.Play(mirrorTrianglesTimelines[0]);
+            this.SaveEffectTime("StartMirrorTriangles");
+        }
+        public void OnStopMirrorTriangles()
+        {
+            this.director.Play(mirrorTrianglesTimelines[1]);
+            this.SaveEffectTime("StopMirrorTriangles");
         }
         
         //

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
+[ExecuteInEditMode]
 public class RippleCirclesParamTrigger : MonoBehaviour
 {
     public Vector2 visualizingHeightRange = new Vector2(-0.55f, 0.65f);
     public Vector3 ellipseCenter = new Vector3(0, 0.0f, 0);
+    public bool isUpper = false;
 
     private List<VisualEffect> vfxList;
     
@@ -30,6 +32,7 @@ public class RippleCirclesParamTrigger : MonoBehaviour
         {
             vfx.SetVector2("VisualizingHeightRange", visualizingHeightRange);
             vfx.SetVector3("EllipseCenter", ellipseCenter);
+            vfx.SetBool("IsUpper", this.isUpper);
 
         }
     }
