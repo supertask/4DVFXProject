@@ -58,6 +58,7 @@ namespace VFXProject4D
         [SerializeField] private TimelineAsset[] verticalRainTimelines;
         [SerializeField] private TimelineAsset[] swarmTimelines;
         [SerializeField] private TimelineAsset[] mirrorTrianglesTimelines;
+        [SerializeField] private TimelineAsset[] neonLineTimelines;
         [Space]
 
         [Header("Human body deformations")]
@@ -242,7 +243,18 @@ namespace VFXProject4D
             this.director.Play(mirrorTrianglesTimelines[1]);
             this.SaveEffectTime("StopMirrorTriangles");
         }
-        
+
+        public void OnNeonLine1()
+        {
+            this.director.Play(neonLineTimelines[0]);
+            this.SaveEffectTime("NeonLine1");
+        }
+        public void OnNeonLine2()
+        {
+            this.director.Play(neonLineTimelines[1]);
+            this.SaveEffectTime("NeonLine2");
+        }
+
         //
         // Human particle VFX
         //

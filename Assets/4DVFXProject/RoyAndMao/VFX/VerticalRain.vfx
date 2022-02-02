@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.7000000476837159,"y":2.0}'
+      m_SerializableObject: '{"x":2.6500000953674318,"y":2.950000047683716}'
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -3618,7 +3618,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.7000000476837159,"y":2.0}'
+      m_SerializableObject: '{"x":2.6500000953674318,"y":2.950000047683716}'
     m_Space: 2147483647
   m_Property:
     name: o

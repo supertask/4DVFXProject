@@ -144,6 +144,9 @@ MonoBehaviour:
   mirrorTrianglesTimelines:
   - {fileID: 11400000, guid: 0a8413a3901e4a74182e97cf9a419451, type: 2}
   - {fileID: 11400000, guid: 4214d3b14429e514bbe27f1a968a92e1, type: 2}
+  neonLineTimelines:
+  - {fileID: 11400000, guid: 9cf4780b1bac90743972b7d09ce3ebbd, type: 2}
+  - {fileID: 11400000, guid: 85830164ceada494ba5be728fcc18f80, type: 2}
   midiTwistTimelines:
   - {fileID: 11400000, guid: c15d9666d15978d4897ba565385d71d2, type: 2}
   - {fileID: 11400000, guid: 57fde598be4752747b1270e984de0cd8, type: 2}
