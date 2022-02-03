@@ -90,10 +90,14 @@ namespace VFXProject4D
         #endregion
 
 
+        private void Awake()
+        {
+            this.director = this.GetComponent<PlayableDirector>();
+        }
+        
         private void Start()
         {
             this.alphaDancerMaterial = dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterial;
-            this.director = this.GetComponent<PlayableDirector>();
             this.warpV2.SetVector3("ActorSourcePosition", Vector3.zero);
             this.warpV2.SetVector3("ActorTargetPosition", Vector3.zero);
             this.currentTriangleYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * 0.1f;

@@ -34,7 +34,7 @@ namespace Khoreo
         void OnPerformed(InputAction.CallbackContext ctx)
           => Flip();
 
-        void Start()
-          => (_state ? _onEvent : _offEvent).Invoke();
+        //void Start()
+        //  => (_state ? _onEvent : _offEvent).Invoke();
     }
 }

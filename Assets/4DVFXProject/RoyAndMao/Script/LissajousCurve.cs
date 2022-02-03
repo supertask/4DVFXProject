@@ -17,12 +17,13 @@ public class LissajousCurve : MonoBehaviour
 	[SerializeField, Range(0, 5)] float speed = 1;
     [SerializeField] Vector3 rotationEuler;
 	[SerializeField] Vector3 lissajousOffset;
+	protected Vector3 currentTheta; //radian(0 ~ 2 * PI)
 
 	private float time = 0;
 	
 	public virtual void Start()
 	{
-		
+		this.currentTheta = Vector3.zero;
 	}
 
 	public virtual void Update()
@@ -30,30 +31,39 @@ public class LissajousCurve : MonoBehaviour
 		this.transform.position = SamplePosition(this.transform.position);
 	}
 
-	public Vector3 SamplePosition(Vector3 position)
+	public virtual Vector3 SamplePosition(Vector3 position)
 	{
 		Quaternion rotatePosition = Quaternion.Euler(rotationEuler);
 
 		if (this.moveType == MoveType.Circle)
 		{
-			position = new Vector3( Mathf.Cos(time * freq.x), 0, Mathf.Sin(time * freq.y) );
+			currentTheta.x = time * freq.x;
+			currentTheta.y = 0;
+			currentTheta.z = time * freq.y;
+			position = new Vector3(Mathf.Cos(currentTheta.x), currentTheta.y, Mathf.Sin(currentTheta.z) );
             position.Scale(radius); // position multiply with radius
 			position = rotatePosition * position;
             position += positionOffset;
 		}
 		else if (this.moveType == MoveType.EightFigure)
 		{
-			position = new Vector3( Mathf.Sin(time * freq.x * 2), 0, - Mathf.Sin(time * freq.y) );
+			currentTheta.x = time * freq.x * 2;
+			currentTheta.y = 0;
+			currentTheta.z = time * freq.y;
+			position = new Vector3(Mathf.Sin(currentTheta.x), currentTheta.y, - Mathf.Sin(currentTheta.z));
             position.Scale(radius); // position multiply with radius
 			position = rotatePosition * position;
             position += positionOffset;
 		}
 		else if (this.moveType == MoveType.LissajousCurve)
 		{
+			currentTheta.x = time * freq.x + lissajousOffset.x;
+			currentTheta.y = time * freq.y + lissajousOffset.y;
+			currentTheta.z = time * freq.z + lissajousOffset.z;
 			position = new Vector3(
-				Mathf.Sin(time * freq.x + lissajousOffset.x),
-                - Mathf.Sin(time * freq.y + lissajousOffset.y),
-                Mathf.Sin(time * freq.z + lissajousOffset.z)
+				Mathf.Sin(currentTheta.x),
+                - Mathf.Sin(currentTheta.y),
+                Mathf.Sin(currentTheta.z)
             );
             position.Scale(radius); // position multiply with radius
 			position = rotatePosition * position;

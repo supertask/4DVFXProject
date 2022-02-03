@@ -36,6 +36,7 @@
     "jp.keijiro.test-assets": "1.0.1",
     "jp.keijiro.vfxgraphassets": "1.0.5",
     "jp.keijiro.minis": "1.0.10",
+    "jp.keijiro.vfx-extra": "1.0.0",
     "com.unity.mathematics": "1.2.5",
     "jp.supertask.cinema.post-processing": "https://github.com/supertask/Cinema.git?path=/Packages/jp.supertask.cinema.post-processing",
     "jp.supertask.shaderlibcore": "https://github.com/supertask/ShaderLibCore.git?path=/Packages/jp.supertask.shaderlibcore",

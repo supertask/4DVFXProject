@@ -40,7 +40,6 @@ namespace VFXProject4D
         // Called when the state of the playable is set to Paused
         public override void OnBehaviourPause(Playable playable, FrameData info)
         {
-            //Debug.Log("OnBehaviourPause");
         }
 
         public float remap(float value, float from1 = 0, float to1 = 10, float from2 = -0.1f, float to2 = 0.1f)

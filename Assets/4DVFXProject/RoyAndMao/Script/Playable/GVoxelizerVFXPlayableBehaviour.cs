@@ -18,7 +18,7 @@ public class GVoxelizerVFXPlayableBehaviour : PlayableBehaviour
     public bool isDarkToDefaultColor;
 
     private VisualEffect gvoxelizerVfx;
-    private Material alphaDancerMaterial; 
+    private Material alphaDancerMaterial;
 
     //Start
     public override void OnGraphStart(Playable playable)
@@ -48,6 +48,7 @@ public class GVoxelizerVFXPlayableBehaviour : PlayableBehaviour
     // Called when the state of the playable is set to Paused
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
+        //Debug.Log("OnBehaviourPause:");
         this.gvoxelizerVfx.SendEvent("StopGVoxelizer");
     }
 
