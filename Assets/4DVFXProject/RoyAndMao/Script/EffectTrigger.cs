@@ -133,20 +133,23 @@ namespace VFXProject4D
             alphaDancerMaterial.SetFloat("DistortionPower", midiNomalizedValue * 0.4f);
             //this.SaveEffectTime("NoiseDistortion,Value=" + midiNomalizedValue);
         }
-        
+
         public void OnModifyTwist(float midiNomalizedValue)
         {
             alphaDancerMaterial.SetFloat("TwistPercent", midiNomalizedValue);
         }
-        
-        public void OnRotateYFlame(float midiNomalizedValue)
+
+        public void OnStartMIDITwist()
         {
-            Vector3 v = new Vector3(0, remap(midiNomalizedValue, 0, 1, 1, -1) * 180f, 0);
-            v.x = -12f;
-            this.flameV1.SetVector3("WindAngle", v);
-            v.x = -12f;
-            this.flameV2.SetVector3("WindAngle", v);
+            this.director.Play(midiTwistTimelines[0]);
+            this.SaveEffectTime("MIDITwistStart");
         }
+        public void OnStopMIDITwist()
+        {
+            this.director.Play(midiTwistTimelines[1]);
+            this.SaveEffectTime("MIDITwistStop");
+        }
+
         
         
         //
@@ -259,6 +262,18 @@ namespace VFXProject4D
             this.SaveEffectTime("NeonLine2");
         }
 
+        public void OnStartHorizontalRain()
+        {
+            this.horizontalRain.SendEvent("StartHorizontalRain");
+            this.SaveEffectTime("StartHorizontalRain");
+        }
+
+        public void OnStopHorizontalRain()
+        {
+            this.horizontalRain.SendEvent("StopHorizontalRain");
+            this.SaveEffectTime("StopHorizontalRain");
+        }
+
         //
         // Human particle VFX
         //
@@ -305,10 +320,20 @@ namespace VFXProject4D
             this.director.Play(warpV2Timelines[1]);
             this.SaveEffectTime("WarpV2ReturnToOrigin");
         }
+
+        public void OnRotateYFlame(float midiNomalizedValue)
+        {
+            Vector3 v = new Vector3(0, remap(midiNomalizedValue, 0, 1, 1, -1) * 180f, 0);
+            v.x = -12f;
+            this.flameV1.SetVector3("WindAngle", v);
+            v.x = -12f;
+            this.flameV2.SetVector3("WindAngle", v);
+        }
+        
         
         void KeyCheck()
         {
-            
+            /*
             //Horizontal Rain VFX
             if (Input.GetKeyDown(horizontalRainKey))
             {
@@ -338,6 +363,7 @@ namespace VFXProject4D
                     this.SaveEffectTime("MIDITwistStart");
                 }
             }
+            */
         }
         
         
