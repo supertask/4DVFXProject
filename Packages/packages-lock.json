@@ -302,7 +302,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "11539306f84d296807e044e28e80611a64966d05"
+      "hash": "893853a2531b2c386c42f6cbc3b3ddf8ff78616e"
     },
     "nyc.scatter.depthkit.core": {
       "version": "file:C:/Assets/4DVFXProject/Depthkit_Studio_Expansion_Package_Phase6_081621/depthkit.core",
