@@ -149,7 +149,7 @@ Material:
     - Radius: 5
     - SinHeight: 0.25
     - Smoothness: 0.8
-    - WaveMigrationLength: 36.925125
+    - WaveMigrationLength: 29.847273
     - WavePeriod: -200
     - _AORemapMax: 1
     - _AORemapMin: 0

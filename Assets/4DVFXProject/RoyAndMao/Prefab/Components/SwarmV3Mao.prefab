@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79964616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41906562, y: 1.2055084, z: 1.8599663}
+  m_LocalPosition: {x: 1.6454731, y: -0.69716334, z: -0.6134217}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1482496258310162969}
@@ -186,7 +186,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector3f:
       m_Array:
-      - m_Value: {x: -0.41906562, y: 1.2055084, z: 1.8599663}
+      - m_Value: {x: 1.6454731, y: -0.69716334, z: -0.6134217}
         m_Name: AttractorPosition
         m_Overridden: 1
     m_Vector4f:
@@ -390,7 +390,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 88f63496-8547-4781-9d27-ebde8f11ab04
-      m_Path: <MidiDevice>/control007
+      m_Path: <MidiDevice>/control000
       m_Interactions: 
       m_Processors: 
       m_Groups: 

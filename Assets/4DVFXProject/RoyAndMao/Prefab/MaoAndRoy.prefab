@@ -763,7 +763,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 5c7a85b9-b05c-4f00-839b-59fc5734ae1e
-      m_Path: <Keyboard>/q
+      m_Path: <MidiDevice>/control050
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -791,80 +791,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: VFXProject4D.EffectTrigger, Assembly-CSharp
         m_MethodName: OnStartHorizontalRain
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!1 &2679681610499144273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8415341088750047386}
-  - component: {fileID: 7352123103274267553}
-  m_Layer: 0
-  m_Name: SwarmParam
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8415341088750047386
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2679681610499144273}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3648574450513868354}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7352123103274267553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2679681610499144273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc917165906b5b34897231593e1c2fe7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _action:
-    m_Name: Action
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 555862b0-5b65-48e2-8ca8-6b9767a73c02
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 3cbd1589-568f-42f7-aef2-15b4d74f5d32
-      m_Path: <MidiDevice>/control020
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Action
-      m_Flags: 0
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6147768708590743030}
-        m_TargetAssemblyTypeName: VFXProject4D.EffectTrigger, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2871,7 +2797,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: d50ee6af-c915-49dd-bb44-88998f6126bf
-      m_Path: <Keyboard>/s
+      m_Path: <MidiDevice>/control052
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3092,7 +3018,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 3cbd1589-568f-42f7-aef2-15b4d74f5d32
-      m_Path: <MidiDevice>/control032
+      m_Path: <MidiDevice>/control045
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3730,7 +3656,6 @@ Transform:
   - {fileID: 3648574450354479815}
   - {fileID: 3648574449523328439}
   - {fileID: 3648574450623470698}
-  - {fileID: 8415341088750047386}
   m_Father: {fileID: 3648574449930570536}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5552,7 +5477,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 3cbd1589-568f-42f7-aef2-15b4d74f5d32
-      m_Path: <Keyboard>/x
+      m_Path: <MidiDevice>/control065
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -5626,7 +5551,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 3cbd1589-568f-42f7-aef2-15b4d74f5d32
-      m_Path: <Keyboard>/f
+      m_Path: <MidiDevice>/control053
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -5910,7 +5835,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 3cbd1589-568f-42f7-aef2-15b4d74f5d32
-      m_Path: <Keyboard>/d
+      m_Path: <MidiDevice>/control037
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -6357,7 +6282,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: d03deefd-887c-4e04-a699-f57082b0cdf9
-      m_Path: <Keyboard>/a
+      m_Path: <MidiDevice>/control036
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -6447,7 +6372,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 5c7a85b9-b05c-4f00-839b-59fc5734ae1e
-      m_Path: <Keyboard>/g
+      m_Path: <MidiDevice>/control068
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -7447,7 +7372,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 5c7a85b9-b05c-4f00-839b-59fc5734ae1e
-      m_Path: <Keyboard>/b
+      m_Path: <MidiDevice>/control032
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -7721,7 +7646,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 5c7a85b9-b05c-4f00-839b-59fc5734ae1e
-      m_Path: <Keyboard>/v
+      m_Path: <MidiDevice>/control066
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -8057,7 +7982,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 5c7a85b9-b05c-4f00-839b-59fc5734ae1e
-      m_Path: <Keyboard>/z
+      m_Path: <MidiDevice>/control051
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -8146,7 +8071,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 3cbd1589-568f-42f7-aef2-15b4d74f5d32
-      m_Path: <Keyboard>/c
+      m_Path: <MidiDevice>/control049
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -8522,6 +8447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbf17237e5d681c4ea7ec6fb28158a0d, type: 3}
+--- !u!2083052967 &3564276238415567239 stripped
+VisualEffect:
+  m_CorrespondingSourceObject: {fileID: 276001037736365138, guid: dbf17237e5d681c4ea7ec6fb28158a0d, type: 3}
+  m_PrefabInstance: {fileID: 3648574449580135893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4999900257558817553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8629286021619990212, guid: dbf17237e5d681c4ea7ec6fb28158a0d, type: 3}
@@ -8530,11 +8460,6 @@ Transform:
 --- !u!1 &4140706208909331001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 852562940992282604, guid: dbf17237e5d681c4ea7ec6fb28158a0d, type: 3}
-  m_PrefabInstance: {fileID: 3648574449580135893}
-  m_PrefabAsset: {fileID: 0}
---- !u!2083052967 &3564276238415567239 stripped
-VisualEffect:
-  m_CorrespondingSourceObject: {fileID: 276001037736365138, guid: dbf17237e5d681c4ea7ec6fb28158a0d, type: 3}
   m_PrefabInstance: {fileID: 3648574449580135893}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3648574449582227613
@@ -10460,14 +10385,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 535769180fa10914098fd931dc70690c, type: 3}
---- !u!1 &4495506054982956604 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 535769180fa10914098fd931dc70690c, type: 3}
-  m_PrefabInstance: {fileID: 3648574450337401709}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3830573565444369542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 535769180fa10914098fd931dc70690c, type: 3}
+  m_PrefabInstance: {fileID: 3648574450337401709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4495506054982956604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 535769180fa10914098fd931dc70690c, type: 3}
   m_PrefabInstance: {fileID: 3648574450337401709}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3648574450390813174
@@ -11978,15 +11903,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 79964617, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9543587
+      value: 0.6959004
       objectReference: {fileID: 0}
     - target: {fileID: 79964617, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3369473
+      value: -1.0695086
       objectReference: {fileID: 0}
     - target: {fileID: 79964617, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0056216
+      value: -1.653595
       objectReference: {fileID: 0}
     - target: {fileID: 1482496258310162968, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12038,15 +11963,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482496258310162971, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: 1.9543587
+      value: 0.6959004
       objectReference: {fileID: 0}
     - target: {fileID: 1482496258310162971, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
-      value: 1.3369473
+      value: -1.0695086
       objectReference: {fileID: 0}
     - target: {fileID: 1482496258310162971, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: 1.0056216
+      value: -1.653595
       objectReference: {fileID: 0}
     - target: {fileID: 1482496258310162974, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
       propertyPath: m_Name
@@ -12062,11 +11987,6 @@ VisualEffect:
 --- !u!4 &6147768708590743025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1482496258310162969, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
-  m_PrefabInstance: {fileID: 4738808733146834920}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6147768708590743030 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1482496258310162974, guid: 570963620eaadcb40a86f83878292ab7, type: 3}
   m_PrefabInstance: {fileID: 4738808733146834920}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8503811755322947181
@@ -12302,11 +12222,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 448022d1833172844a6a903e6a63b77c, type: 3}
---- !u!4 &3648574450692486398 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4945458841698943635, guid: 448022d1833172844a6a903e6a63b77c, type: 3}
-  m_PrefabInstance: {fileID: 8503811755322947181}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3648574450692486399 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4945458841698943634, guid: 448022d1833172844a6a903e6a63b77c, type: 3}
@@ -12318,3 +12233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f98b93ea154f0e4b8fd18bde3a2d7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &3648574450692486398 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4945458841698943635, guid: 448022d1833172844a6a903e6a63b77c, type: 3}
+  m_PrefabInstance: {fileID: 8503811755322947181}
+  m_PrefabAsset: {fileID: 0}
