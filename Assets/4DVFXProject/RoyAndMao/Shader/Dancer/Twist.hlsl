@@ -26,11 +26,13 @@ void Twist_float(
 	float3 position,
 	float timeScale,
 	float angleScale,
+	float radius,
 	out float3 twistedPosition)
 {
-	float3 y = position.y + (_Time.x * timeScale);
+	float y = position.y + (_Time.x * timeScale);
 	float4 rotatedPosition4 = mul(rotateY(y * angleScale * PI), float4(position, 1.0));
 	twistedPosition = rotatedPosition4.xyz;
+	twistedPosition.xz *= radius;
 }
 
 

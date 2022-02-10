@@ -34,6 +34,9 @@
             "m_Id": "03dd4b860a17425898e4c8e12db8ed31"
         },
         {
+            "m_Id": "b12f1add01f7460696a312a228e4eb48"
+        },
+        {
             "m_Id": "b05331afcf7d43b081acdbe49ed9b010"
         },
         {
@@ -302,6 +305,9 @@
         },
         {
             "m_Id": "8a05a5558c77463b9cfd1b6719cb575b"
+        },
+        {
+            "m_Id": "42cf2ab783944907855247f25e7d184f"
         }
     ],
     "m_GroupDatas": [],
@@ -542,6 +548,20 @@
                     "m_Id": "c815802585b84902becc527a17a2ef1c"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "42cf2ab783944907855247f25e7d184f"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "b26dcf2027c54048a2340cd3dc34510b"
+                },
+                "m_SlotId": 4
             }
         },
         {
@@ -1396,7 +1416,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 5.0,
+    "m_Value": 10.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -2762,6 +2782,21 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "340bda24b5c94cee83a1bcf979d37977",
+    "m_Id": 0,
+    "m_DisplayName": "TwistRadius",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "3571266214e24a7e8ff76fda062f5802",
@@ -3135,6 +3170,41 @@
         "m_SerializableColors": []
     },
     "m_TextureType": 1
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "42cf2ab783944907855247f25e7d184f",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1971.0001220703125,
+            "y": -1729.0001220703125,
+            "width": 140.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "340bda24b5c94cee83a1bcf979d37977"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "b12f1add01f7460696a312a228e4eb48"
+    }
 }
 
 {
@@ -5764,6 +5834,31 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "b12f1add01f7460696a312a228e4eb48",
+    "m_Guid": {
+        "m_GuidSerialized": "9edfa740-25fe-45a0-99ed-8eb56d0b932b"
+    },
+    "m_Name": "TwistRadius",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "TwistRadius",
+    "m_DefaultReferenceName": "TwistRadius",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 2.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "b1efa1871d974d8a90f8562fbdefa410",
@@ -5815,6 +5910,9 @@
         },
         {
             "m_Id": "37ee2ebff85b4e21843c2bb4c9fac1c0"
+        },
+        {
+            "m_Id": "d17d2ec8b82b4cab8f120c4f52f74277"
         },
         {
             "m_Id": "2531bc204c484a668da4ca8a004cdc3e"
@@ -6623,6 +6721,21 @@
     "m_StageCapability": 3,
     "m_Value": false,
     "m_DefaultValue": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "d17d2ec8b82b4cab8f120c4f52f74277",
+    "m_Id": 4,
+    "m_DisplayName": "radius",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "radius",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {

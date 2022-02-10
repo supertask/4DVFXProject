@@ -7,10 +7,11 @@ using UnityEngine;
 using UnityEngine.VFX;
 //using UnityEngine.Rendering;
 //using UnityEngine.Rendering.HighDefinition;
-
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 using UnityEngine.InputSystem;
+
+using Klak.Motion;
 
 
 namespace VFXProject4D
@@ -27,19 +28,14 @@ namespace VFXProject4D
         // twistとnoiseDistortionは相性が良さそう
         //
 
-        // Particle VFX
-        [SerializeField] private KeyCode horizontalRainKey = KeyCode.Q;
-
-        //Human Vertex shader VFX
-        [SerializeField] private KeyCode midiTwistKey = KeyCode.Z;
-        [Space]
-        
         public GameObject dancerMeshObj;
         public PlayableDirector volumetricVideoDirector;
         [Space]
         
         public GameObject triangleObj;
         public GameObject rectObj;
+        public GameObject scenePivotObj;
+
         [Space]
 
         [SerializeField] public VisualEffect flameV1;
@@ -78,10 +74,15 @@ namespace VFXProject4D
 
         private Material alphaDancerMaterial;
         private PlayableDirector director;
+        private LinearMotion sceneLinearMotion;
+        
         private string effectTimelineString;
         
         private float SHAPE_ROTATION_Y_DEGREE_PER_SEC = 180.0f * 6;
         private float SHAPE_ROTATION_X_DEGREE = 180.0f;
+        
+        private float SCENE_ROTATION_Y_DEGREE = 360.0f;
+
         private float currentTriangleYRotateSpeed;
         private float currentTriangleXRotateSpeed;
         private float currentRectYRotateSpeed;
@@ -98,6 +99,7 @@ namespace VFXProject4D
         private void Start()
         {
             this.alphaDancerMaterial = dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterial;
+            this.sceneLinearMotion = this.scenePivotObj.GetComponent<LinearMotion>();
             this.warpV2.SetVector3("ActorSourcePosition", Vector3.zero);
             this.warpV2.SetVector3("ActorTargetPosition", Vector3.zero);
             this.currentTriangleYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * 0.1f;
@@ -123,7 +125,13 @@ namespace VFXProject4D
             return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
         }
 
+        public void OnRotateScene(float midiNomalizedValue)
+        {
+            if (midiNomalizedValue < 0.01f) { midiNomalizedValue = 0.0f; }
+            this.sceneLinearMotion.angularVelocity.y = SCENE_ROTATION_Y_DEGREE * midiNomalizedValue;
 
+            //Debug.Log(midiNomalizedValue);
+        }
         //
         // Human body shader
         //
