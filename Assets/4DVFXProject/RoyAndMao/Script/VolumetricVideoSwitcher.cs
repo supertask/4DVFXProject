@@ -2,25 +2,36 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.Timeline;
 using UnityEngine.Playables;
+using UnityEditor;
 
 using System.Collections;
-//using UnityEditor;
 
 
-//[ExecuteInEditMode]
+[ExecuteInEditMode]
 public class VolumetricVideoSwitcher : MonoBehaviour
 {
-	private Depthkit.Clip clip;
-	private VideoPlayer player;
-	private PlayableDirector director;
-
-
 	[SerializeField] private TextAsset[] metaFiles;
 	[SerializeField] private VideoClip[] videos;
 	[SerializeField] private TimelineAsset[] timelines;
 	[SerializeField] private GameObject[] authorUILabels;
+	[SerializeField] public Dancer dancer;
 
-	
+	private Depthkit.Clip clip;
+	private VideoPlayer player;
+	private PlayableDirector director;
+	private Dancer exDancer;
+
+	public enum Dancer 
+	{
+		Mao1 = 0,
+		Mao2 = 1,
+		Mao3 = 2,
+		Roy1 = 3,
+		Roy2 = 4,
+		Roy3 = 5
+	}
+
+	/*
 	[Button("Mao1")]
 	public bool mao1;
 	
@@ -38,6 +49,7 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 	
 	[Button("Roy3")]
 	public bool roy3;
+	*/
 	
 	
 	private void Init()
@@ -59,10 +71,42 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 			this.authorUILabels[i].SetActive(false);
 		}
 		this.authorUILabels[index].SetActive(true);
-
+	}
+	
+	void Update()
+	{
+#if UNITY_EDITOR
+		if (! EditorApplication.isPlaying)
+		{ 
+			/*
+			if (Time.frameCount % 60 == 0)
+			{
+				Debug.Log("Dancer:" + dancer);
+				this.AssignVolumetricVideoInfo((int)dancer);
+			}
+			*/
+			
+			// Dancerが切り替わったら, データも切り替える
+			if (this.exDancer != this.dancer)
+			{
+				Debug.Log("Dancer:" + dancer);
+				this.AssignVolumetricVideoInfo((int)dancer);
+				this.exDancer = this.dancer;
+			}
+		}
+#endif
+	}
+	
+	void OnDestory()
+	{
+#if UNITY_EDITOR
+		//DepthKitのDepthKitClipは終了後，metadataが初期化されるので，上書きする
+		Debug.Log("Dancer:" + dancer);
+		this.AssignVolumetricVideoInfo((int)dancer);
+#endif
 	}
 
-	
+	/*
 	//[ContextMenu("Switch Volumetric Video Mao 1")]
 	public void Mao1 ()
 	{
@@ -104,4 +148,5 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 		Debug.Log("Roy3");
 		this.AssignVolumetricVideoInfo(5);
 	}
+	*/
 }
