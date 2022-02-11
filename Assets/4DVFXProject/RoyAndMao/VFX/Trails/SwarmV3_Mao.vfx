@@ -560,7 +560,7 @@ MonoBehaviour:
   m_ImportDependencies: []
   m_GraphVersion: 6
   m_ResourceVersion: 1
-  m_saved: 0
+  m_saved: 1
   m_SubgraphDependencies:
   - {fileID: 5371698745253816930, guid: 7a706e801b2e732468b457b73b279675, type: 3}
   - {fileID: 5371698745253816930, guid: c5ce544a6af43c34f80c7ab25c4835e1, type: 3}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614752}
   - {fileID: 8926484042661615753}
   - {fileID: 8926484042661615947}
-  m_UIPosition: {x: -168, y: -1126}
+  m_UIPosition: {x: -168, y: -955}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -5698,7 +5698,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615562}
   m_ExposedName: NoiseFrequence
   m_Exposed: 1
-  m_Order: 12
+  m_Order: 11
   m_Category: 
   m_Min:
     m_Type:
@@ -5778,7 +5778,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615595}
   m_ExposedName: NoiseSpread
   m_Exposed: 1
-  m_Order: 13
+  m_Order: 12
   m_Category: 
   m_Min:
     m_Type:
@@ -9515,7 +9515,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615845}
   m_ExposedName: NoiseMotion
   m_Exposed: 1
-  m_Order: 14
+  m_Order: 13
   m_Category: 
   m_Min:
     m_Type:
@@ -13720,7 +13720,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616037}
   m_ExposedName: SwirlNoiseAmplitude
   m_Exposed: 1
-  m_Order: 15
+  m_Order: 14
   m_Category: 
   m_Min:
     m_Type:
@@ -13800,7 +13800,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616039}
   m_ExposedName: SwirlNoiseFrequence
   m_Exposed: 1
-  m_Order: 16
+  m_Order: 15
   m_Category: 
   m_Min:
     m_Type:
@@ -14286,7 +14286,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616077}
   m_ExposedName: Smoothnes
   m_Exposed: 1
-  m_Order: 17
+  m_Order: 16
   m_Category: 
   m_Min:
     m_Type:
@@ -14368,7 +14368,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616079}
   m_ExposedName: Metallic
   m_Exposed: 1
-  m_Order: 18
+  m_Order: 17
   m_Category: 
   m_Min:
     m_Type:
@@ -15185,7 +15185,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616169}
   m_ExposedName: TrailWidth
   m_Exposed: 1
-  m_Order: 19
+  m_Order: 18
   m_Category: 
   m_Min:
     m_Type:
@@ -15265,7 +15265,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616171}
   m_ExposedName: TrailLifetime
   m_Exposed: 1
-  m_Order: 20
+  m_Order: 19
   m_Category: 
   m_Min:
     m_Type:
@@ -15699,7 +15699,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616188}
   m_ExposedName: NoiseAmplitudeRange
   m_Exposed: 1
-  m_Order: 11
+  m_Order: 10
   m_Category: 
   m_Min:
     m_Type:
