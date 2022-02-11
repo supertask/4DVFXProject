@@ -125,12 +125,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59abc49fee17414092140be16c10d7c, type: 3}
   m_Name: DisappearVFXPlayableAsset(Clone)(Clone)
   m_EditorClassIdentifier: 
-  disappearVfxObj:
-    exposedName: e70af65becd5392408990174c038498a
+  warpVfxObj:
+    exposedName: 
     defaultValue: {fileID: 0}
-  dissolveMeshObj:
-    exposedName: d84a16557f009cc4f896c55b9aa106f8
+  dancerMeshObj:
+    exposedName: 
     defaultValue: {fileID: 0}
+  isReturnToOrigin: 0
 --- !u!114 &-1679515607983914052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -235,12 +236,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59abc49fee17414092140be16c10d7c, type: 3}
   m_Name: DisappearVFXPlayableAsset
   m_EditorClassIdentifier: 
-  disappearVfxObj:
-    exposedName: 4c40f86966c3c6946ae41fbac927691d
+  warpVfxObj:
+    exposedName: 
     defaultValue: {fileID: 0}
-  dissolveMeshObj:
-    exposedName: cc0b482483d400c419c23ebb0c913c31
+  dancerMeshObj:
+    exposedName: 
     defaultValue: {fileID: 0}
+  isReturnToOrigin: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,12 +322,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59abc49fee17414092140be16c10d7c, type: 3}
   m_Name: DisappearVFXPlayableAsset(Clone)(Clone)
   m_EditorClassIdentifier: 
-  disappearVfxObj:
-    exposedName: 9af0770eecde29c499a71e18a1c4068e
+  warpVfxObj:
+    exposedName: 
     defaultValue: {fileID: 0}
-  dissolveMeshObj:
-    exposedName: b83d58c2796cc0741aab8d62357b82bc
+  dancerMeshObj:
+    exposedName: 
     defaultValue: {fileID: 0}
+  isReturnToOrigin: 0
 --- !u!114 &9086433904763447456
 MonoBehaviour:
   m_ObjectHideFlags: 1

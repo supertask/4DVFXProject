@@ -18,11 +18,17 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 	[SerializeField] private TextAsset[] metaFiles;
 	[SerializeField] private VideoClip[] videos;
 	[SerializeField] private TimelineAsset[] timelines;
+	[SerializeField] private GameObject[] authorUILabels;
+
+	
 	[Button("Mao1")]
 	public bool mao1;
 	
 	[Button("Mao2")]
 	public bool mao2;
+
+	[Button("Mao3")]
+	public bool mao3;
 
 	[Button("Roy1")]
 	public bool roy1;
@@ -46,7 +52,14 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 		this.Init();
 		this.clip.metadataFile = metaFiles[index];
 		this.player.clip = videos[index];
-		this.director.playableAsset = timelines[index];		
+		this.director.playableAsset = timelines[index];
+		
+		for(int i = 0; i < authorUILabels.Length; i++)
+		{
+			this.authorUILabels[i].SetActive(false);
+		}
+		this.authorUILabels[index].SetActive(true);
+
 	}
 
 	
@@ -63,25 +76,32 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 		Debug.Log("Mao2");
 		this.AssignVolumetricVideoInfo(1);
 	}
+
+	//[ContextMenu("Switch Volumetric Video Mao 3")]
+	public void Mao3 ()
+	{
+		Debug.Log("Mao3");
+		this.AssignVolumetricVideoInfo(2);
+	}
 	
 	//[ContextMenu("Switch Volumetric Video Roy 1")]
 	public void Roy1 ()
 	{
 		Debug.Log("Roy1");
-		this.AssignVolumetricVideoInfo(2);
+		this.AssignVolumetricVideoInfo(3);
 	}
 	
 	//[ContextMenu("Switch Volumetric Video Roy 2")]
 	public void Roy2 ()
 	{
 		Debug.Log("Roy2");
-		this.AssignVolumetricVideoInfo(3);
+		this.AssignVolumetricVideoInfo(4);
 	}
 	
 	//[ContextMenu("Switch Volumetric Video Roy 3")]
 	public void Roy3 ()
 	{
 		Debug.Log("Roy3");
-		this.AssignVolumetricVideoInfo(4);
+		this.AssignVolumetricVideoInfo(5);
 	}
 }
