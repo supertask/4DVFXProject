@@ -171,12 +171,12 @@ Material:
     - DissolvePercent: 0
     - DissolveScale: 40
     - DistortionNoiseScale: 0.4
-    - DistortionPower: 0.0031496068
+    - DistortionPower: 0.0062992135
     - DistortionTimeScale: 6
     - EmissionPercent: 0.542
-    - HeightDissolveHeight: -0.7
+    - HeightDissolveHeight: 1.8
     - HeightDissolveInterpolation: 0.45
-    - HeightDissolveIsDark: 0
+    - HeightDissolveIsDark: 1
     - HeightDissolveNoiseScale: 70
     - Metallic: 0.85
     - MidiTwistPercent: 0
