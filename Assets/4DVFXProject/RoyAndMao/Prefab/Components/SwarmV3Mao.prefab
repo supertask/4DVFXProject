@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79964616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6454731, y: -0.69716334, z: -0.6134217}
+  m_LocalPosition: {x: 2.1256058, y: 2.2717297, z: 1.8240743}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1482496258310162969}
@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 1482496258310162970}
   - component: {fileID: 3499380654430138256}
   - component: {fileID: 3049918600123489983}
+  - component: {fileID: 4290029167438485736}
   m_Layer: 0
   m_Name: SwarmV3Mao
   m_TagString: Untagged
@@ -186,7 +187,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 1.6454731, y: -0.69716334, z: -0.6134217}
+      - m_Value: {x: 2.1256058, y: 2.2717297, z: 1.8240743}
         m_Name: AttractorPosition
         m_Overridden: 1
     m_Vector4f:
@@ -396,3 +397,22 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+--- !u!95 &4290029167438485736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482496258310162974}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

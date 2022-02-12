@@ -42,6 +42,7 @@ namespace VFXProject4D
         [SerializeField] public VisualEffect flameV2;
         [SerializeField] public VisualEffect warpV2;
         [SerializeField] public VisualEffect horizontalRain;
+        [SerializeField] public VisualEffect swarmV3;
         [Space]
 
         [Header("Primitive shapes")]
@@ -239,13 +240,19 @@ namespace VFXProject4D
         
         public void OnStartSwarm()
         {
+            Debug.Log("StartSwarmV3");
             this.director.Play(swarmTimelines[0]);
-            this.SaveEffectTime("StartSwarm");
+            //this.swarmV3.SendEvent("StartSwarmV3");
+            //this.swarmV3.SetBool("IsAlive", true);
+            this.SaveEffectTime("StartSwarmV3");
         }
         public void OnStopSwarm()
         {
+            Debug.Log("StopSwarmV3");
             this.director.Play(swarmTimelines[1]);
-            this.SaveEffectTime("StopSwarm");
+            //this.swarmV3.SendEvent("StopSwarmV3");
+            //this.swarmV3.SetBool("IsAlive", false);
+            this.SaveEffectTime("StopSwarmV3");
         }
         
         public void OnStartMirrorTriangles()
