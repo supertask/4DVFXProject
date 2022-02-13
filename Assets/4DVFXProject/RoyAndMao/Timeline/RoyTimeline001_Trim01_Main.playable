@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 57.68333333333333
+    m_Start: 58.59999999999999
     m_ClipIn: 0
     m_Asset: {fileID: -2781308217663080803}
     m_Duration: 0.2666666666666728
@@ -1090,7 +1090,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 57.95
+    m_Start: 58.86666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 1534605188434321364}
     m_Duration: 0.18333333333333002
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1108,25 +1108,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1141,7 +1123,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 0
+    m_Start: 1.4166666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 6960180237299517545}
     m_Duration: 0.7333333333333333
@@ -1192,7 +1174,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 55.733333333333334
+    m_Start: 56.65
     m_ClipIn: 0
     m_Asset: {fileID: 6821250208174663241}
     m_Duration: 0.28333333333333144
@@ -1243,7 +1225,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 56.016666666666666
+    m_Start: 56.93333333333333
     m_ClipIn: 0
     m_Asset: {fileID: -7761400580888993960}
     m_Duration: 0.1666666666666643
@@ -1252,7 +1234,7 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1261,25 +1243,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1294,7 +1258,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 56.18333333333333
+    m_Start: 57.09999999999999
     m_ClipIn: 0
     m_Asset: {fileID: -9078807361817546890}
     m_Duration: 0.29999999999999716
@@ -1302,7 +1266,7 @@ MonoBehaviour:
     m_ParentTrack: {fileID: -8805409176740164787}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
+    m_BlendInDuration: 0
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -1345,7 +1309,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 58.13333333333333
+    m_Start: 59.04999999999999
     m_ClipIn: 0
     m_Asset: {fileID: 1295266532923990784}
     m_Duration: 0.29999999999999716
@@ -1353,7 +1317,7 @@ MonoBehaviour:
     m_ParentTrack: {fileID: -8805409176740164787}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
+    m_BlendInDuration: 0
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -1436,7 +1400,7 @@ MonoBehaviour:
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children:
-  - {fileID: -1576538425332591190}
+  - {fileID: -7737217822673140143}
   - {fileID: -3457067875620957112}
   m_Clips: []
   m_Markers:
@@ -1674,7 +1638,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: -1080725889384448813}
+  m_Parent: {fileID: -8679346330856443903}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -4669,7 +4633,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 0
+    m_Start: 1.4166666666666667
     m_ClipIn: 0
     m_Asset: {fileID: -9179524803247418293}
     m_Duration: 0.7333333333333333
@@ -4759,29 +4723,6 @@ MonoBehaviour:
       m_Name: 
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
---- !u!114 &-4915352183388902894
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 321606f6a37f1754986999b348b385f5, type: 3}
-  m_Name: FlameVFXPlayableAsset(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  flameVfxV1Obj:
-    exposedName: 1f6179bff0358f84aa4f65e6bbb78698
-    defaultValue: {fileID: 0}
-  flameVfxV2Obj:
-    exposedName: 79d184ce9c3f00e469edfba1c40dd1ea
-    defaultValue: {fileID: 0}
-  dancerMeshObj:
-    exposedName: 5bae3f31a58ce4c4693e7977312aac1c
-    defaultValue: {fileID: 0}
-  isStart: 1
-  flameType: 0
 --- !u!114 &-4902428788398043300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4938,7 +4879,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 32.9305536996573
+    m_Start: 33.84722036632396
     m_ClipIn: 0
     m_Asset: {fileID: 5583570854689263456}
     m_Duration: 0.25
@@ -5007,7 +4948,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 33.1805536996573
+    m_Start: 34.09722036632396
     m_ClipIn: 0
     m_Asset: {fileID: -931024109729291039}
     m_Duration: 0.25
@@ -5058,7 +4999,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 33.9130077974871
+    m_Start: 34.82967446415376
     m_ClipIn: 0
     m_Asset: {fileID: -841073135961322243}
     m_Duration: 0.25
@@ -5127,7 +5068,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 34.1630077974871
+    m_Start: 35.07967446415376
     m_ClipIn: 0
     m_Asset: {fileID: -7308518009406003495}
     m_Duration: 0.25
@@ -5178,7 +5119,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 0
+    m_Start: 1.4166666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 1426827132634440102}
     m_Duration: 0.7333333333333333
@@ -5229,7 +5170,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 35.1454618953
+    m_Start: 36.06212856196667
     m_ClipIn: 0
     m_Asset: {fileID: -3167281104186887745}
     m_Duration: 0.25
@@ -5280,7 +5221,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 34.8954618953
+    m_Start: 35.81212856196667
     m_ClipIn: 0
     m_Asset: {fileID: 2647188949996802041}
     m_Duration: 0.25
@@ -5349,7 +5290,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 36.847911039864
+    m_Start: 37.764577706530666
     m_ClipIn: 0
     m_Asset: {fileID: 4778223820063151213}
     m_Duration: 0.25
@@ -5418,7 +5359,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 37.097911039864
+    m_Start: 38.014577706530666
     m_ClipIn: 0
     m_Asset: {fileID: 5955863564764118393}
     m_Duration: 0.25
@@ -5469,7 +5410,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 37.830365137693796
+    m_Start: 38.747031804360454
     m_ClipIn: 0
     m_Asset: {fileID: 7321009028167560746}
     m_Duration: 0.25
@@ -5538,7 +5479,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 38.080365137693796
+    m_Start: 38.997031804360454
     m_ClipIn: 0
     m_Asset: {fileID: 1778434262128697484}
     m_Duration: 0.25
@@ -5589,7 +5530,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 38.8128192355067
+    m_Start: 39.72948590217336
     m_ClipIn: 0
     m_Asset: {fileID: -6593105438718541061}
     m_Duration: 0.25
@@ -5658,7 +5599,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 39.0628192355067
+    m_Start: 39.97948590217336
     m_ClipIn: 0
     m_Asset: {fileID: -875816394275829455}
     m_Duration: 0.25
@@ -5709,7 +5650,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 40.8532353004441
+    m_Start: 41.76990196711076
     m_ClipIn: 0
     m_Asset: {fileID: -6007521737109254001}
     m_Duration: 0.25
@@ -5778,7 +5719,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 41.1032353004441
+    m_Start: 42.01990196711076
     m_ClipIn: 0
     m_Asset: {fileID: -8047332211829911857}
     m_Duration: 0.25
@@ -5829,7 +5770,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 41.83568939827389
+    m_Start: 42.75235606494055
     m_ClipIn: 0
     m_Asset: {fileID: 7670998755102068397}
     m_Duration: 0.25
@@ -5898,7 +5839,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 42.08568939827389
+    m_Start: 43.00235606494055
     m_ClipIn: 0
     m_Asset: {fileID: -1416328422245165726}
     m_Duration: 0.25
@@ -5949,7 +5890,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 42.8181434960868
+    m_Start: 43.734810162753455
     m_ClipIn: 0
     m_Asset: {fileID: -766216607221725794}
     m_Duration: 0.25
@@ -6018,7 +5959,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 43.0681434960868
+    m_Start: 43.984810162753455
     m_ClipIn: 0
     m_Asset: {fileID: -6279108439079738548}
     m_Duration: 0.25
@@ -6069,7 +6010,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 44.7705926406508
+    m_Start: 45.687259307317454
     m_ClipIn: 0
     m_Asset: {fileID: 2553454592364396937}
     m_Duration: 0.25
@@ -6138,7 +6079,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 45.0205926406508
+    m_Start: 45.937259307317454
     m_ClipIn: 0
     m_Asset: {fileID: 6753914763018701673}
     m_Duration: 0.25
@@ -6189,7 +6130,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 45.75304673848059
+    m_Start: 46.669713405147256
     m_ClipIn: 0
     m_Asset: {fileID: -6829461173966515365}
     m_Duration: 0.25
@@ -6258,7 +6199,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 46.00304673848059
+    m_Start: 46.919713405147256
     m_ClipIn: 0
     m_Asset: {fileID: -3293509358953144776}
     m_Duration: 0.25
@@ -6309,7 +6250,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 46.7355008362935
+    m_Start: 47.65216750296016
     m_ClipIn: 0
     m_Asset: {fileID: 4158641113499068359}
     m_Duration: 0.25
@@ -6378,7 +6319,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 46.9855008362935
+    m_Start: 47.90216750296016
     m_ClipIn: 0
     m_Asset: {fileID: 7525945120815884853}
     m_Duration: 0.25
@@ -6429,7 +6370,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 48.7972482293223
+    m_Start: 49.71391489598896
     m_ClipIn: 0
     m_Asset: {fileID: -4113076488891439938}
     m_Duration: 0.25
@@ -6498,7 +6439,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 49.0472482293223
+    m_Start: 49.96391489598896
     m_ClipIn: 0
     m_Asset: {fileID: -5059612155797151623}
     m_Duration: 0.25
@@ -6549,7 +6490,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 49.779702327152094
+    m_Start: 50.69636899381876
     m_ClipIn: 0
     m_Asset: {fileID: -7859784671483618678}
     m_Duration: 0.25
@@ -6618,7 +6559,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 50.029702327152094
+    m_Start: 50.94636899381876
     m_ClipIn: 0
     m_Asset: {fileID: -5644666646475768245}
     m_Duration: 0.25
@@ -6669,7 +6610,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 50.762156424965
+    m_Start: 51.67882309163166
     m_ClipIn: 0
     m_Asset: {fileID: -2380544774549444898}
     m_Duration: 0.25
@@ -6738,7 +6679,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 51.012156424965
+    m_Start: 51.92882309163166
     m_ClipIn: 0
     m_Asset: {fileID: 5711189229184875058}
     m_Duration: 0.25
@@ -6789,7 +6730,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 52.714605569529
+    m_Start: 53.63127223619566
     m_ClipIn: 0
     m_Asset: {fileID: -281613493595630972}
     m_Duration: 0.25
@@ -6858,7 +6799,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 52.964605569529
+    m_Start: 53.88127223619566
     m_ClipIn: 0
     m_Asset: {fileID: 4513382753510116579}
     m_Duration: 0.25
@@ -6909,7 +6850,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 53.69705966735879
+    m_Start: 54.61372633402545
     m_ClipIn: 0
     m_Asset: {fileID: 8760714645703494279}
     m_Duration: 0.25
@@ -6978,7 +6919,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 53.94705966735879
+    m_Start: 54.86372633402545
     m_ClipIn: 0
     m_Asset: {fileID: 6737972533205749904}
     m_Duration: 0.25
@@ -7029,7 +6970,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 54.6795137651717
+    m_Start: 55.596180431838356
     m_ClipIn: 0
     m_Asset: {fileID: -715962462771894588}
     m_Duration: 0.25
@@ -7098,7 +7039,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 54.9295137651717
+    m_Start: 55.846180431838356
     m_ClipIn: 0
     m_Asset: {fileID: -2225962795488537068}
     m_Duration: 0.25
@@ -7149,7 +7090,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 60.6730594827483
+    m_Start: 61.589726149414965
     m_ClipIn: 0
     m_Asset: {fileID: 8525700086082694373}
     m_Duration: 0.25
@@ -7218,7 +7159,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 60.9230594827483
+    m_Start: 61.839726149414965
     m_ClipIn: 0
     m_Asset: {fileID: -1263167868745970556}
     m_Duration: 0.25
@@ -7269,7 +7210,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 61.655513580578095
+    m_Start: 62.57218024724475
     m_ClipIn: 0
     m_Asset: {fileID: 301243591043439077}
     m_Duration: 0.25
@@ -7338,7 +7279,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 61.905513580578095
+    m_Start: 62.82218024724475
     m_ClipIn: 0
     m_Asset: {fileID: 1926480643986908831}
     m_Duration: 0.25
@@ -7389,7 +7330,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 62.637967678391
+    m_Start: 63.554634345057664
     m_ClipIn: 0
     m_Asset: {fileID: -8903914653970875944}
     m_Duration: 0.25
@@ -7398,7 +7339,7 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendOutDuration: 0
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -7425,25 +7366,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -7458,7 +7381,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 62.887967678391
+    m_Start: 63.80463434505765
     m_ClipIn: 0
     m_Asset: {fileID: 2423192096829939750}
     m_Duration: 0.25
@@ -7466,7 +7389,7 @@ MonoBehaviour:
     m_ParentTrack: {fileID: -4166632009921175116}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
+    m_BlendInDuration: 0
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -7509,7 +7432,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 63.137967678391
+    m_Start: 64.05463434505765
     m_ClipIn: 0
     m_Asset: {fileID: 4956665020868480900}
     m_Duration: 0.4453656549423357
@@ -8058,7 +7981,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82cd92ffc29383742932b27ca414c80f, type: 3}
-  m_Name: Playable Track
+  m_Name: GVoxelizer
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -9975,167 +9898,6 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
---- !u!114 &-1576538425332591190
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82cd92ffc29383742932b27ca414c80f, type: 3}
-  m_Name: Flame V1
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 1
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: -8679346330856443903}
-  m_Children: []
-  m_Clips:
-  - m_Version: 1
-    m_Start: 95.3586388317053
-    m_ClipIn: 0
-    m_Asset: {fileID: -4915352183388902894}
-    m_Duration: 0.1
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -1576538425332591190}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: FlameVFXPlayableAsset
-  - m_Version: 1
-    m_Start: 97.36666666666666
-    m_ClipIn: 0
-    m_Asset: {fileID: 1806262487664584177}
-    m_Duration: 0.1
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -1576538425332591190}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: FlameVFXPlayableAsset
-  m_Markers:
-    m_Objects: []
 --- !u!114 &-1570610596415472055
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10672,30 +10434,6 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
-  m_Markers:
-    m_Objects: []
---- !u!114 &-1080725889384448813
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
-  m_Name: Warp
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 0
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: 7241820219642980338}
-  m_Children:
-  - {fileID: -7737217822673140143}
-  m_Clips: []
   m_Markers:
     m_Objects: []
 --- !u!114 &-931024109729291039
@@ -14850,29 +14588,6 @@ MonoBehaviour:
     defaultValue: {fileID: 0}
   deformationType: 2
   deformationValueRange: {x: 0.1, y: 0}
---- !u!114 &1806262487664584177
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 321606f6a37f1754986999b348b385f5, type: 3}
-  m_Name: FlameVFXPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  flameVfxV1Obj:
-    exposedName: 0a21240e89a098f48a9660b541830822
-    defaultValue: {fileID: 0}
-  flameVfxV2Obj:
-    exposedName: 41918aaff0ecd864cac02fb261986dc7
-    defaultValue: {fileID: 0}
-  dancerMeshObj:
-    exposedName: c6ce28f14ce100242bcea57a9ae36c49
-    defaultValue: {fileID: 0}
-  isStart: 0
-  flameType: 0
 --- !u!74 &1907944707118864529
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -20469,7 +20184,6 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children:
   - {fileID: -1810558659354475844}
-  - {fileID: -1080725889384448813}
   - {fileID: 955084483920420258}
   - {fileID: 968220456412486889}
   m_Clips: []

@@ -24,7 +24,6 @@ namespace VFXProject4D
         //Start
         public override void OnGraphStart(Playable playable)
         {
-            this.alphaDancerMaterial = this.dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterials[0];
         }
 
         //OnDestory
@@ -35,6 +34,11 @@ namespace VFXProject4D
         // Called when the state of the playable is set to Play
         public override void OnBehaviourPlay(Playable playable, FrameData info)
         {
+            MeshRenderer renderer = this.dancerMeshObj.GetComponent<MeshRenderer>();
+            if (this.alphaDancerMaterial == null && renderer != null) {
+            this.alphaDancerMaterial = renderer.sharedMaterials[0];
+
+            }
         }
 
         // Called when the state of the playable is set to Paused
