@@ -126,26 +126,29 @@ namespace VFXProject4D
             return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
         }
 
-        public void OnRotateScene(float midiNomalizedValue)
+        public void OnRotateScene(float midiNormalizedValue)
         {
-            if (midiNomalizedValue < 0.01f) { midiNomalizedValue = 0.0f; }
-            this.sceneLinearMotion.angularVelocity.y = SCENE_ROTATION_Y_DEGREE * midiNomalizedValue;
+            if (midiNormalizedValue < 0.01f) { midiNormalizedValue = 0.0f; }
+            this.sceneLinearMotion.angularVelocity.y = SCENE_ROTATION_Y_DEGREE * midiNormalizedValue;
+            this.SaveEffectTimePerSomeFrame("OnRotateScene", midiNormalizedValue);
+            
 
-            //Debug.Log(midiNomalizedValue);
+            //Debug.Log(midiNormalizedValue);
         }
         //
         // Human body shader
         //
-        public void OnModifyNoiseDistortion(float midiNomalizedValue)
+        public void OnModifyNoiseDistortion(float midiNormalizedValue)
         {
-            //Debug.Log("OnNoiseDistortion value: " + midiNomalizedValue);
-            alphaDancerMaterial.SetFloat("DistortionPower", midiNomalizedValue * 0.4f);
-            //this.SaveEffectTime("NoiseDistortion,Value=" + midiNomalizedValue);
+            //Debug.Log("OnNoiseDistortion value: " + midiNormalizedValue);
+            alphaDancerMaterial.SetFloat("DistortionPower", midiNormalizedValue * 0.4f);
+            this.SaveEffectTimeForDistortion("OnModifyNoiseDistortion", midiNormalizedValue);
         }
 
-        public void OnModifyTwist(float midiNomalizedValue)
+        public void OnModifyTwist(float midiNormalizedValue)
         {
-            alphaDancerMaterial.SetFloat("TwistPercent", midiNomalizedValue);
+            alphaDancerMaterial.SetFloat("TwistPercent", midiNormalizedValue);
+            this.SaveEffectTimeForDistortion("OnModifyTwist", midiNormalizedValue);
         }
 
         public void OnStartMIDITwist()
@@ -176,32 +179,36 @@ namespace VFXProject4D
             this.SaveEffectTime("StopTriangleV1");
         }
         
-        public void OnYRotateTriangle(float midiNomalizedValue)
+        public void OnYRotateTriangle(float midiNormalizedValue)
         {
-            this.currentTriangleYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * midiNomalizedValue;
-            //Debug.Log(midiNomalizedValue);
+            this.currentTriangleYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * midiNormalizedValue;
+            //Debug.Log(midiNormalizedValue);
+            this.SaveEffectTimePerSomeFrame("OnYRotateTriangle", midiNormalizedValue);
         }
         
-        public void OnXRotateTriangle(float midiNomalizedValue)
+        public void OnXRotateTriangle(float midiNormalizedValue)
         {
-            this.currentTriangleXRotateSpeed = 3.14f * midiNomalizedValue;
+            this.currentTriangleXRotateSpeed = 3.14f * midiNormalizedValue;
             this.triangleObj.transform.Rotate( Vector3.right, this.currentTriangleXRotateSpeed);
+            this.SaveEffectTimePerSomeFrame("OnXRotateTriangle", midiNormalizedValue);
 
-            //Debug.Log(midiNomalizedValue);
+            //Debug.Log(midiNormalizedValue);
         }
 
-        public void OnYRotateRect(float midiNomalizedValue)
+        public void OnYRotateRect(float midiNormalizedValue)
         {
-            this.currentRectYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * midiNomalizedValue;
-            //Debug.Log(midiNomalizedValue);
+            this.currentRectYRotateSpeed = SHAPE_ROTATION_Y_DEGREE_PER_SEC * midiNormalizedValue;
+            //Debug.Log(midiNormalizedValue);
+            this.SaveEffectTimePerSomeFrame("OnYRotateRect", midiNormalizedValue);
         }
         
-        public void OnXRotateRect(float midiNomalizedValue)
+        public void OnXRotateRect(float midiNormalizedValue)
         {
-            this.currentRectXRotateSpeed = 3.14f * midiNomalizedValue;
+            this.currentRectXRotateSpeed = 3.14f * midiNormalizedValue;
             this.rectObj.transform.Rotate( Vector3.right, this.currentRectXRotateSpeed);
 
-            //Debug.Log(midiNomalizedValue);
+            this.SaveEffectTimePerSomeFrame("OnXRotateRect", midiNormalizedValue);
+            //Debug.Log(midiNormalizedValue);
         }
 
         public void OnStartRectV1()
@@ -336,13 +343,14 @@ namespace VFXProject4D
             this.SaveEffectTime("WarpV2ReturnToOrigin");
         }
 
-        public void OnRotateYFlame(float midiNomalizedValue)
+        public void OnRotateYFlame(float midiNormalizedValue)
         {
-            Vector3 v = new Vector3(0, remap(midiNomalizedValue, 0, 1, 1, -1) * 180f, 0);
+            Vector3 v = new Vector3(0, remap(midiNormalizedValue, 0, 1, 1, -1) * 180f, 0);
             v.x = -12f;
             this.flameV1.SetVector3("WindAngle", v);
             v.x = -12f;
             this.flameV2.SetVector3("WindAngle", v);
+            this.SaveEffectTimePerSomeFrame("OnRotateYFlame", midiNormalizedValue);
         }
         
         
@@ -390,6 +398,16 @@ namespace VFXProject4D
             effectTimeWritter.Close();
         }
         
+        void SaveEffectTimeForDistortion(string effectName, float midiNormalizedValue)
+        {
+            //if (Time.frameCount % 3 == 0) { this.SaveEffectTime(effectName + ",Value=" + midiNormalizedValue); }
+            if (midiNormalizedValue <= 0.025f) { this.SaveEffectTime(effectName + ",Value=" + midiNormalizedValue); }
+        }
+        
+        void SaveEffectTimePerSomeFrame(string effectName, float midiNormalizedValue)
+        {
+            if (Time.frameCount % 8 == 0) { this.SaveEffectTime(effectName + ",Value=" + midiNormalizedValue); }
+        }
         void SaveEffectTime(string effectName)
         {
             //Debug.LogFormat("effectTime: {0}, effectName: {1}", this.volumetricVideoDirector.time, effectName);

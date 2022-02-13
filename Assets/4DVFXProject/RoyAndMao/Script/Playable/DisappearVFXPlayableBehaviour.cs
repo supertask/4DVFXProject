@@ -22,9 +22,11 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
 
     private Material alphaDancerMaterial; 
     
-    private const float RANDOM_TARGET_POSITION_MAX_X = 1.0f;
-    private const float RANDOM_TARGET_POSITION_MAX_Y = 0.15f;
-    private const float RANDOM_TARGET_POSITION_MAX_Z = 1.0f;
+    //private const float RANDOM_TARGET_POSITION_MAX_X = 1.0f;
+    //private const float RANDOM_TARGET_POSITION_MAX_Z = 1.0f;
+    private const float RANDOM_TARGET_POSITION_MAX_X = 0.8f;
+    private const float RANDOM_TARGET_POSITION_MAX_Z = 0.8f;
+    private const float RANDOM_TARGET_POSITION_MAX_Y = 0.1f;
     private const float DISSOLVE_TIME = 0.4f; // progress: 0 to 1
     private const float APPEAR_TIME = 0.62f; // progress: 0 to 1
 

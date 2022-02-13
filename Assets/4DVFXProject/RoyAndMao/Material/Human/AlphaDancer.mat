@@ -171,7 +171,7 @@ Material:
     - DissolvePercent: 0
     - DissolveScale: 40
     - DistortionNoiseScale: 0.4
-    - DistortionPower: 0.0062992135
+    - DistortionPower: 0
     - DistortionTimeScale: 6
     - EmissionPercent: 0.542
     - HeightDissolveHeight: 1.8
@@ -189,7 +189,7 @@ Material:
     - SpikeNormalPower: 3
     - SpikeThreshold: 0.2
     - TwistAngleScale: 2
-    - TwistPercent: 0.007874017
+    - TwistPercent: 0
     - TwistRadius: 2
     - TwistTimeScale: 10
     - _AORemapMax: 1
