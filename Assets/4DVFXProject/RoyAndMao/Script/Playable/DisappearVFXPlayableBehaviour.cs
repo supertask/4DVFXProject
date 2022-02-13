@@ -29,13 +29,15 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
     private const float RANDOM_TARGET_POSITION_MAX_Y = 0.1f;
     private const float DISSOLVE_TIME = 0.4f; // progress: 0 to 1
     private const float APPEAR_TIME = 0.62f; // progress: 0 to 1
+    
+    private Vector3 exLocalPosition;
 
     //Start
     public override void OnGraphStart(Playable playable)
     {
         this.alphaDancerMaterial = this.dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterials[0];
         this.disappearVfx = this.warpVfxObj.GetComponent<VisualEffect>();
-        Debug.LogFormat("ActorTargetPosition OnGraphStart = {0}", this.disappearVfx.GetVector3("ActorTargetPosition"));
+        //Debug.LogFormat("ActorTargetPosition OnGraphStart = {0}", this.disappearVfx.GetVector3("ActorTargetPosition"));
 
         //this.disappearVfx.SetVector3("ActorSourcePosition", Vector3.zero);
         //this.disappearVfx.SetVector3("ActorTargetPosition", Vector3.zero);
@@ -49,9 +51,12 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
     // Called when the state of the playable is set to Play
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
-        Debug.Log(disappearVfx);
+        //Debug.Log(disappearVfx);
         Vector3 actorSourcePosition = this.disappearVfx.GetVector3("ActorTargetPosition");
-        Debug.LogFormat("actorSourcePosition = {0}", actorSourcePosition);
+        //Debug.LogFormat("actorSourcePosition = {0}", actorSourcePosition);
+        //Debug.Log("exLocalPosition" + this.disappearVfx.GetVector3("ActorLocalTargetPosition"));
+            Debug.LogFormat("dancerMeshObj.transform.localPosition OnBehaviourPlay = {0}, {1}, {2}",
+                dancerMeshObj.transform.localPosition.x, dancerMeshObj.transform.localPosition.y, dancerMeshObj.transform.localPosition.z );
 
         //
         //Set a target position randomly
@@ -83,6 +88,8 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
 
 
         //Debug.LogFormat("actorSourcePosition = {0}, actorTargetPosition = {1}", actorSourcePosition, actorTargetPosition);
+        Debug.LogFormat("actorTargetPosition = {0},{1},{2}", actorTargetPosition.x, actorTargetPosition.y, actorTargetPosition.z);
+
         
         this.disappearVfx.SetVector3("ActorSourcePosition", actorSourcePosition);
         this.disappearVfx.SetVector3("ActorTargetPosition", actorTargetPosition);
@@ -91,7 +98,8 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
         //this.warpVfxObj.GetComponent<MeshRenderer>().enabled = true;
         //this.dancerMeshObj.GetComponent<MeshRenderer>().enabled = true;
         
-        //3.21
+        
+        //this.disappearVfx.SetVector3("ActorMeshTargetPosition", actorTargetPosition);
     }
 
     // Called when the state of the playable is set to Paused
@@ -102,6 +110,7 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
         //Debug.Log("OnBehaviourPause");
     }
 
+    /*
     private IEnumerator DissolveDancer(bool isDisappeaer, float duration ) {
         
         float t0to1 = 0.0f;
@@ -117,6 +126,7 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
             yield return null;
         }
     }
+    */
 
     public float remap(float value, float from1 = 0, float to1 = 10, float from2 = -0.1f, float to2 = 0.1f)
     {
@@ -145,7 +155,10 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
         {
             Vector3 actorTargetPosition = this.disappearVfx.GetVector3("ActorTargetPosition");
             dancerMeshObj.transform.localPosition = actorTargetPosition;
-            Debug.Log("actorTargetPosition = " + actorTargetPosition);
+            //Debug.Log("actorTargetPosition = " + actorTargetPosition);
+            Debug.LogFormat("dancerMeshObj.transform.localPosition = {0}, {1}, {2}",
+                dancerMeshObj.transform.localPosition.x, dancerMeshObj.transform.localPosition.y, dancerMeshObj.transform.localPosition.z );
+
         }
         
     }
