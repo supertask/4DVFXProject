@@ -16,6 +16,9 @@ public class GVoxelizerVFXPlayableBehaviour : PlayableBehaviour
     public GameObject dancerMeshObj;
     public GameObject gvoxelizerVfxObj;
     public bool isDarkToDefaultColor;
+    
+    public static readonly string DANCER_OBJ_NAME = "Mao/Mao";
+    public static readonly string GVOXELIZER_OBJ_NAME = "Mao/VFX/MaoGVoxelizer";
 
     private VisualEffect gvoxelizerVfx;
     private Material alphaDancerMaterial;
@@ -23,6 +26,9 @@ public class GVoxelizerVFXPlayableBehaviour : PlayableBehaviour
     //Start
     public override void OnGraphStart(Playable playable)
     {
+        this.dancerMeshObj = GameObject.Find(DANCER_OBJ_NAME);
+        this.gvoxelizerVfxObj = GameObject.Find(GVOXELIZER_OBJ_NAME);
+        
         this.alphaDancerMaterial = this.dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterials[0];
         this.gvoxelizerVfx = this.gvoxelizerVfxObj.GetComponent<VisualEffect>();
         //Debug.LogFormat("ActorTargetPosition OnGraphStart = {0}", this.gvoxelizerVfx.GetVector3("ActorTargetPosition"));

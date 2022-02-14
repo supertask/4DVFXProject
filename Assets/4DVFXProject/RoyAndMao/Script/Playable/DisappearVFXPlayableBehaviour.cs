@@ -17,6 +17,9 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
     public GameObject warpVfxObj;
     public bool isReturnToOrigin;
 
+    public static readonly string DANCER_OBJ_NAME = "Mao/Mao";
+    public static readonly string WARP_OBJ_NAME = "Mao/VFX/MaoWarpV2";
+
     private Volume volumeProfile;
     private VisualEffect disappearVfx;
 
@@ -35,6 +38,9 @@ public class DisappearVFXPlayableBehaviour : PlayableBehaviour
     //Start
     public override void OnGraphStart(Playable playable)
     {
+        this.dancerMeshObj = GameObject.Find(DANCER_OBJ_NAME);
+        this.warpVfxObj = GameObject.Find(WARP_OBJ_NAME);
+        
         this.alphaDancerMaterial = this.dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterials[0];
         this.disappearVfx = this.warpVfxObj.GetComponent<VisualEffect>();
         //Debug.LogFormat("ActorTargetPosition OnGraphStart = {0}", this.disappearVfx.GetVector3("ActorTargetPosition"));

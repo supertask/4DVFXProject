@@ -37,6 +37,18 @@ namespace VFXProject4D
         public GameObject scenePivotObj;
 
         [Space]
+        public static readonly float SHAPE_ROTATION_Y_DEGREE_PER_SEC = 180.0f * 6;
+        public static readonly float SHAPE_ROTATION_X_DEGREE = 180.0f;
+        public static readonly float SCENE_ROTATION_Y_DEGREE = 360.0f;
+
+        public float currentTriangleYRotateSpeed;
+        public float currentTriangleXRotateSpeed;
+        public float currentRectYRotateSpeed;
+        public float currentRectXRotateSpeed;
+        
+        public bool isSaveEffectTime;
+
+        [Space]
 
         [SerializeField] public VisualEffect flameV1;
         [SerializeField] public VisualEffect flameV2;
@@ -78,16 +90,7 @@ namespace VFXProject4D
         private LinearMotion sceneLinearMotion;
         
         private string effectTimelineString;
-        
-        private float SHAPE_ROTATION_Y_DEGREE_PER_SEC = 180.0f * 6;
-        private float SHAPE_ROTATION_X_DEGREE = 180.0f;
-        
-        private float SCENE_ROTATION_Y_DEGREE = 360.0f;
 
-        private float currentTriangleYRotateSpeed;
-        private float currentTriangleXRotateSpeed;
-        private float currentRectYRotateSpeed;
-        private float currentRectXRotateSpeed;
         
         #endregion
 
@@ -131,8 +134,6 @@ namespace VFXProject4D
             if (midiNormalizedValue < 0.01f) { midiNormalizedValue = 0.0f; }
             this.sceneLinearMotion.angularVelocity.y = SCENE_ROTATION_Y_DEGREE * midiNormalizedValue;
             this.SaveEffectTimePerSomeFrame("OnRotateScene", midiNormalizedValue);
-            
-
             //Debug.Log(midiNormalizedValue);
         }
         //
@@ -410,6 +411,7 @@ namespace VFXProject4D
         }
         void SaveEffectTime(string effectName)
         {
+            if (! this.isSaveEffectTime) { return; }
             //Debug.LogFormat("effectTime: {0}, effectName: {1}", this.volumetricVideoDirector.time, effectName);
             effectTimelineString += String.Format("{0},{1}\n", this.volumetricVideoDirector.time, effectName);
         }

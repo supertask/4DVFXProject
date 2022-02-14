@@ -18,12 +18,14 @@ namespace VFXProject4D
         public GameObject dancerMeshObj;
         public DeformationType deformationType;
         public Vector2 deformationValueRange;
+        public static readonly string DANCER_OBJ_NAME = "Mao/Mao";
 
         private Material alphaDancerMaterial; 
         
         //Start
         public override void OnGraphStart(Playable playable)
         {
+            this.dancerMeshObj = GameObject.Find(DANCER_OBJ_NAME);
         }
 
         //OnDestory

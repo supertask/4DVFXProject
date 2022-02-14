@@ -97,7 +97,7 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 #endif
 	}
 	
-	void OnDestory()
+	void OnDestroy()
 	{
 #if UNITY_EDITOR
 		//DepthKitのDepthKitClipは終了後，metadataが初期化されるので，上書きする

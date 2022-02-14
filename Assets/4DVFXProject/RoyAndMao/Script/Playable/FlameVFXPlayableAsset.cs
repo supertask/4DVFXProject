@@ -14,8 +14,8 @@ public enum FlameType {
 [System.Serializable]
 public class FlameVFXPlayableAsset : PlayableAsset
 {
-    public ExposedReference<GameObject> flameVfxV1Obj;
-    public ExposedReference<GameObject> flameVfxV2Obj;
+    //public ExposedReference<GameObject> flameVfxV1Obj;
+    //public ExposedReference<GameObject> flameVfxV2Obj;
 
     public ExposedReference<GameObject> dancerMeshObj;
     public bool isStart = true;
@@ -25,10 +25,10 @@ public class FlameVFXPlayableAsset : PlayableAsset
     {
         //behaviourに対してパラメータを入れ込んでいく
         FlameVFXPlayableBehaviour behaviour = new FlameVFXPlayableBehaviour();
-        behaviour.flameVfxV1Obj = this.flameVfxV1Obj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
-        behaviour.flameVfxV2Obj = this.flameVfxV2Obj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
+        //behaviour.flameVfxV1Obj = this.flameVfxV1Obj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
+        //behaviour.flameVfxV2Obj = this.flameVfxV2Obj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
 
-        behaviour.dancerMeshObj = this.dancerMeshObj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
+        //behaviour.dancerMeshObj = this.dancerMeshObj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
         behaviour.isStart = isStart;
         behaviour.flameType = flameType;
 

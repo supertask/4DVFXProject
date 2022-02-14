@@ -20,7 +20,7 @@ namespace VFXProject4D
     [System.Serializable]
     public class MaterialSwitcherPlayableAsset : PlayableAsset
     {
-        public ExposedReference<GameObject> dancerMeshObj;
+        //public ExposedReference<GameObject> dancerMeshObj;
         public DeformationType deformationType;
         public Vector2 deformationValueRange = new Vector2(0,1);
 
@@ -28,7 +28,7 @@ namespace VFXProject4D
         {
             //behaviourに対してパラメータを入れ込んでいく
             MaterialSwitcherPlayableBehaviour behaviour = new MaterialSwitcherPlayableBehaviour();
-            behaviour.dancerMeshObj = this.dancerMeshObj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
+            //behaviour.dancerMeshObj = this.dancerMeshObj.Resolve(graph.GetResolver()); //ExposedReferenceからとる時のおまじない
             behaviour.deformationType = this.deformationType;
             behaviour.deformationValueRange = this.deformationValueRange;
 

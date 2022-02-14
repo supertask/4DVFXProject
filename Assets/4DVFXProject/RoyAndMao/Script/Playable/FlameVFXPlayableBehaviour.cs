@@ -18,6 +18,10 @@ public class FlameVFXPlayableBehaviour : PlayableBehaviour
     public GameObject flameVfxV2Obj;
     public bool isStart;
     public FlameType flameType;
+    
+    public static readonly string DANCER_OBJ_NAME = "Mao/Mao";
+    public static readonly string FLAME_V1_OBJ_NAME = "Mao/VFX/MaoFlameV1";
+    public static readonly string FLAME_V2_OBJ_NAME = "Mao/VFX/MaoFlameV2";
 
     private VisualEffect flameVfxV1;
     private VisualEffect flameVfxV2;
@@ -27,6 +31,10 @@ public class FlameVFXPlayableBehaviour : PlayableBehaviour
     //Start
     public override void OnGraphStart(Playable playable)
     {
+        this.dancerMeshObj = GameObject.Find(DANCER_OBJ_NAME);
+        this.flameVfxV1Obj = GameObject.Find(FLAME_V1_OBJ_NAME);
+        this.flameVfxV2Obj = GameObject.Find(FLAME_V2_OBJ_NAME);
+        
         this.alphaDancerMaterial = this.dancerMeshObj.GetComponent<MeshRenderer>().sharedMaterials[0];
         this.flameVfxV1 = this.flameVfxV1Obj.GetComponent<VisualEffect>();
         this.flameVfxV2 = this.flameVfxV2Obj.GetComponent<VisualEffect>();
