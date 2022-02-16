@@ -586,11 +586,6 @@ MonoBehaviour:
   frequency: 0.1
   octaves: 2
   seed: 0
---- !u!2083052967 &1118581716 stripped
-VisualEffect:
-  m_CorrespondingSourceObject: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-  m_PrefabInstance: {fileID: 3648574451176413358}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1141203488
 GameObject:
   m_ObjectHideFlags: 1
@@ -653,11 +648,6 @@ Transform:
   m_Father: {fileID: 1141203489}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1643415110 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8812031143944666880, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-  m_PrefabInstance: {fileID: 3648574451176413358}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1788100065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,26 +1185,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3648574449834625586, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.size
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 3648574449834625586, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.data[43].key
-      value: 
-      objectReference: {fileID: -9149842712231343996, guid: 132d1fbeaa5e25b41b8d7beeb1722c7e, type: 2}
-    - target: {fileID: 3648574449834625586, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.data[44].key
-      value: 
-      objectReference: {fileID: -257085305730516252, guid: 132d1fbeaa5e25b41b8d7beeb1722c7e, type: 2}
-    - target: {fileID: 3648574449834625586, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.data[43].value
-      value: 
-      objectReference: {fileID: 1118581716}
-    - target: {fileID: 3648574449834625586, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
-      propertyPath: m_SceneBindings.Array.data[44].value
-      value: 
-      objectReference: {fileID: 1643415110}
     - target: {fileID: 3648574449834625587, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: colorDataTexture
       value: 
@@ -1297,15 +1267,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4738808733075263009, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1751144
+      value: -1.6028954
       objectReference: {fileID: 0}
     - target: {fileID: 4738808733075263009, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8482417
+      value: 0.18849011
       objectReference: {fileID: 0}
     - target: {fileID: 4738808733075263009, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.1913282
+      value: -0.7518494
       objectReference: {fileID: 0}
     - target: {fileID: 4824642793293783721, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1321,15 +1291,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: 1.1751144
+      value: -1.6028954
       objectReference: {fileID: 0}
     - target: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
-      value: -0.8482417
+      value: 0.18849011
       objectReference: {fileID: 0}
     - target: {fileID: 6147768708590743027, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: -1.1913282
+      value: -0.7518494
       objectReference: {fileID: 0}
     - target: {fileID: 6178683748901708169, guid: 842a2ac20f6f65a418c42c36b4017976, type: 3}
       propertyPath: m_Mesh

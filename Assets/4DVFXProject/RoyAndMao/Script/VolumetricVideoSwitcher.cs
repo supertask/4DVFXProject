@@ -99,11 +99,13 @@ public class VolumetricVideoSwitcher : MonoBehaviour
 	
 	void OnDestroy()
 	{
+/*
 #if UNITY_EDITOR
 		//DepthKitのDepthKitClipは終了後，metadataが初期化されるので，上書きする
 		Debug.Log("Dancer:" + dancer);
 		this.AssignVolumetricVideoInfo((int)dancer);
 #endif
+*/
 	}
 
 	/*
