@@ -14,7 +14,8 @@ namespace VFXProject4D
     {
         MidiTwist,
         Twist,
-        NoiseDistortion
+        NoiseDistortion,
+        DissolveAlpha
     }
 
     [System.Serializable]

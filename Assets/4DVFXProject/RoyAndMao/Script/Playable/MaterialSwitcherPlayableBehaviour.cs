@@ -71,6 +71,10 @@ namespace VFXProject4D
             {
                 alphaDancerMaterial.SetFloat("DistortionPower", deformationValue);
             }
+            else if (this.deformationType == DeformationType.DissolveAlpha)
+            {
+                alphaDancerMaterial.SetFloat("DissolveAlpha", deformationValue);
+            }
         }
 
     }

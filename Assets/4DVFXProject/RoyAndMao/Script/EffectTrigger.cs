@@ -46,7 +46,7 @@ namespace VFXProject4D
         public float currentRectYRotateSpeed;
         public float currentRectXRotateSpeed;
         
-        public bool isSaveEffectTime;
+        public bool isSaveEffectTime = true;
 
         [Space]
 
