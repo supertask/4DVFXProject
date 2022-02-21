@@ -71,20 +71,6 @@ MonoBehaviour:
       m_Name: 
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
---- !u!114 &-8861205314713378813
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 0, y: 1}
 --- !u!114 &-8854344898595238105
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,7 +150,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0
+    m_Start: 6.816666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 2429513532169289278}
     m_Duration: 0.9333333333333333
@@ -215,58 +201,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 43.17294408008459
-    m_ClipIn: 0
-    m_Asset: {fileID: -7296424770502600143}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 63.8677359074354
+    m_Start: 70.68440257410205
     m_ClipIn: 0
     m_Asset: {fileID: -271230486877781429}
     m_Duration: 0.9333333333333333
@@ -317,364 +252,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 53.2246489990503
-    m_ClipIn: 0
-    m_Asset: {fileID: -5985078134371034077}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 54.5980760026723
-    m_ClipIn: 0
-    m_Asset: {fileID: 1946790470345181377}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 124.48410249874
-    m_ClipIn: 0
-    m_Asset: {fileID: -4271759286783959489}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 126.180603988469
-    m_ClipIn: 0
-    m_Asset: {fileID: -1401282607365805110}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 134.515706986189
-    m_ClipIn: 0
-    m_Asset: {fileID: -3501439576407556624}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 146.686960829422
-    m_ClipIn: 0
-    m_Asset: {fileID: 2973169118760332770}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 223.46666666666667
-    m_ClipIn: 0
-    m_Asset: {fileID: -8861205314713378813}
-    m_Duration: 0.9333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8633742399459442494}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: MaterialSwitcherPlayableAsset
-  - m_Version: 1
-    m_Start: 117.694441101576
+    m_Start: 111.01666666666665
     m_ClipIn: 0
     m_Asset: {fileID: -4813218926732762051}
     m_Duration: 0.9333333333333333
@@ -919,7 +497,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 110.824148502946
+    m_Start: 117.64081516961267
     m_ClipIn: 0
     m_Asset: {fileID: -4489778387403159704}
     m_Duration: 0.5925181637206691
@@ -970,7 +548,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MidiFloatPlayableAsset
   - m_Version: 1
-    m_Start: 112.8
+    m_Start: 119.61666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -4153271660519700731}
     m_Duration: 0.5166666666666657
@@ -1039,7 +617,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MidiFloatPlayableAsset
   - m_Version: 1
-    m_Start: 114.51666666666667
+    m_Start: 121.33333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 6390309074002342396}
     m_Duration: 0.5333333333333314
@@ -1108,7 +686,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MidiFloatPlayableAsset
   - m_Version: 1
-    m_Start: 117.21666666666667
+    m_Start: 124.03333333333333
     m_ClipIn: 0
     m_Asset: {fileID: -2383871806892506699}
     m_Duration: 0.5166666666666657
@@ -1177,7 +755,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MidiFloatPlayableAsset
   - m_Version: 1
-    m_Start: 111.41666666666667
+    m_Start: 118.23333333333333
     m_ClipIn: 0
     m_Asset: {fileID: -6166663422450516137}
     m_Duration: 1.0333333333333314
@@ -1292,7 +870,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0
+    m_Start: 6.816666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -1736010147626170078}
     m_Duration: 21.366666666666696
@@ -1362,20 +940,6 @@ MonoBehaviour:
     m_DisplayName: VisualEffectActivationClip
   m_Markers:
     m_Objects: []
---- !u!114 &-7296424770502600143
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 0, y: 1}
 --- !u!114 &-7101701474114426389
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1645,20 +1209,6 @@ MonoBehaviour:
       m_Name: 
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
---- !u!114 &-5985078134371034077
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 0, y: 1}
 --- !u!114 &-5857686047948995856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1903,20 +1453,6 @@ MonoBehaviour:
       m_Name: 
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
---- !u!114 &-4271759286783959489
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 0, y: 1}
 --- !u!114 &-4195457832106123540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1985,7 +1521,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 17.353932724408796
+    m_Start: 24.170599391075463
     m_ClipIn: 0
     m_Asset: {fileID: 9223187923142603753}
     m_Duration: 0.16606727559120316
@@ -2054,7 +1590,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 19.2408590308204
+    m_Start: 26.057525697487065
     m_ClipIn: 0
     m_Asset: {fileID: 7703314479205071933}
     m_Duration: 0.16606727559120316
@@ -2123,7 +1659,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 21.226669531390097
+    m_Start: 28.043336198056764
     m_ClipIn: 0
     m_Asset: {fileID: 8681402545360539457}
     m_Duration: 0.16606727559120316
@@ -2192,7 +1728,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 23.1377536189556
+    m_Start: 29.954420285622263
     m_ClipIn: 0
     m_Asset: {fileID: 8267617143257289177}
     m_Duration: 0.16606727559120316
@@ -2261,7 +1797,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 25.228191912248697
+    m_Start: 32.04485857891536
     m_ClipIn: 0
     m_Asset: {fileID: 8507044541658494733}
     m_Duration: 0.16606727559120316
@@ -2330,7 +1866,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 27.1940945182741
+    m_Start: 34.010761184940755
     m_ClipIn: 0
     m_Asset: {fileID: 5486210073071209337}
     m_Duration: 0.16606727559120316
@@ -2399,7 +1935,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 29.166096024289697
+    m_Start: 35.982762690956356
     m_ClipIn: 0
     m_Asset: {fileID: -8185318068906999526}
     m_Duration: 0.16606727559120316
@@ -2468,7 +2004,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 31.134219719171497
+    m_Start: 37.95088638583815
     m_ClipIn: 0
     m_Asset: {fileID: -8477177876247035851}
     m_Duration: 0.16606727559120316
@@ -2537,7 +2073,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.68851101219698
+    m_Start: 237.50517767886367
     m_ClipIn: 0
     m_Asset: {fileID: 6191518470522963322}
     m_Duration: 0.16606727559120316
@@ -2606,7 +2142,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.12308791473498
+    m_Start: 236.93975458140164
     m_ClipIn: 0
     m_Asset: {fileID: -6456056511699382316}
     m_Duration: 0.16606727559120316
@@ -2675,7 +2211,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 229.10433761224198
+    m_Start: 235.92100427890864
     m_ClipIn: 0
     m_Asset: {fileID: -1652538051838526378}
     m_Duration: 0.16606727559120316
@@ -2744,7 +2280,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 228.376876611337
+    m_Start: 235.1935432780037
     m_ClipIn: 0
     m_Asset: {fileID: 5866863962567538303}
     m_Duration: 0.16606727559120316
@@ -2874,7 +2410,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 32.9305536996573
+    m_Start: 39.74722036632396
     m_ClipIn: 0
     m_Asset: {fileID: -1114078219248524299}
     m_Duration: 14.903558600693998
@@ -2907,7 +2443,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: MaterialSwitcherPlayableAsset
   - m_Version: 1
-    m_Start: 0
+    m_Start: 6.816666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 3954661254605343400}
     m_Duration: 0.9333333333333333
@@ -3037,7 +2573,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 63.483333333333334
+    m_Start: 70.29999999999995
     m_ClipIn: 0
     m_Asset: {fileID: 959441480646352532}
     m_Duration: 18.266666666666666
@@ -3106,7 +2642,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 0.4166666666666643
+    m_Start: 7.233333333333332
     m_ClipIn: 0
     m_Asset: {fileID: 5578394540947449501}
     m_Duration: 1.0333333333333357
@@ -3272,20 +2808,6 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events: []
---- !u!114 &-3501439576407556624
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 0, y: 1}
 --- !u!114 &-2681260396636771802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3368,7 +2890,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1.08940949756652
+    m_Start: 7.906076164233187
     m_ClipIn: 0
     m_Asset: {fileID: -6682199299058772401}
     m_Duration: 0.11666666666666664
@@ -3437,7 +2959,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 3.20043839979917
+    m_Start: 10.017105066465838
     m_ClipIn: 0
     m_Asset: {fileID: 8339164566277727090}
     m_Duration: 0.11666666666666664
@@ -3506,7 +3028,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 4.70542170293629
+    m_Start: 11.522088369602958
     m_ClipIn: 0
     m_Asset: {fileID: -4308975404880377635}
     m_Duration: 0.11666666666666664
@@ -3575,7 +3097,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 6.16556410677731
+    m_Start: 12.98223077344398
     m_ClipIn: 0
     m_Asset: {fileID: 3085144426943555359}
     m_Duration: 0.11666666666666664
@@ -3644,7 +3166,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 8.11604310479015
+    m_Start: 14.932709771456821
     m_ClipIn: 0
     m_Asset: {fileID: 7806789876266849447}
     m_Duration: 0.11666666666666664
@@ -3713,7 +3235,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 10.1345414901152
+    m_Start: 16.951208156781867
     m_ClipIn: 0
     m_Asset: {fileID: 3998919772902831633}
     m_Duration: 0.11666666666666664
@@ -3782,7 +3304,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 12.085606192238
+    m_Start: 18.902272858904666
     m_ClipIn: 0
     m_Asset: {fileID: -1536073318834744578}
     m_Duration: 0.11666666666666664
@@ -3851,7 +3373,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 13.1035959897563
+    m_Start: 19.92026265642297
     m_ClipIn: 0
     m_Asset: {fileID: 2762538461955790094}
     m_Duration: 0.11666666666666664
@@ -3920,7 +3442,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 15.0735122915357
+    m_Start: 21.89017895820237
     m_ClipIn: 0
     m_Asset: {fileID: -3756890026741858720}
     m_Duration: 0.11666666666666664
@@ -3989,7 +3511,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 16.5808529928327
+    m_Start: 23.397519659499366
     m_ClipIn: 0
     m_Asset: {fileID: -1421976794684007440}
     m_Duration: 0.11666666666666664
@@ -4058,7 +3580,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 18.1629750896245
+    m_Start: 24.979641756291166
     m_ClipIn: 0
     m_Asset: {fileID: -260886693471442066}
     m_Duration: 0.11666666666666664
@@ -4127,7 +3649,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 20.0528849894181
+    m_Start: 26.869551656084766
     m_ClipIn: 0
     m_Asset: {fileID: 329979184005889187}
     m_Duration: 0.11666666666666664
@@ -4196,7 +3718,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 22.0797184882686
+    m_Start: 28.896385154935267
     m_ClipIn: 0
     m_Asset: {fileID: -7336248006439572790}
     m_Duration: 0.11666666666666664
@@ -4265,7 +3787,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 24.0279307877645
+    m_Start: 30.844597454431167
     m_ClipIn: 0
     m_Asset: {fileID: -6364142699141117741}
     m_Duration: 0.11666666666666664
@@ -4334,7 +3856,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 26.0466713914648
+    m_Start: 32.86333805813146
     m_ClipIn: 0
     m_Asset: {fileID: -3771509121949913100}
     m_Duration: 0.11666666666666664
@@ -4403,7 +3925,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 27.9556806003675
+    m_Start: 34.772347267034164
     m_ClipIn: 0
     m_Asset: {fileID: -8854344898595238105}
     m_Duration: 0.11666666666666664
@@ -4472,7 +3994,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 28.9869414977729
+    m_Start: 35.80360816443956
     m_ClipIn: 0
     m_Asset: {fileID: 1546368081568111885}
     m_Duration: 0.11666666666666664
@@ -4541,7 +4063,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 30.9859259957448
+    m_Start: 37.80259266241146
     m_ClipIn: 0
     m_Asset: {fileID: -4031333129672769356}
     m_Duration: 0.11666666666666664
@@ -4727,7 +4249,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0.5
+    m_Start: 7.316666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 4859297207497309736}
     m_Duration: 272.64959183673466
@@ -4857,7 +4379,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 18.3021621295065
+    m_Start: 25.11882879617317
     m_ClipIn: 0
     m_Asset: {fileID: 583369612975033373}
     m_Duration: 0.16606727559120316
@@ -4926,7 +4448,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 22.1497320216894
+    m_Start: 28.96639868835607
     m_ClipIn: 0
     m_Asset: {fileID: -2511829277545578902}
     m_Duration: 0.16606727559120316
@@ -4995,7 +4517,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 26.1641368177533
+    m_Start: 32.98080348441997
     m_ClipIn: 0
     m_Asset: {fileID: -5377564584975116121}
     m_Duration: 0.16606727559120316
@@ -5064,7 +4586,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 30.124491321928797
+    m_Start: 36.94115798859546
     m_ClipIn: 0
     m_Asset: {fileID: -6796269673088521706}
     m_Duration: 0.16606727559120316
@@ -5133,7 +4655,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 231.014272613525
+    m_Start: 237.83093928019167
     m_ClipIn: 0
     m_Asset: {fileID: -6001106952559553345}
     m_Duration: 0.16606727559120316
@@ -5202,7 +4724,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.31769131317702
+    m_Start: 237.13435797984368
     m_ClipIn: 0
     m_Asset: {fileID: 3596668546578319432}
     m_Duration: 0.16606727559120316
@@ -5271,7 +4793,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 229.50574291318702
+    m_Start: 236.32240957985368
     m_ClipIn: 0
     m_Asset: {fileID: 7951199741089430532}
     m_Duration: 0.16606727559120316
@@ -5340,7 +4862,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 228.68912871375701
+    m_Start: 235.5057953804237
     m_ClipIn: 0
     m_Asset: {fileID: 6772151138028632653}
     m_Duration: 0.16606727559120316
@@ -5429,20 +4951,6 @@ MonoBehaviour:
       m_Name: 
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
---- !u!114 &-1401282607365805110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 1, y: 0}
 --- !u!114 &-1377994423143285082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5465,7 +4973,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 17.1839327244088
+    m_Start: 24.00059939107547
     m_ClipIn: 0
     m_Asset: {fileID: 6985334870143571678}
     m_Duration: 0.16606727559120316
@@ -5534,7 +5042,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 19.0708590308204
+    m_Start: 25.88752569748707
     m_ClipIn: 0
     m_Asset: {fileID: 9037878150638105527}
     m_Duration: 0.16606727559120316
@@ -5603,7 +5111,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 21.0566695313901
+    m_Start: 27.87333619805677
     m_ClipIn: 0
     m_Asset: {fileID: 5167910776448485981}
     m_Duration: 0.16606727559120316
@@ -5672,7 +5180,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 22.9677536189556
+    m_Start: 29.78442028562227
     m_ClipIn: 0
     m_Asset: {fileID: 2433843433672196095}
     m_Duration: 0.16606727559120316
@@ -5741,7 +5249,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 25.0581919122487
+    m_Start: 31.874858578915372
     m_ClipIn: 0
     m_Asset: {fileID: 2461915545375580673}
     m_Duration: 0.16606727559120316
@@ -5810,7 +5318,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 27.0240945182741
+    m_Start: 33.84076118494077
     m_ClipIn: 0
     m_Asset: {fileID: 321442762516462099}
     m_Duration: 0.16606727559120316
@@ -5879,7 +5387,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 28.9960960242897
+    m_Start: 35.812762690956355
     m_ClipIn: 0
     m_Asset: {fileID: 7591569141236975782}
     m_Duration: 0.16606727559120316
@@ -5948,7 +5456,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 30.9642197191715
+    m_Start: 37.78088638583815
     m_ClipIn: 0
     m_Asset: {fileID: 1451424799587266805}
     m_Duration: 0.16606727559120316
@@ -6017,7 +5525,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.518511012197
+    m_Start: 237.33517767886366
     m_ClipIn: 0
     m_Asset: {fileID: -8187369297527183215}
     m_Duration: 0.16606727559120316
@@ -6086,7 +5594,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 229.953087914735
+    m_Start: 236.76975458140168
     m_ClipIn: 0
     m_Asset: {fileID: -5388061757677802521}
     m_Duration: 0.16606727559120316
@@ -6155,7 +5663,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 228.934337612242
+    m_Start: 235.75100427890868
     m_ClipIn: 0
     m_Asset: {fileID: 4442546781979532279}
     m_Duration: 0.16606727559120316
@@ -6224,7 +5732,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 228.206876611337
+    m_Start: 235.02354327800367
     m_ClipIn: 0
     m_Asset: {fileID: -4548886671826877280}
     m_Duration: 0.16606727559120316
@@ -6335,7 +5843,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0.5
+    m_Start: 7.316666666666667
     m_ClipIn: 0
     m_Asset: {fileID: -5518654652573442435}
     m_Duration: 238.08512471655328
@@ -6813,7 +6321,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 17.533932724408796
+    m_Start: 24.350599391075463
     m_ClipIn: 0
     m_Asset: {fileID: 1525988040146622247}
     m_Duration: 0.16606727559120316
@@ -6882,7 +6390,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 19.4208590308204
+    m_Start: 26.237525697487065
     m_ClipIn: 0
     m_Asset: {fileID: -6556814020637612370}
     m_Duration: 0.16606727559120316
@@ -6951,7 +6459,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 21.406669531390097
+    m_Start: 28.223336198056764
     m_ClipIn: 0
     m_Asset: {fileID: -5728126022188942855}
     m_Duration: 0.16606727559120316
@@ -7020,7 +6528,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 23.3177536189556
+    m_Start: 30.13442028562227
     m_ClipIn: 0
     m_Asset: {fileID: -259480642299902435}
     m_Duration: 0.16606727559120316
@@ -7089,7 +6597,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 25.408191912248697
+    m_Start: 32.22485857891537
     m_ClipIn: 0
     m_Asset: {fileID: 5123571284283034040}
     m_Duration: 0.16606727559120316
@@ -7158,7 +6666,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 27.3740945182741
+    m_Start: 34.19076118494076
     m_ClipIn: 0
     m_Asset: {fileID: -1711407710972633580}
     m_Duration: 0.16606727559120316
@@ -7227,7 +6735,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 29.346096024289697
+    m_Start: 36.16276269095635
     m_ClipIn: 0
     m_Asset: {fileID: 2037357309505943311}
     m_Duration: 0.16606727559120316
@@ -7296,7 +6804,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 31.314219719171497
+    m_Start: 38.13088638583816
     m_ClipIn: 0
     m_Asset: {fileID: -8451179093632880379}
     m_Duration: 0.16606727559120316
@@ -7365,7 +6873,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.868511012197
+    m_Start: 237.68517767886368
     m_ClipIn: 0
     m_Asset: {fileID: 3032011415598026375}
     m_Duration: 0.16606727559120316
@@ -7434,7 +6942,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.303087914735
+    m_Start: 237.11975458140165
     m_ClipIn: 0
     m_Asset: {fileID: -93947377682623750}
     m_Duration: 0.16606727559120316
@@ -7503,7 +7011,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 229.28433761224198
+    m_Start: 236.10100427890865
     m_ClipIn: 0
     m_Asset: {fileID: -2557070729820764999}
     m_Duration: 0.16606727559120316
@@ -7572,7 +7080,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 228.556876611337
+    m_Start: 235.3735432780037
     m_ClipIn: 0
     m_Asset: {fileID: 8393905751043437924}
     m_Duration: 0.16606727559120316
@@ -7829,20 +7337,6 @@ MonoBehaviour:
       m_Name: 
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
---- !u!114 &1946790470345181377
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 1, y: 0}
 --- !u!114 &1990484015526466694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8824,20 +8318,6 @@ MonoBehaviour:
       m_Name: 
     clipEnterEventAttributes: []
     clipExitEventAttributes: []
---- !u!114 &2973169118760332770
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829a17a8d6fa7fc4bb41edcf97806bcc, type: 3}
-  m_Name: MaterialSwitcherPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  deformationType: 0
-  deformationValueRange: {x: 1, y: 0}
 --- !u!114 &3032011415598026375
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9116,7 +8596,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0
+    m_Start: 6.816666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -143931000781162095}
     m_Duration: 0.9333333333333333
@@ -9222,7 +8702,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 58.6460021253054
+    m_Start: 65.46266879197208
     m_ClipIn: 0
     m_Asset: {fileID: 1566568972250752916}
     m_Duration: 0.25
@@ -9288,7 +8768,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 58.6460021253054
+    m_PreExtrapolationTime: 65.46266879197208
     m_DisplayName: StartTriangle (2)
   m_Markers:
     m_Objects: []
@@ -9425,7 +8905,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 18.4821621295065
+    m_Start: 25.29882879617317
     m_ClipIn: 0
     m_Asset: {fileID: 3835760078017180124}
     m_Duration: 0.16606727559120316
@@ -9494,7 +8974,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 22.329732021689402
+    m_Start: 29.146398688356072
     m_ClipIn: 0
     m_Asset: {fileID: -8245842626424811470}
     m_Duration: 0.16606727559120316
@@ -9563,7 +9043,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 26.344136817753302
+    m_Start: 33.160803484419965
     m_ClipIn: 0
     m_Asset: {fileID: -8764796389696185557}
     m_Duration: 0.16606727559120316
@@ -9632,7 +9112,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 30.3044913219288
+    m_Start: 37.12115798859546
     m_ClipIn: 0
     m_Asset: {fileID: -8138854737630241680}
     m_Duration: 0.16606727559120316
@@ -9701,7 +9181,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 231.19427261352502
+    m_Start: 238.01093928019168
     m_ClipIn: 0
     m_Asset: {fileID: -6252754978753393664}
     m_Duration: 0.16606727559120316
@@ -9770,7 +9250,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.49769131317703
+    m_Start: 237.3143579798437
     m_ClipIn: 0
     m_Asset: {fileID: -8408954460737237840}
     m_Duration: 0.16606727559120316
@@ -9839,7 +9319,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 229.68574291318703
+    m_Start: 236.5024095798537
     m_ClipIn: 0
     m_Asset: {fileID: -6614577681785060361}
     m_Duration: 0.16606727559120316
@@ -9908,7 +9388,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 228.86912871375702
+    m_Start: 235.6857953804237
     m_ClipIn: 0
     m_Asset: {fileID: -8547117242811968195}
     m_Duration: 0.16606727559120316
@@ -10020,7 +9500,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 12.716666666666667
+    m_Start: 19.53333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 7750226976261101035}
     m_Duration: 0.25
@@ -10086,10 +9566,10 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 43.38448995432503
-    m_PreExtrapolationTime: 12.716666666666667
+    m_PreExtrapolationTime: 19.53333333333334
     m_DisplayName: Recorded
   - m_Version: 1
-    m_Start: 56.3511566209917
+    m_Start: 63.16782328765837
     m_ClipIn: 0
     m_Asset: {fileID: -7601351518405656199}
     m_Duration: 0.25
@@ -10302,7 +9782,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1.45
+    m_Start: 8.266666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 4037322066641405173}
     m_Duration: 271.69959183673467
@@ -10417,7 +9897,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 81.75
+    m_Start: 88.56666666666665
     m_ClipIn: 0
     m_Asset: {fileID: -2681260396636771802}
     m_Duration: 0.2
@@ -10486,7 +9966,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Recorded
   - m_Version: 1
-    m_Start: 63.483333333333334
+    m_Start: 70.29999999999998
     m_ClipIn: 0
     m_Asset: {fileID: 5207515061885274326}
     m_Duration: 0.2
@@ -10552,7 +10032,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 18.066666666666663
-    m_PreExtrapolationTime: 63.483333333333334
+    m_PreExtrapolationTime: 70.29999999999998
     m_DisplayName: Recorded (1)
   m_Markers:
     m_Objects: []
@@ -10643,7 +10123,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 18.1321621295065
+    m_Start: 24.948828796173167
     m_ClipIn: 0
     m_Asset: {fileID: -4719130987716613731}
     m_Duration: 0.16606727559120316
@@ -10712,7 +10192,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 21.9797320216894
+    m_Start: 28.796398688356067
     m_ClipIn: 0
     m_Asset: {fileID: -6041548965569415802}
     m_Duration: 0.16606727559120316
@@ -10781,7 +10261,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 25.9941368177533
+    m_Start: 32.81080348441997
     m_ClipIn: 0
     m_Asset: {fileID: 2496869768045600056}
     m_Duration: 0.16606727559120316
@@ -10850,7 +10330,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 29.9544913219288
+    m_Start: 36.771157988595455
     m_ClipIn: 0
     m_Asset: {fileID: 4602570103412878009}
     m_Duration: 0.16606727559120316
@@ -10919,7 +10399,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.844272613525
+    m_Start: 237.66093928019166
     m_ClipIn: 0
     m_Asset: {fileID: 4678147336366557607}
     m_Duration: 0.16606727559120316
@@ -10988,7 +10468,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 230.147691313177
+    m_Start: 236.96435797984367
     m_ClipIn: 0
     m_Asset: {fileID: -202721778846262789}
     m_Duration: 0.16606727559120316
@@ -11057,7 +10537,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 229.335742913187
+    m_Start: 236.15240957985367
     m_ClipIn: 0
     m_Asset: {fileID: -8206947781585062511}
     m_Duration: 0.16606727559120316
@@ -11126,7 +10606,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 228.519128713757
+    m_Start: 235.3357953804237
     m_ClipIn: 0
     m_Asset: {fileID: 9151629397125516176}
     m_Duration: 0.16606727559120316
@@ -11376,7 +10856,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 2.26414259895682
+    m_Start: 9.080809265623486
     m_ClipIn: 0
     m_Asset: {fileID: -4763906631892184116}
     m_Duration: 0.11666666666666664
@@ -11445,7 +10925,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 4.22373209986836
+    m_Start: 11.040398766535024
     m_ClipIn: 0
     m_Asset: {fileID: -3933206954543828736}
     m_Duration: 0.11666666666666664
@@ -11514,7 +10994,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 5.19828330352902
+    m_Start: 12.014949970195687
     m_ClipIn: 0
     m_Asset: {fileID: 1322525281370643137}
     m_Duration: 0.11666666666666664
@@ -11583,7 +11063,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 7.10312140639871
+    m_Start: 13.919788073065376
     m_ClipIn: 0
     m_Asset: {fileID: -2339329913263638549}
     m_Duration: 0.11666666666666664
@@ -11652,7 +11132,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 9.12510310206562
+    m_Start: 15.941769768732286
     m_ClipIn: 0
     m_Asset: {fileID: 1251527439214670432}
     m_Duration: 0.11666666666666664
@@ -11721,7 +11201,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 11.0889258915558
+    m_Start: 17.90559255822246
     m_ClipIn: 0
     m_Asset: {fileID: 389868775191108029}
     m_Duration: 0.11666666666666664
@@ -11790,7 +11270,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 12.5747039895505
+    m_Start: 19.391370656217163
     m_ClipIn: 0
     m_Asset: {fileID: -6524568077532140089}
     m_Duration: 0.11666666666666664
@@ -11859,7 +11339,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 14.1367882918566
+    m_Start: 20.95345495852326
     m_ClipIn: 0
     m_Asset: {fileID: 1757509019080157670}
     m_Duration: 0.11666666666666664
@@ -11928,7 +11408,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 16.0728120906278
+    m_Start: 22.889478757294462
     m_ClipIn: 0
     m_Asset: {fileID: -4086421731172703657}
     m_Duration: 0.11666666666666664
@@ -11997,7 +11477,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 17.1000929912552
+    m_Start: 23.916759657921858
     m_ClipIn: 0
     m_Asset: {fileID: 1851942474455972290}
     m_Duration: 0.11666666666666664
@@ -12066,7 +11546,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 19.0929522914812
+    m_Start: 25.90961895814786
     m_ClipIn: 0
     m_Asset: {fileID: 1990484015526466694}
     m_Duration: 0.11666666666666664
@@ -12135,7 +11615,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 21.0668565873057
+    m_Start: 27.883523253972363
     m_ClipIn: 0
     m_Asset: {fileID: -8914968946160385101}
     m_Duration: 0.11666666666666664
@@ -12204,7 +11684,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 23.0277121867985
+    m_Start: 29.84437885346516
     m_ClipIn: 0
     m_Asset: {fileID: 1259177049135405358}
     m_Duration: 0.11666666666666664
@@ -12273,7 +11753,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 25.0568971885368
+    m_Start: 31.873563855203464
     m_ClipIn: 0
     m_Asset: {fileID: 6780578569486086679}
     m_Duration: 0.11666666666666664
@@ -12342,7 +11822,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 27.0199907980859
+    m_Start: 33.83665746475256
     m_ClipIn: 0
     m_Asset: {fileID: -8853635403318564438}
     m_Duration: 0.11666666666666664
@@ -12411,7 +11891,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 28.5039389971644
+    m_Start: 35.32060566383106
     m_ClipIn: 0
     m_Asset: {fileID: -1333104232786088353}
     m_Duration: 0.11666666666666664
@@ -12480,7 +11960,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VisualEffectActivationClip
   - m_Version: 1
-    m_Start: 30.0362463993952
+    m_Start: 36.85291306606186
     m_ClipIn: 0
     m_Asset: {fileID: 2887655259024439686}
     m_Duration: 0.11666666666666664
