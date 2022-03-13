@@ -1,3 +1,5 @@
+// https://github.com/TwoTailsGames/Unity-Built-in-Shaders/blob/master/CGIncludes/UnityCG.cginc
+
 inline float GammaToLinearSpaceExact (float value)
 {
     if (value <= 0.04045F)
