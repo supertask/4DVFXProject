@@ -16,7 +16,7 @@ Volumetric captured dance videos captured at Rememory Studio powered by DepthKit
 Coming soon..
 
 
-## How dancers are captured & is run on Unity
+## How dancers are captured & how an app works on Unity
 
 
 I requested to take Volumetric Video of dancers to [Rememory Studio](https://rememory.jp/jp/studio.html) organized by Curiocity, inc (If you wanna use outside of Japan, please check out [DepthKitStudio](https://www.depthkit.tv/depthkit-studio) ). Here is how the studio looks like.
