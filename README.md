@@ -1,5 +1,5 @@
 # 4DVFXProject
-Volumetric captured dance videos captured at Rememory Studio powered by DepthKit Studio
+Volumetric videos captured at Rememory Studio powered by DepthKit Studio
 
 ## Ariaray
 
