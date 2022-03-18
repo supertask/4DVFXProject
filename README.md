@@ -10,6 +10,8 @@ Volumetric captured dance videos captured at Rememory Studio powered by DepthKit
 
 ![screenshot](./images/Roy002.gif)
 
+For more detail, look at [AR VJing / POV revolution
+](https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/24839080799599053567585683586329345224812042688023832453838796424732206956545/).
 
 ## Mao
 
