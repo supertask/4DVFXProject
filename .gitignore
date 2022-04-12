@@ -11,8 +11,7 @@
 /[Mm]emoryCaptures/
 /Recordings/
 
-/[Aa]ssets/DepthKitClip/
-/[Aa]ssets/Samples/
+/[Aa]ssets/DepthKitClip/*/*.mp4
 
 
 #

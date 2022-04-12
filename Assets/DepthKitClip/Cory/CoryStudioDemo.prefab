@@ -1,0 +1,650 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &854237334161607345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2921086988249226736}
+  - component: {fileID: 8753041968747118871}
+  - component: {fileID: 7305965101684728332}
+  - component: {fileID: 1365681918043619720}
+  - component: {fileID: 4904148728012636679}
+  - component: {fileID: 7430181837595096105}
+  - component: {fileID: 725975527697773850}
+  - component: {fileID: 7594559701447733686}
+  - component: {fileID: 2107265284641689988}
+  - component: {fileID: 5903246224364475616}
+  m_Layer: 0
+  m_Name: CoryStudioDemo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2921086988249226736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8753041968747118871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fa781ea55830e408ba83c0f9d07c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_metadataFilePath: 
+  m_metadataFile: {fileID: 4900000, guid: 98d2f42111c38534f8c271773749e65c, type: 3}
+  m_metadataSourceType: 0
+  m_metadata:
+    _versionMajor: 0
+    _versionMinor: 4
+    format: perpixel
+    textureWidth: 4096
+    textureHeight: 2784
+    boundsCenter: {x: -0.03230667, y: 0.82457256, z: -0.10847199}
+    boundsSize: {x: 1.4794178, y: 2.8156395, z: 1.5507209}
+    perspectives:
+    - depthImageSize: {x: 2560, y: 1440}
+      depthPrincipalPoint: {x: 1271.9865, y: 743.62994}
+      depthFocalLength: {x: 1202.4148, y: 1201.7833}
+      farClip: 2.162703
+      nearClip: 1.0942456
+      extrinsics:
+        e00: -0.15997759
+        e01: 0.7408898
+        e02: -0.6522956
+        e03: 1.0629103
+        e10: 0.96796453
+        e11: -0.011808933
+        e12: -0.25080922
+        e13: 1.3898622
+        e20: -0.1935249
+        e21: -0.67152286
+        e22: -0.7152658
+        e23: 1.1035529
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      extrinsicsInv:
+        e00: -0.1599776
+        e01: 0.9679645
+        e02: -0.19352488
+        e03: -0.9617304
+        e10: 0.7408897
+        e11: -0.011808919
+        e12: -0.6715228
+        e13: -0.030025512
+        e20: -0.6522956
+        e21: -0.2508092
+        e22: -0.7152658
+        e23: 1.8312558
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      crop: {x: 0.17598493, y: 0.26071844, z: 0.6317352, w: 0.47856316}
+      clipEpsilon: 0.004679643
+      cameraNormal: {x: -0.6522956, y: -0.25080922, z: -0.7152658}
+      cameraCenter: {x: 1.0629103, y: 1.3898622, z: 1.1035529}
+    - depthImageSize: {x: 2560, y: 1440}
+      depthPrincipalPoint: {x: 1277.1177, y: 733.5387}
+      depthFocalLength: {x: 1220.5576, y: 1220.6243}
+      farClip: 2.0332737
+      nearClip: 1.0968784
+      extrinsics:
+        e00: 0.04044468
+        e01: 0.99724936
+        e02: 0.062112387
+        e03: -0.103105314
+        e10: 0.95011544
+        e11: -0.019143533
+        e12: -0.3113105
+        e13: 1.6164832
+        e20: -0.30926514
+        e21: 0.07160479
+        e22: -0.9482762
+        e23: 1.4599278
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      extrinsicsInv:
+        e00: 0.04044468
+        e01: 0.95011544
+        e02: -0.3092652
+        e03: -1.0801708
+        e10: 0.9972493
+        e11: -0.01914353
+        e12: 0.07160479
+        e13: 0.029229073
+        e20: 0.062112395
+        e21: -0.3113105
+        e22: -0.94827634
+        e23: 1.8940473
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      crop: {x: 0.15317208, y: 0.22016223, z: 0.6024044, w: 0.5538818}
+      clipEpsilon: 0.0053396253
+      cameraNormal: {x: 0.06211239, y: -0.31131053, z: -0.9482763}
+      cameraCenter: {x: -0.103105314, y: 1.6164832, z: 1.4599278}
+    - depthImageSize: {x: 2560, y: 1440}
+      depthPrincipalPoint: {x: 1278.9332, y: 737.34326}
+      depthFocalLength: {x: 1202.1642, y: 1201.9348}
+      farClip: 1.9139365
+      nearClip: 1.1225617
+      extrinsics:
+        e00: 0.034333684
+        e01: -0.731603
+        e02: 0.68086576
+        e03: -1.0845622
+        e10: 0.99865407
+        e11: -0.0013854598
+        e12: -0.051847342
+        e13: 1.0635225
+        e20: 0.038874988
+        e21: 0.68172944
+        e22: 0.7305708
+        e23: -1.2691164
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      extrinsicsInv:
+        e00: 0.034333687
+        e01: 0.99865407
+        e02: 0.03887499
+        e03: -0.9755172
+        e10: -0.73160297
+        e11: -0.0013854638
+        e12: 0.68172956
+        e13: 0.07319858
+        e20: 0.68086576
+        e21: -0.05184734
+        e22: 0.7305708
+        e23: 1.7207614
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      crop: {x: 0.166208, y: 0.27809966, z: 0.6121813, w: 0.42062575}
+      clipEpsilon: 0.0063181184
+      cameraNormal: {x: 0.68086576, y: -0.051847342, z: 0.7305708}
+      cameraCenter: {x: -1.0845622, y: 1.0635225, z: -1.2691164}
+    - depthImageSize: {x: 2560, y: 1440}
+      depthPrincipalPoint: {x: 1283.5309, y: 726.41815}
+      depthFocalLength: {x: 1199.1982, y: 1198.3851}
+      farClip: 1.8695824
+      nearClip: 1.0937718
+      extrinsics:
+        e00: -0.008698521
+        e01: -0.67933136
+        e02: -0.7337801
+        e03: 1.1564157
+        e10: 0.99892193
+        e11: 0.02755928
+        e12: -0.037355915
+        e13: 1.0418231
+        e20: 0.045599494
+        e21: -0.733314
+        e22: 0.67835927
+        e23: -1.1047308
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      extrinsicsInv:
+        e00: -0.008698522
+        e01: 0.9989219
+        e02: 0.045599494
+        e03: -0.98026574
+        e10: -0.6793313
+        e11: 0.027559279
+        e12: -0.733314
+        e13: -0.053237103
+        e20: -0.7337801
+        e21: -0.03735591
+        e22: 0.67835927
+        e23: 1.6368774
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      crop: {x: 0.15969004, y: 0.25492468, z: 0.6186993, w: 0.5191194}
+      clipEpsilon: 0.006444872
+      cameraNormal: {x: -0.7337801, y: -0.037355915, z: 0.67835927}
+      cameraCenter: {x: 1.1564157, y: 1.0418231, z: -1.1047308}
+    - depthImageSize: {x: 2560, y: 1440}
+      depthPrincipalPoint: {x: 1275.6399, y: 744.5405}
+      depthFocalLength: {x: 1226.2806, y: 1226.1614}
+      farClip: 2.0167952
+      nearClip: 1.0427849
+      extrinsics:
+        e00: 0.18682188
+        e01: 0.65053254
+        e02: 0.736142
+        e03: -1.222227
+        e10: 0.973297
+        e11: -0.020827806
+        e12: -0.22860265
+        e13: 1.3673562
+        e20: -0.13338125
+        e21: 0.75919276
+        e22: -0.6370525
+        e23: 0.95612794
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      extrinsicsInv:
+        e00: 0.18682188
+        e01: 0.97329706
+        e02: -0.13338125
+        e03: -0.9749754
+        e10: 0.65053254
+        e11: -0.0208278
+        e12: 0.75919265
+        e13: 0.0976921
+        e20: 0.736142
+        e21: -0.22860265
+        e22: -0.6370525
+        e23: 1.8214175
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      crop: {x: 0.15969002, y: 0.29548088, z: 0.6317353, w: 0.4901506}
+      clipEpsilon: 0.005133416
+      cameraNormal: {x: 0.736142, y: -0.22860265, z: -0.6370525}
+      cameraCenter: {x: -1.222227, y: 1.3673562, z: 0.95612794}
+    perspectivesCount: 5
+    numRows: 2
+    numColumns: 3
+    numAngles: 5
+  m_perspectiveDataBuffer:
+    m_name: Depthkit Perspective Data Buffer
+  m_player: {fileID: 7305965101684728332}
+  m_poster: {fileID: 2800000, guid: e233324a415d4ab46b580397e9b41619, type: 3}
+  m_disablePoster: 0
+--- !u!114 &7305965101684728332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d45f7d508d0a14884bec1201260eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mediaPlayer: {fileID: 1365681918043619720}
+  m_audioSource: {fileID: 4904148728012636679}
+--- !u!328 &1365681918043619720
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 5250dec3ee3e2e64fba2eb1d6ce321eb, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 4
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!82 &4904148728012636679
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!33 &7430181837595096105
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Mesh: {fileID: 0}
+--- !u!23 &725975527697773850
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7594559701447733686
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4794178, y: 2.8156395, z: 1.5507209}
+  m_Center: {x: -0.03230667, y: 0.82457256, z: -0.10847199}
+--- !u!114 &2107265284641689988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ed5688ce254104cb81e4b622d403b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  depthkitClip: {fileID: 8753041968747118871}
+  showPerViewColorDebug: 0
+  showCameraFrustums: 0
+  meshSource: {fileID: 5903246224364475616}
+  m_collider: {fileID: 7594559701447733686}
+  showClipInfo: 0
+--- !u!114 &5903246224364475616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854237334161607345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c39bca641cdaf46a71dcfdeb31fe85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bIsSetup: 1
+  m_parent: root
+  calculatingCurrentSurfaceTriangleCount: 0
+  maxSurfaceTriangles: 3000000
+  useTriangleMesh: 1
+  radialBias: 0.8
+  radialBiasPersp:
+  - 0.8
+  - 0.8
+  - 0.8
+  - 0.8
+  - 0.8
+  pauseDataGenerationWhenInvisible: 0
+  pausePlayerWhenInvisible: 0
+  showVolumePreview: 0
+  volumePreviewAlpha: 0.02
+  volumePreviewPointSize: 1
+  automaticLevelOfDetail: 0
+  levelOfDetailDistance: 1
+  m_volumeBounds:
+    m_Center: {x: -0.03230667, y: 0.82457256, z: -0.10847199}
+    m_Extent: {x: 0.7397089, y: 1.4078197, z: 0.77536047}
+  m_volumeDensity: 100
+  m_voxelGridDimensions: {x: 147, y: 281, z: 155}
+  m_totalVoxelCount: 6402585
+  surfaceSmoothingRadius: 0.3
+  enableSurfaceSmoothing: 0
+  showLevelOfDetailGizmo: 0
+  surfaceSensitivity: 0.1
+  weightUnknown: 0.005
+  weightUnseenMax: 1
+  weightUnseenMin: 0.0025
+  weightUnseenFalloffPower: 10
+  weightInFrontMax: 1
+  weightInFrontMin: 0.1
+  volumeViewpoint: {fileID: 0}
+  surfaceNormalColorBlendingPower: 1
+  perViewDisparityThreshold: 0.025
+  perViewDisparityBlendWidth: 0.01
+  globalViewDependentColorBlendWeight: 1
+  globalViewDependentGeometryBlendWeight: 1
+  viewDependentBlendingMode: 0
+  enableViewDependentGeometry: 0
+  edgeDepthThreshold: 0.5
+  edgeMaskEnabled: 0
+  edgeBlendSmoothingRadius: 0.3
+  edgeMaskScale: 6
+  edgeBlendSmoothingScale: 2
+  showDebugEdgeMask: 0
+  perspectiveColorBlendingData:
+    m_data:
+    - enabled: 1
+      edgeMaskEnabled: 1
+      edgeMaskBlendEdgeMin: 0
+      edgeMaskBlendEdgeMax: 1
+      edgeMaskStrength: 1
+      viewWeightPowerContribution: 1
+    - enabled: 1
+      edgeMaskEnabled: 1
+      edgeMaskBlendEdgeMin: 0
+      edgeMaskBlendEdgeMax: 1
+      edgeMaskStrength: 1
+      viewWeightPowerContribution: 1
+    - enabled: 1
+      edgeMaskEnabled: 1
+      edgeMaskBlendEdgeMin: 0
+      edgeMaskBlendEdgeMax: 1
+      edgeMaskStrength: 1
+      viewWeightPowerContribution: 1
+    - enabled: 1
+      edgeMaskEnabled: 1
+      edgeMaskBlendEdgeMin: 0
+      edgeMaskBlendEdgeMax: 1
+      edgeMaskStrength: 1
+      viewWeightPowerContribution: 1
+    - enabled: 1
+      edgeMaskEnabled: 1
+      edgeMaskBlendEdgeMin: 0
+      edgeMaskBlendEdgeMax: 1
+      edgeMaskStrength: 1
+      viewWeightPowerContribution: 1
+    m_name: Depthkit Per Perspective Color Blending Data
+  perspectiveGeometryData:
+    m_data:
+    - enabled: 1
+      overrideWeightUnknown: 0
+      weightUnknown: 0.005
+      viewDependentUnseenAmount: 1
+      viewDependentInFrontAmount: 1
+      viewDependentWeight: 1
+    - enabled: 1
+      overrideWeightUnknown: 0
+      weightUnknown: 0.005
+      viewDependentUnseenAmount: 1
+      viewDependentInFrontAmount: 1
+      viewDependentWeight: 1
+    - enabled: 1
+      overrideWeightUnknown: 0
+      weightUnknown: 0.005
+      viewDependentUnseenAmount: 1
+      viewDependentInFrontAmount: 1
+      viewDependentWeight: 1
+    - enabled: 1
+      overrideWeightUnknown: 0
+      weightUnknown: 0.005
+      viewDependentUnseenAmount: 1
+      viewDependentInFrontAmount: 1
+      viewDependentWeight: 1
+    - enabled: 1
+      overrideWeightUnknown: 0
+      weightUnknown: 0.005
+      viewDependentUnseenAmount: 1
+      viewDependentInFrontAmount: 1
+      viewDependentWeight: 1
+    m_name: Depthkit Per Perspective Geometry Data
+    m_geometryMatchesColorWeights: 0000000000
+    m_viewDependentContributions:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+  overrideRadialBias: 0000000000
+  perspectivesCount: 5
+  showPerspectiveGizmo: 0000000000
